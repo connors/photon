@@ -1,0 +1,16 @@
+.search {
+  margin: 7px 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 21px;
+  width: 200px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #2e6da4;
+  }
+}

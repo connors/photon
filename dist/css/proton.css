@@ -231,7 +231,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font: 14px/1.6 system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+  font: 13px/1.6 system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
   color: #000;
   background-color: #fff;
 }
@@ -254,4 +254,124 @@ body {
 }
 .clearfix:after {
   clear: both;
+}
+
+.btn {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all .05s linear;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.btn-default:hover {
+  background-color: #eee;
+}
+.btn-default:active {
+  background-color: #ddd;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #429ae8;
+  border-color: #3b80bd;
+}
+.btn-primary:hover {
+  background-color: #3ba0fa;
+}
+.btn-primary:active {
+  background-color: #3082cb;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 37px;
+  background-color: #e8e8e8;
+  border-bottom: 1px solid #ddd;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  margin: 0;
+  padding-top: 7px;
+  color: #333;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+.search {
+  margin: 7px 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 21px;
+  width: 200px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  -webkit-appearance: none;
+}
+.search:focus {
+  outline: none;
+  border: 1px solid #2e6da4;
+}
+
+.cols {
+  height: 100vh;
+  display: flex;
+}
+
+.col {
+  margin-top: 37px;
+  overflow-y: auto;
+  flex: 3 auto;
+}
+
+.col-main {
+  flex-direction: column;
+}
+
+.col-sec {
+  max-width: 250px;
+  min-width: 150px;
+  flex: 1 0 25%;
+  background-color: #f3f3f3;
+}
+
+.col-content {
+  margin: 10px;
+  height: 5000px;
 }
