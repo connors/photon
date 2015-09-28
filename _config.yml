@@ -1,0 +1,9 @@
+# Meta data
+name:         Proton
+authors:      Connor Sears
+
+# Dependencies
+highlighter:  rouge
+
+# Permalinks
+permalink:    pretty
