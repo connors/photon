@@ -435,11 +435,31 @@ body {
   padding: 0;
   border-bottom: 1px solid #ddd;
 }
+.list-group p {
+  margin: 0;
+}
 
 .list-group-item {
   padding: 10px;
+  font-size: 12px;
   border-top: 1px solid #ddd;
 }
 .list-group-item:first-child {
   border-top: 0;
+}
+
+.media-object {
+  margin-top: 3px;
+}
+
+.media-object.pull-left {
+  margin-right: 10px;
+}
+
+.media-object.pull-right {
+  margin-left: 10px;
+}
+
+.media-body {
+  overflow: hidden;
 }
