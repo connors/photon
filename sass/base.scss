@@ -2,8 +2,8 @@
 // Base styles
 // --------------------------------------------------
 
-// Use box sizing on all the things!
 * {
+  -webkit-user-select: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -42,6 +42,9 @@ body {
 }
 
 // Utility classes
+.selectable-text {
+  -webkit-user-select: text;
+}
 .text-center {
   text-align: center;
 }

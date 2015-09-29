@@ -30,14 +30,13 @@
 .title {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  margin: 7px 0;
-  color: #333;
+  margin: 9px 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #444;
   text-shadow: 0 1px rgba(255,255,255,.5);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
   cursor: default;
+  transform: translateX(-50%);
 }
 
 // Borderless toolbar for the clean look

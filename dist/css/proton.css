@@ -217,6 +217,7 @@ th {
 }
 
 * {
+  -webkit-user-select: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -253,6 +254,10 @@ body {
   flex: 1;
 }
 
+.selectable-text {
+  -webkit-user-select: text;
+}
+
 .text-center {
   text-align: center;
 }
@@ -287,7 +292,6 @@ body {
   border: 1px solid transparent;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  transition: all .05s linear;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   -webkit-user-select: none;
@@ -352,14 +356,13 @@ body {
 .title {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  margin: 7px 0;
-  color: #333;
+  margin: 9px 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #444;
   text-shadow: 0 1px rgba(255, 255, 255, 0.5);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
   cursor: default;
+  transform: translateX(-50%);
 }
 
 .toolbar-borderless {
