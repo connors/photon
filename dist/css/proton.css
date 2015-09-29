@@ -391,7 +391,6 @@ body {
 .column {
   position: relative;
   overflow-y: auto;
-  min-width: 400px;
   flex: 1;
 }
 
