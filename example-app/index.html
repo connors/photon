@@ -8,7 +8,7 @@
     <script src="./popover.js" charset="utf-8"></script>
   </head>
   <body>
-    <div class="pane">
+    <div class="window">
 
       <!-- .toolbar-header sits at the top of your app -->
       <header class="toolbar toolbar-header">
@@ -35,9 +35,9 @@
       </header>
 
       <!-- Your app's content goes inside .pane-content -->
-      <div class="pane-content">
-        <div class="column-group">
-          <div class="column column-sm sidebar">
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane pane-sm sidebar">
             <ul class="list-group">
               <li class="list-group-header">
                 <input class="search" type="text" placeholder="Search for someone">
@@ -135,13 +135,13 @@
               </li>
             </ul>
           </div>
-          <div class="column padded-more">
+          <div class="pane padded-more">
             <h1>H1. Headings are cool</h1>
             <h2>H2. Headings are cool</h2>
             <h3>H3. Headings are cool</h3>
             <h4>H4. Headings are cool</h4>
             <h5>H5. Headings are cool</h5>
-            <h6>H6. Headings are cool</h6>
+            <h6 class="selectable-text">H6. Selectable headings are cool</h6>
           </div>
         </div>
       </div>

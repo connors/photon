@@ -2,7 +2,7 @@
 // The Grid.css
 // --------------------------------------------------
 
-.column-group {
+.pane-group {
   position: absolute;
   top: 0;
   right: 0;
@@ -10,7 +10,7 @@
   left: 0;
   display: flex;
 }
-.column {
+.pane {
   position: relative;
   overflow-y: auto;
   flex: 1;
@@ -20,19 +20,19 @@
     border-left: 0;
   }
 }
-.column-sm {
+.pane-sm {
   max-width: 220px;
   min-width: 150px;
 }
-.column-mini {
+.pane-mini {
   width: 80px;
   flex: none;
 }
-.column-one-fourth {
+.pane-one-fourth {
   width: 25%;
   flex: none;
 }
-.column-one-third {
+.pane-one-third {
   width: 33.3%;
 }
 .derp {

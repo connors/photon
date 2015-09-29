@@ -63,6 +63,7 @@ h6 { font-size: 12px; }
 
 // Utility classes
 .selectable-text {
+  cursor: text;
   -webkit-user-select: text;
 }
 .text-center {
