@@ -46,12 +46,14 @@
 // Buttons in toolbars
 .toolbar-actions {
   margin-top: -5px;
+  margin-bottom: 5px;
   padding-right: 5px;
   padding-left: 5px;
   padding-bottom: 5px;
   @include clearfix;
 
-  > .btn {
+  > .btn,
+  > .btn-group {
     margin-left: 3px;
     margin-right: 3px;
   }

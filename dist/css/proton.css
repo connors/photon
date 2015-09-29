@@ -395,6 +395,7 @@ img {
 
 .toolbar-actions {
   margin-top: -5px;
+  margin-bottom: 5px;
   padding-right: 5px;
   padding-left: 5px;
   padding-bottom: 5px;
@@ -406,7 +407,8 @@ img {
 .toolbar-actions:after {
   clear: both;
 }
-.toolbar-actions > .btn {
+.toolbar-actions > .btn,
+.toolbar-actions > .btn-group {
   margin-left: 3px;
   margin-right: 3px;
 }
