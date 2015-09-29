@@ -1,0 +1,44 @@
+.pane {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+	display: flex;
+  flex-direction: column;
+}
+.pane-content {
+  position: relative;
+  overflow-y: auto;
+	display: flex;
+  flex: 1;
+}
+.column-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.column {
+  position: relative;
+  overflow-y: auto;
+  min-width: 400px;
+  flex: 1;
+}
+.column-sm {
+  max-width: 220px;
+  min-width: 150px;
+  background-color: #f3f3f3;
+}
+.column-mini {
+  max-width: 80px;
+  min-width: 80px;
+  background-color: #f3f3f3;
+}
+.derp {
+  height: 5000px;
+  margin: 10px;
+  background-color: red;
+}

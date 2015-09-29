@@ -5,28 +5,23 @@
     <link href="../dist/css/proton.css" rel="stylesheet">
   </head>
   <body>
-    <header class="toolbar">
-      <input class="search pull-right" type="search" placeholder="Search for things"></input>
-      <h1 class="title">My app</h1>
-    </header>
-
-    <div class="container">
-      <div class="col col-sec">
-        <div class="col-content">side left</div>
-      </div>
-      <div class="col col-main">
-        <div class="col-content">
-          <button class="btn btn-default">Cancel</button>
-          <button class="btn btn-primary">Submit</button>
+    <div class="pane">
+      <header class="toolbar toolbar-header">
+        <h1 class="title">My app</h1>
+      </header>
+      <div class="pane-content">
+        <div class="column-group">
+          <div class="column column-mini">
+            mini
+          </div>
+          <div class="column">main</div>
+          <div class="column column-sm">
+            small
+            <div class="derp">a tall element</div>
+          </div>
         </div>
       </div>
-      <div class="col col-sec">
-        <div class="col-content">side right</div>
-      </div>
+      <footer class="toolbar toolbar-footer"></footer>
     </div>
-
-    <footer class="toolbar">
-      <h1 class="title">Footer</h1>
-    </footer>
   </body>
 </html>

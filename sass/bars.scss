@@ -1,8 +1,15 @@
 .toolbar {
-  background-color: #e8e8e8;
-  border-bottom: 1px solid #ddd;
-  box-shadow: inset 0 1px rgba(255,255,255,.5);
+  min-height: 39px;
+  cursor: default;
+  box-shadow: inset 0 1px rgba(255,255,255,.6);
+  @include linear-gradient(#e8e3e8, #d9d7d9);
   @include clearfix;
+}
+.toolbar-header {
+  border-bottom: 1px solid #aaa7aa;
+}
+.toolbar-footer {
+  border-top: 1px solid #aaa7aa;
 }
 
 .title {
@@ -10,8 +17,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 14px;
-  margin: 0;
-  padding-top: 7px;
+  margin: 7px 0;
   color: #333;
   text-shadow: 0 1px rgba(255,255,255,.5);
   -webkit-touch-callout: none;
