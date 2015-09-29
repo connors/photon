@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var windowPosition = BrowserWindow.getFocusedWindow().getPosition()
 
     var height = 380
-    var width = 300
+    var width = 250
     var x = button.offsetLeft + windowPosition[0] - (width / 2) + (button.offsetWidth / 2)
     var y = button.offsetTop + windowPosition[1] + button.offsetHeight
 
