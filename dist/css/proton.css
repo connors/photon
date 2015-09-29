@@ -456,6 +456,10 @@ body {
 .list-group-item:first-child {
   border-top: 0;
 }
+.list-group-item:active {
+  color: #fff;
+  background-color: #217bf4;
+}
 
 .media-object {
   margin-top: 3px;

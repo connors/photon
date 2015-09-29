@@ -18,7 +18,12 @@ app.on('window-all-closed', function() {
 // initialization and is ready to create browser windows.
 app.on('ready', function() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1000, height: 700, 'title-bar-style': 'hidden-inset'});
+  mainWindow = new BrowserWindow({
+    width: 1000,
+    height: 700,
+    'accept-first-mouse': true,
+    'title-bar-style': 'hidden-inset'
+  });
 
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/index.html');
