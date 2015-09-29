@@ -296,7 +296,7 @@ img {
   cursor: default;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 .btn:focus {
@@ -351,7 +351,7 @@ img {
 }
 
 .toolbar {
-  min-height: 25px;
+  min-height: 22px;
   cursor: default;
   background-color: #e8e3e8;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e3e8), color-stop(100%, #d9d7d9));
@@ -384,7 +384,7 @@ img {
 }
 
 .title {
-  margin: 3px 0;
+  margin: 0;
   font-size: 12px;
   font-weight: 500;
   text-align: center;
@@ -414,8 +414,8 @@ img {
 }
 .toolbar-actions > .btn,
 .toolbar-actions > .btn-group {
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .toolbar .btn {
