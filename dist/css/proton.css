@@ -371,6 +371,7 @@ h6 {
   background-image: linear-gradient(to bottom, #57acf5 0%, #348fe1 100%);
 }
 .btn-primary:active {
+  border-color: #3c77a8;
   background-color: #4a93d1;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4a93d1), color-stop(100%, #2e7dc5));
   background-image: -webkit-linear-gradient(top, #4a93d1 0%, #2e7dc5 100%);

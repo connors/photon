@@ -42,7 +42,8 @@
   @include linear-gradient(#57acf5, #348fe1);
 
   &:active {
-   @include linear-gradient(#4a93d1, #2e7dc5);
+    border-color: #3c77a8;
+    @include linear-gradient(#4a93d1, #2e7dc5);
   }
 }
 
