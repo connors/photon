@@ -70,13 +70,24 @@
   .btn + .btn-group,
   .btn-group + .btn,
   .btn-group + .btn-group {
-    margin-left: -3px;
+    float: left;
   }
-}
 
-.btn-group > .btn:not(:first-child):not(:last-child) {
-  border-radius: 0;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  z-index: 10;
+  > .btn:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  > .btn:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  > .btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+
+  .btn + .btn {
+    border-left: 1px solid #ddd;
+  }
 }
