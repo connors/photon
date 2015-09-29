@@ -399,7 +399,7 @@ body {
   border-left: 1px solid #ddd;
 }
 .column:first-child {
-  border-left: 1px solid #ddd;
+  border-left: 0;
 }
 
 .column-sm {
@@ -433,7 +433,12 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #ddd;
+}
+.list-group strong,
+.list-group p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .list-group p {
   margin: 0;

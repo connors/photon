@@ -6,7 +6,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #ddd;
+
+  strong,
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   p {
     margin: 0
