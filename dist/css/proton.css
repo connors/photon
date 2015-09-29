@@ -359,11 +359,19 @@ h6 {
 
 .btn-primary {
   color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
   background-color: #429ae8;
-  border-color: #3b80bd;
+  border-color: #468bc4;
+  background-color: #57acf5;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #57acf5), color-stop(100%, #348fe1));
+  background-image: -webkit-linear-gradient(top, #57acf5 0%, #348fe1 100%);
+  background-image: linear-gradient(to bottom, #57acf5 0%, #348fe1 100%);
 }
 .btn-primary:active {
-  background-color: #3082cb;
+  background-color: #4a93d1;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4a93d1), color-stop(100%, #2e7dc5));
+  background-image: -webkit-linear-gradient(top, #4a93d1 0%, #2e7dc5 100%);
+  background-image: linear-gradient(to bottom, #4a93d1 0%, #2e7dc5 100%);
 }
 
 .btn-group {
@@ -528,14 +536,6 @@ h6 {
 
 .pane-one-third {
   width: 33.3%;
-}
-
-.derp {
-  height: 5000px;
-}
-
-.sidebar {
-  background-color: #f8f8f8;
 }
 
 .list-group {

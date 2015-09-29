@@ -36,11 +36,13 @@
 // For primary actions
 .btn-primary {
   color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
   background-color: #429ae8;
-  border-color: #3b80bd;
+  border-color: #468bc4;
+  @include linear-gradient(#57acf5, #348fe1);
 
   &:active {
-    background-color: #3082cb;
+   @include linear-gradient(#4a93d1, #2e7dc5);
   }
 }
 
