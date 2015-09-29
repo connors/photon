@@ -21,6 +21,7 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({
     width: 1000,
     height: 700,
+    'min-width': 500,
     'accept-first-mouse': true,
     'title-bar-style': 'hidden'
   });
