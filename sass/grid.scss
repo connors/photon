@@ -1,0 +1,38 @@
+.column-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.column {
+  position: relative;
+  overflow-y: auto;
+  flex: 1;
+}
+.column-sm {
+  max-width: 220px;
+  min-width: 150px;
+}
+.column-mini {
+  width: 80px;
+  flex: none;
+}
+.column-one-fourth {
+  width: 25%;
+  flex: none;
+}
+.column-one-third {
+  width: 33.3%;
+}
+.derp {
+  height: 5000px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.sidebar {
+  background-color: #f3f3f3;
+}
