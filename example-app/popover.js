@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
       width: width,
       height: height,
       frame: false,
+      resizable: false,
       x: Math.round(x),
       y: Math.round(y)
     })
