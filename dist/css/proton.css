@@ -443,3 +443,9 @@ body {
 .list-group-item:first-child {
   border-top: 0;
 }
+
+.btn-popover {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
