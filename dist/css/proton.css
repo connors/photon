@@ -217,6 +217,8 @@ th {
 }
 
 * {
+  cursor: default;
+  -webkit-user-drag: text;
   -webkit-user-select: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -235,6 +237,10 @@ body {
   font: 13px/1.6 system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
   color: #000;
   background-color: #fff;
+}
+
+img {
+  -webkit-user-drag: text;
 }
 
 .pane {
@@ -287,7 +293,7 @@ body {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  cursor: pointer;
+  cursor: default;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;

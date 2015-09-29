@@ -3,6 +3,8 @@
 // --------------------------------------------------
 
 * {
+  cursor: default;
+  -webkit-user-drag: text;
   -webkit-user-select: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -22,6 +24,10 @@ body {
   font: 13px/1.6 system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
   color: #000;
   background-color: #fff;
+}
+
+img {
+  -webkit-user-drag: text;
 }
 
 // Basic app structure
