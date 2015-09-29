@@ -1,7 +1,7 @@
 var popover = null
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.btn-popover').addEventListener('click', function (event) {
+  document.querySelector('.js-popover-trigger').addEventListener('click', function (event) {
     if (popover) {
       popover.close()
       return
