@@ -30,8 +30,22 @@ img {
   -webkit-user-drag: text;
 }
 
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
 // Basic app structure
-.pane {
+.window {
   position: absolute;
   top: 0;
   right: 0;
@@ -40,7 +54,7 @@ img {
 	display: flex;
   flex-direction: column;
 }
-.pane-content {
+.window-content {
   position: relative;
   overflow-y: auto;
 	display: flex;
@@ -54,12 +68,27 @@ img {
 .text-center {
   text-align: center;
 }
+
+// Floats
 .pull-left {
   float: left;
 }
 .pull-right {
   float: right;
 }
+
+// Padding
+.padded {
+  padding: 10px;
+}
+.padded-more {
+  padding: 5px;
+}
+.padded-more {
+  padding: 20px;
+}
+
+// Clearfix
 .clearfix {
   @include clearfix();
 }

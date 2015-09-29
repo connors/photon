@@ -243,7 +243,37 @@ img {
   -webkit-user-drag: text;
 }
 
-.pane {
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+.window {
   position: absolute;
   top: 0;
   right: 0;
@@ -253,7 +283,7 @@ img {
   flex-direction: column;
 }
 
-.pane-content {
+.window-content {
   position: relative;
   overflow-y: auto;
   display: flex;
@@ -274,6 +304,18 @@ img {
 
 .pull-right {
   float: right;
+}
+
+.padded {
+  padding: 10px;
+}
+
+.padded-more {
+  padding: 5px;
+}
+
+.padded-more {
+  padding: 20px;
 }
 
 .clearfix:before, .clearfix:after {
