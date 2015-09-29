@@ -430,6 +430,7 @@ body {
 }
 
 .list-group {
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -469,13 +470,6 @@ body {
   overflow: hidden;
 }
 
-.btn-popover {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .popover {
-  background: red;
-  color: white;
+  background-color: #fff;
 }

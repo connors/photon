@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var button = event.target
     var windowPosition = BrowserWindow.getFocusedWindow().getPosition()
 
-    var height = 200
+    var height = 380
     var width = 300
     var x = button.offsetLeft + windowPosition[0] - (width / 2) + (button.offsetWidth / 2)
     var y = button.offsetTop + windowPosition[1] + button.offsetHeight
@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
     popover = new BrowserWindow({
       width: width,
       height: height,
-      transparent: true,
       frame: false,
       x: Math.round(x),
       y: Math.round(y)
