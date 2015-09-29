@@ -306,9 +306,6 @@ body {
   border-color: #ccc;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-.btn-default:hover {
-  background-color: #eee;
-}
 .btn-default:active {
   background-color: #ddd;
 }
@@ -318,9 +315,6 @@ body {
   background-color: #429ae8;
   border-color: #3b80bd;
 }
-.btn-primary:hover {
-  background-color: #3ba0fa;
-}
 .btn-primary:active {
   background-color: #3082cb;
 }
@@ -328,11 +322,7 @@ body {
 .toolbar {
   min-height: 39px;
   cursor: default;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.6);
-  background-color: #e8e3e8;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e3e8), color-stop(100%, #d9d7d9));
-  background-image: -webkit-linear-gradient(top, #e8e3e8 0%, #d9d7d9 100%);
-  background-image: linear-gradient(to bottom, #e8e3e8 0%, #d9d7d9 100%);
+  background-color: #f8f8f8;
 }
 .toolbar:before, .toolbar:after {
   display: table;
@@ -343,11 +333,11 @@ body {
 }
 
 .toolbar-header {
-  border-bottom: 1px solid #aaa7aa;
+  border-bottom: 1px solid #eee;
 }
 
 .toolbar-footer {
-  border-top: 1px solid #aaa7aa;
+  border-top: 1px solid #eee;
 }
 
 .title {
@@ -361,6 +351,20 @@ body {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   cursor: default;
+}
+
+.toolbar-dark {
+  box-shadow: none;
+  background-color: #111;
+}
+.toolbar-dark .title {
+  text-shadow: none;
+  color: #fff;
+}
+
+.toolbar-borderless {
+  border-top: 0;
+  border-bottom: 0;
 }
 
 .search {
@@ -415,12 +419,8 @@ body {
 
 .derp {
   height: 5000px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
 }
 
 .sidebar {
-  background-color: #f3f3f3;
+  background-color: #f8f8f8;
 }

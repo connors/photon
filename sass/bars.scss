@@ -1,15 +1,15 @@
 .toolbar {
   min-height: 39px;
   cursor: default;
-  box-shadow: inset 0 1px rgba(255,255,255,.6);
-  @include linear-gradient(#e8e3e8, #d9d7d9);
+  ///box-shadow: inset 0 1px rgba(255,255,255,.6);
+  background-color: #f8f8f8;
   @include clearfix;
 }
 .toolbar-header {
-  border-bottom: 1px solid #aaa7aa;
+  border-bottom: 1px solid #eee;
 }
 .toolbar-footer {
-  border-top: 1px solid #aaa7aa;
+  border-top: 1px solid #eee;
 }
 
 .title {
@@ -23,4 +23,19 @@
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   cursor: default;
+}
+
+.toolbar-dark {
+  box-shadow: none;
+  background-color: #111;
+
+  .title {
+    text-shadow: none;
+    color: #fff;
+  }
+}
+
+.toolbar-borderless {
+  border-top: 0;
+  border-bottom: 0;
 }
