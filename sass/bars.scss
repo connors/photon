@@ -9,12 +9,24 @@
   @include clearfix;
 }
 .toolbar-header {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
 }
 .toolbar-footer {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
 }
 
+// A dark variation of the toolbar
+.toolbar-dark {
+  box-shadow: none;
+  background-color: #111;
+
+  .title {
+    text-shadow: none;
+    color: #fff;
+  }
+}
+
+// Simple centered title to go in the toolbar
 .title {
   position: absolute;
   left: 50%;
@@ -28,16 +40,7 @@
   cursor: default;
 }
 
-.toolbar-dark {
-  box-shadow: none;
-  background-color: #111;
-
-  .title {
-    text-shadow: none;
-    color: #fff;
-  }
-}
-
+// Borderless toolbar for the clean look
 .toolbar-borderless {
   border-top: 0;
   border-bottom: 0;

@@ -1,0 +1,18 @@
+//
+// Lists.scss
+// --------------------------------------------------
+
+.list-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+}
+.list-group-item {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+
+  &:first-child {
+    border-top: 0;
+  }
+}
