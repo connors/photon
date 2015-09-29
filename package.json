@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/connors/proton/issues"
   },
+  "scripts": {
+    "start": "electron example-app"
+  },
   "license": "MIT",
   "devDependencies": {
     "electron-prebuilt": "^0.33.3",
