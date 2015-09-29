@@ -10,6 +10,10 @@
 }
 .toolbar-header {
   border-bottom: 1px solid #aaa7aa;
+
+  .title {
+    margin-top: 1px
+  }
 }
 .toolbar-footer {
   border-top: 1px solid #aaa7aa;

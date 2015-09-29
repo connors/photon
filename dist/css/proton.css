@@ -369,6 +369,9 @@ img {
 .toolbar-header {
   border-bottom: 1px solid #aaa7aa;
 }
+.toolbar-header .title {
+  margin-top: 1px;
+}
 
 .toolbar-footer {
   border-top: 1px solid #aaa7aa;
