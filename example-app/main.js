@@ -22,7 +22,7 @@ app.on('ready', function() {
     width: 1000,
     height: 700,
     'accept-first-mouse': true,
-    'title-bar-style': 'hidden-inset'
+    'title-bar-style': 'hidden'
   });
 
   // and load the index.html of the app.

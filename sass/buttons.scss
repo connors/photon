@@ -16,17 +16,13 @@
   border: 1px solid transparent;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+
   &:focus {
     outline: none;
     box-shadow: none;
   }
 }
+// Normal buttons
 .btn-default {
   color: #333;
   background-color: #fff;
@@ -37,6 +33,7 @@
     background-color: #ddd;
   }
 }
+// For primary actions
 .btn-primary {
   color: #fff;
   background-color: #429ae8;

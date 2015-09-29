@@ -3,18 +3,18 @@
 // --------------------------------------------------
 
 .search {
-  height: 22px;
-  width: 200px;
-  margin: 8px 10px 7px;
-  padding-right: 10px;
-  padding-left: 10px;
+  display: block;
+  min-height: 22px;
+  width: 100%;
+  padding: 4px 8px;
   font-size: 12px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  -webkit-appearance: none;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  -webkit-appearance: textfield;
 
   &:focus {
     outline: none;
-    border: 1px solid #2e6da4;
+    margin: -2px;
+    border: 3px solid #9bc2ed;
   }
 }

@@ -13,7 +13,13 @@
       <!-- .toolbar-header sits at the top of your app -->
       <header class="toolbar toolbar-header">
         <h1 class="title">My App</h1>
-        <button class="btn btn-default pull-right js-popover-trigger">Share</button>
+
+        <div class="toolbar-actions">
+          <button class="btn btn-default pull-left">Btn 1</button>
+          <button class="btn btn-default pull-left">Btn 2</button>
+          <button class="btn btn-default pull-left">Btn 3</button>
+          <button class="btn btn-default pull-right js-popover-trigger">Share</button>
+        </div>
       </header>
 
       <!-- Your app's content goes inside .pane-content -->
@@ -21,6 +27,9 @@
         <div class="column-group">
           <div class="column column-sm sidebar">
             <ul class="list-group">
+              <li class="list-group-header">
+                <input class="search" type="text" placeholder="Search for someone">
+              </li>
               <li class="list-group-item">
                 <img class="avatar media-object pull-left" src="images/avatar.jpg" width="32" height="32">
                 <div class="media-body">

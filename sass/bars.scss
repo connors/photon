@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 .toolbar {
-  min-height: 39px;
+  min-height: 25px;
   cursor: default;
   background-color: #f8f8f8;
   @include clearfix;
@@ -28,19 +28,31 @@
 
 // Simple centered title to go in the toolbar
 .title {
-  position: absolute;
-  left: 50%;
   margin: 9px 0;
   font-size: 12px;
   font-weight: 500;
+  text-align: center;
   color: #444;
   text-shadow: 0 1px rgba(255,255,255,.5);
   cursor: default;
-  transform: translateX(-50%);
 }
 
 // Borderless toolbar for the clean look
 .toolbar-borderless {
   border-top: 0;
   border-bottom: 0;
+}
+
+// Buttons in toolbars
+.toolbar-actions {
+  margin-top: -5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  @include clearfix;
+
+  .btn {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
 }
