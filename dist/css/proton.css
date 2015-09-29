@@ -345,13 +345,18 @@ img {
 
 .btn-group > .btn:not(:first-child):not(:last-child) {
   border-radius: 0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   z-index: 10;
 }
 
 .toolbar {
   min-height: 25px;
   cursor: default;
-  background-color: #f8f8f8;
+  background-color: #e8e3e8;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e3e8), color-stop(100%, #d9d7d9));
+  background-image: -webkit-linear-gradient(top, #e8e3e8 0%, #d9d7d9 100%);
+  background-image: linear-gradient(to bottom, #e8e3e8 0%, #d9d7d9 100%);
 }
 .toolbar:before, .toolbar:after {
   display: table;
@@ -362,11 +367,11 @@ img {
 }
 
 .toolbar-header {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #aaa7aa;
 }
 
 .toolbar-footer {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #aaa7aa;
 }
 
 .toolbar-dark {
@@ -411,6 +416,11 @@ img {
 .toolbar-actions > .btn-group {
   margin-left: 3px;
   margin-right: 3px;
+}
+
+.toolbar .btn {
+  border: 0;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .search {

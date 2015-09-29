@@ -5,14 +5,14 @@
 .toolbar {
   min-height: 25px;
   cursor: default;
-  background-color: #f8f8f8;
+  @include linear-gradient(#e8e3e8, #d9d7d9);
   @include clearfix;
 }
 .toolbar-header {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #aaa7aa;
 }
 .toolbar-footer {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #aaa7aa;
 }
 
 // A dark variation of the toolbar
@@ -57,4 +57,9 @@
     margin-left: 3px;
     margin-right: 3px;
   }
+}
+
+.toolbar .btn {
+  border: 0;
+  box-shadow: 0 1px 0px rgba(0,0,0,.2);
 }

@@ -76,5 +76,7 @@
 
 .btn-group > .btn:not(:first-child):not(:last-child) {
   border-radius: 0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   z-index: 10;
 }
