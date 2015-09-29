@@ -379,7 +379,7 @@ img {
 }
 
 .title {
-  margin: 9px 0;
+  margin: 3px 0;
   font-size: 12px;
   font-weight: 500;
   text-align: center;
@@ -394,7 +394,7 @@ img {
 }
 
 .toolbar-actions {
-  margin-top: -5px;
+  margin-top: 5px;
   margin-bottom: 5px;
   padding-right: 5px;
   padding-left: 5px;
