@@ -1,7 +1,7 @@
 /*!
- * Proton 's Gruntfile
+ * Photon 's Gruntfile
  * Copyright 2015 Connor Sears
- * Licensed under MIT (https://github.com/connors/proton/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/connors/photon/blob/master/LICENSE)
  */
 
 module.exports = function(grunt) {
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 
     banner: '/*!\n' +
             ' * =====================================================\n' +
-            ' * Proton v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * Photon v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under <%= pkg.license %> (https://github.com/connors/proton/blob/master/LICENSE)\n' +
             ' *\n' +
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         unixNewlines: true
       },
       core: {
-        src: 'sass/proton.scss',
+        src: 'sass/photon.scss',
         dest: '<%= meta.distPath %>css/<%= pkg.name %>.css'
       }
 		},

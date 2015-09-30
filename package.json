@@ -1,21 +1,21 @@
 {
-  "name": "proton",
+  "name": "photon",
   "version": "1.0.0",
   "author": "Connor Sears",
   "keywords": [
-    "proton",
+    "photon",
     "html",
     "css",
     "electron"
   ],
-  "style": "dist/css/proton.css",
-  "sass": "sass/proton.scss",
+  "style": "dist/css/photon.css",
+  "sass": "sass/photon.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/connors/proton.git"
+    "url": "https://github.com/connors/photon.git"
   },
   "bugs": {
-    "url": "https://github.com/connors/proton/issues"
+    "url": "https://github.com/connors/photon/issues"
   },
   "scripts": {
     "start": "electron example-app"
