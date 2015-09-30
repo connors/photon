@@ -1,4 +1,4 @@
-# Proton
+# Photon
 
 UI toolkit for building desktop apps with Electron.
 
