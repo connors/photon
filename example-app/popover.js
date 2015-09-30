@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.js-popover-trigger').addEventListener('click', function (event) {
     if (popover) {
       popover.close()
+      popover = null
       return
     }
     var BrowserWindow = require('remote').require('browser-window')
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
       width: width,
       height: height,
       frame: false,
+      resizable: false,
       x: Math.round(x),
       y: Math.round(y)
     })
