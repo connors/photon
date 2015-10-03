@@ -212,6 +212,14 @@ h6 {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .pull-left {
   float: left;
 }
