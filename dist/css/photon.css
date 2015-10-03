@@ -421,7 +421,7 @@ h6 {
 .btn-group .btn + .btn-group,
 .btn-group .btn-group + .btn,
 .btn-group .btn-group + .btn-group {
-  float: left;
+  margin-left: -1px;
 }
 .btn-group > .btn:first-child {
   border-top-right-radius: 0;

@@ -111,7 +111,7 @@
   .btn + .btn-group,
   .btn-group + .btn,
   .btn-group + .btn-group {
-    float: left;
+    margin-left: -1px;
   }
 
   > .btn:first-child {
