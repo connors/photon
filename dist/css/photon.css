@@ -474,20 +474,98 @@ h6 {
   margin-right: 4px;
 }
 
-.search {
-  display: block;
-  min-height: 22px;
-  width: 100%;
-  padding: 4px 8px;
-  font-size: 12px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  -webkit-appearance: textfield;
+label {
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
-.search:focus {
+
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  line-height: normal;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 25px;
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
   outline: none;
-  margin: -2px;
-  border: 3px solid #9bc2ed;
+}
+
+textarea {
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.radio label,
+.checkbox label {
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px \9;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px;
+}
+
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.search {
+  border-radius: 30px;
 }
 
 .pane-group {
@@ -602,6 +680,9 @@ img {
   display: block;
   color: #333;
   text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .nav-group-item:active, .nav-group-item.selected {
   background-color: #dcdfe1;

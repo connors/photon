@@ -1,20 +1,102 @@
 //
 // Forms.css
+// Adapted from Bootstrap's forms.less (https://github.com/twbs/bootstrap/blob/master/less/forms.less)
 // --------------------------------------------------
 
-.search {
+label {
+  display: inline-block;
+  font-size: $font-size-default +1;
+  margin-bottom: 5px;
+}
+input[type="search"] {
+  box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  line-height: normal;
+}
+input[type="file"] {
   display: block;
-  min-height: 22px;
+}
+// Make multiple select elements height not fixed
+select[multiple],
+select[size] {
+  height: auto;
+}
+.form-control {
+  display: block;
   width: 100%;
-  padding: 4px 8px;
-  font-size: 12px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  -webkit-appearance: textfield;
+  min-height: 25px;
+  padding: $padding-less $padding;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  background-color: $chrome-color;
+  border: 1px solid $border-color;
+  border-radius: $default-border-radius;
+  outline: none;
+}
+// Reset height for `textarea`s
+textarea {
+  height: auto;
+}
 
-  &:focus {
-    outline: none;
-    margin: -2px;
-    border: 3px solid #9bc2ed;
+// Form groups
+//
+// Designed to help with the organization and spacing of vertical forms. For
+// horizontal forms, use the predefined grid classes.
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+// Checkboxes and radios
+//
+// Indent the labels to position radios/checkboxes as hanging controls.
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  label {
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
   }
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px \9;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
+}
+
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px; // space out consecutive inline controls
+}
+
+.search {
+  border-radius: 30px;
 }

@@ -10,6 +10,9 @@
   display: block;
   color: $gray-color;
   text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   &:active,
   &.selected {
