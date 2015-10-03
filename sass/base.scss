@@ -31,6 +31,14 @@ img {
   -webkit-user-drag: text;
 }
 
+hr {
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid $border-color;
+}
+
 // Typography
 h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
