@@ -1,0 +1,36 @@
+//
+// Utilities styles
+// --------------------------------------------------
+
+// Utility classes
+.selectable-text {
+  cursor: text;
+  -webkit-user-select: text;
+}
+.text-center {
+  text-align: center;
+}
+
+// Floats
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+// Padding
+.padded {
+  padding: 10px;
+}
+.padded-more {
+  padding: 5px;
+}
+.padded-more {
+  padding: 20px;
+}
+
+// Clearfix
+.clearfix {
+  @include clearfix();
+}

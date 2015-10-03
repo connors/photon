@@ -4,9 +4,10 @@
 // Mixins
 @import "mixins.scss";
 
-// Normalize & Base CSS
+// Normalize, Base, & Utilities CSS
 @import "normalize.scss";
 @import "base.scss";
+@import "utilities.scss";
 
 // Components
 @import "buttons.scss";
