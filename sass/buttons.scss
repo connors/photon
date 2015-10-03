@@ -14,7 +14,7 @@
   cursor: default;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: $default-border-radius;
 
   &:focus {
     outline: none;

@@ -145,10 +145,6 @@ body {
   background-color: #fff;
 }
 
-img {
-  -webkit-user-drag: text;
-}
-
 hr {
   margin: 15px 0;
   overflow: hidden;
@@ -469,6 +465,18 @@ h6 {
 
 .pane-one-third {
   width: 33.3%;
+}
+
+img {
+  -webkit-user-drag: text;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-rounded {
+  border-radius: 3px;
 }
 
 .list-group {
