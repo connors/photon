@@ -237,7 +237,7 @@ body {
   font-family: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
   font-size: 13px;
   line-height: 1.6;
-  color: #000;
+  color: #333;
   background-color: #fff;
 }
 
@@ -345,7 +345,6 @@ h6 {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 .btn:focus {
   outline: none;
@@ -363,8 +362,7 @@ h6 {
 .btn-default {
   color: #333;
   background-color: #fff;
-  border-color: #ccc;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-color: #ddd;
 }
 .btn-default:active {
   background-color: #ddd;

@@ -9,14 +9,14 @@
   @include clearfix;
 }
 .toolbar-header {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $border-color;
 
   .title {
     margin-top: 1px;
   }
 }
 .toolbar-footer {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid $border-color;
 }
 
 // A dark variation of the toolbar
@@ -61,9 +61,4 @@
     margin-left: 4px;
     margin-right: 4px;
   }
-}
-
-.toolbar .btn {
-  // border: 0;
-  // box-shadow: 0 1px 0px rgba(0,0,0,.2);
 }

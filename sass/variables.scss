@@ -2,7 +2,6 @@
 // Variables
 // --------------------------------------------------
 
-
 // Type
 // --------------------------------------------------
 $font-family-default: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif !default;
@@ -19,6 +18,10 @@ $line-height-default: 1.6 !default;
 // Main theme colors
 $primary-color: #57acf5 !default;
 $chrome-color:  #fff !default;
+
+// Copy
+$gray-color: #333 !default;
+$border-color: #ddd !default;
 
 // Action colors
 $default-color:  #fff !default;

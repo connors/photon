@@ -15,7 +15,7 @@
   background-image: none;
   border: 1px solid transparent;
   border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  //box-shadow: 0 1px 1px rgba(0,0,0,.1);
 
   &:focus {
     outline: none;
@@ -31,10 +31,9 @@
 
 // Normal buttons
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
-  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  color: $gray-color;
+  background-color: $chrome-color;
+  border-color: $border-color;
 
   &:active {
     background-color: #ddd;
