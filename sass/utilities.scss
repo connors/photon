@@ -21,13 +21,42 @@
 
 // Padding
 .padded {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.padded-less {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .padded-more {
-  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.padded-more {
-  padding: 20px;
+// Vertical Padding
+.padded-vertically {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.padded-vertically-less {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.padded-vertically-more {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+// Horizontal Padding
+.padded-horizontally {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.padded-horizontally-less {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.padded-horizontally-more {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 // Clearfix
