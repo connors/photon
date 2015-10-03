@@ -2,6 +2,10 @@
 // Lists.scss
 // --------------------------------------------------
 
+// List groups
+// These are to be used when shows list items that contain
+// more substanstial amounts of information. (headings, images, text, etc.)
+
 .list-group {
   width: 100%;
   list-style: none;
@@ -27,14 +31,14 @@
   padding: 10px;
   font-size: 12px;
   color: #414142;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid $border-color;
 
   &:first-child {
     border-top: 0;
   }
   &:active {
     color: #fff;
-    background-color: #4f9dfb;
+    background-color: $primary-color;
   }
 }
 .list-group-header {
