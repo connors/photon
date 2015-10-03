@@ -22,6 +22,13 @@
     box-shadow: none;
   }
 }
+.btn-mini {
+  padding: 2px 6px;
+}
+.btn-large {
+  padding: 6px 12px;
+}
+
 // Normal buttons
 .btn-default {
   color: #333;
@@ -33,16 +40,49 @@
     background-color: #ddd;
   }
 }
-// For primary actions
-.btn-primary {
-  padding: 6px 10px;
+
+// Button variations
+.btn-primary,
+.btn-positive,
+.btn-negative,
+.btn-warning {
   color: #fff;
-  background-color: #57acf5;
   border: 0;
+}
+
+// For primary buttons
+.btn-primary {
+  background-color: $primary-color;
 
   &:active {
-    background-color: #4a93d1;
-    @include linear-gradient(#4a93d1, #2e7dc5);
+    background-color: darken($primary-color, 15%);
+  }
+}
+
+// For positive buttons
+.btn-positive {
+  background-color: $positive-color;
+
+  &:active {
+    background-color: darken($positive-color, 15%);
+  }
+}
+
+// For negative actions
+.btn-negative {
+  background-color: $negative-color;
+
+  &:active {
+    background-color: darken($negative-color, 15%);
+  }
+}
+
+// For warning actions
+.btn-warning {
+  background-color: $warning-color;
+
+  &:active {
+    background-color: darken($warning-color, 15%);
   }
 }
 

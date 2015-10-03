@@ -352,6 +352,14 @@ h6 {
   box-shadow: none;
 }
 
+.btn-mini {
+  padding: 2px 6px;
+}
+
+.btn-large {
+  padding: 6px 12px;
+}
+
 .btn-default {
   color: #333;
   background-color: #fff;
@@ -362,18 +370,40 @@ h6 {
   background-color: #ddd;
 }
 
-.btn-primary {
-  padding: 6px 10px;
+.btn-primary,
+.btn-positive,
+.btn-negative,
+.btn-warning {
   color: #fff;
-  background-color: #57acf5;
   border: 0;
 }
+
+.btn-primary {
+  background-color: #57acf5;
+}
 .btn-primary:active {
-  background-color: #4a93d1;
-  background-color: #4a93d1;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4a93d1), color-stop(100%, #2e7dc5));
-  background-image: -webkit-linear-gradient(top, #4a93d1 0%, #2e7dc5 100%);
-  background-image: linear-gradient(to bottom, #4a93d1 0%, #2e7dc5 100%);
+  background-color: #0f88f1;
+}
+
+.btn-positive {
+  background-color: #34c84a;
+}
+.btn-positive:active {
+  background-color: #248b34;
+}
+
+.btn-negative {
+  background-color: #fc605b;
+}
+.btn-negative:active {
+  background-color: #fb1710;
+}
+
+.btn-warning {
+  background-color: #fdbc40;
+}
+.btn-warning:active {
+  background-color: #ee9d02;
 }
 
 .btn-group {
