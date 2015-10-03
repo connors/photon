@@ -21,7 +21,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font: 13px/1.6 system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
   color: #000;
   background-color: #fff;
 }

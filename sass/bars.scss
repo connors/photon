@@ -4,25 +4,25 @@
 
 .toolbar {
   min-height: 22px;
-  cursor: default;
-  @include linear-gradient(#e8e3e8, #d9d7d9);
+  background-color: #fff;
+  //@include linear-gradient(#e7e5e7, #d1cfd1);
   @include clearfix;
 }
 .toolbar-header {
-  border-bottom: 1px solid #aaa7aa;
+  border-bottom: 1px solid #ddd;
 
   .title {
     margin-top: 1px;
   }
 }
 .toolbar-footer {
-  border-top: 1px solid #aaa7aa;
+  border-top: 1px solid #ddd;
 }
 
 // A dark variation of the toolbar
 .toolbar-dark {
   box-shadow: none;
-  background-color: #111;
+  background-color: $dark-color;
 
   .title {
     text-shadow: none;
@@ -64,6 +64,6 @@
 }
 
 .toolbar .btn {
-  border: 0;
-  box-shadow: 0 1px 0px rgba(0,0,0,.2);
+  // border: 0;
+  // box-shadow: 0 1px 0px rgba(0,0,0,.2);
 }

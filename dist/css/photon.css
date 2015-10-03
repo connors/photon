@@ -234,7 +234,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font: 13px/1.6 system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+  font-family: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
   color: #000;
   background-color: #fff;
 }
@@ -361,17 +363,13 @@ h6 {
 }
 
 .btn-primary {
+  padding: 6px 10px;
   color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-  background-color: #429ae8;
-  border-color: #468bc4;
   background-color: #57acf5;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #57acf5), color-stop(100%, #348fe1));
-  background-image: -webkit-linear-gradient(top, #57acf5 0%, #348fe1 100%);
-  background-image: linear-gradient(to bottom, #57acf5 0%, #348fe1 100%);
+  border: 0;
 }
 .btn-primary:active {
-  border-color: #3c77a8;
+  background-color: #4a93d1;
   background-color: #4a93d1;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4a93d1), color-stop(100%, #2e7dc5));
   background-image: -webkit-linear-gradient(top, #4a93d1 0%, #2e7dc5 100%);
@@ -414,11 +412,7 @@ h6 {
 
 .toolbar {
   min-height: 22px;
-  cursor: default;
-  background-color: #e8e3e8;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e3e8), color-stop(100%, #d9d7d9));
-  background-image: -webkit-linear-gradient(top, #e8e3e8 0%, #d9d7d9 100%);
-  background-image: linear-gradient(to bottom, #e8e3e8 0%, #d9d7d9 100%);
+  background-color: #fff;
 }
 .toolbar:before, .toolbar:after {
   display: table;
@@ -429,19 +423,19 @@ h6 {
 }
 
 .toolbar-header {
-  border-bottom: 1px solid #aaa7aa;
+  border-bottom: 1px solid #ddd;
 }
 .toolbar-header .title {
   margin-top: 1px;
 }
 
 .toolbar-footer {
-  border-top: 1px solid #aaa7aa;
+  border-top: 1px solid #ddd;
 }
 
 .toolbar-dark {
   box-shadow: none;
-  background-color: #111;
+  background-color: #405057;
 }
 .toolbar-dark .title {
   text-shadow: none;
@@ -481,11 +475,6 @@ h6 {
 .toolbar-actions > .btn-group {
   margin-left: 4px;
   margin-right: 4px;
-}
-
-.toolbar .btn {
-  border: 0;
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .search {
@@ -554,6 +543,9 @@ h6 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.list-group strong {
+  font-weight: bold;
+}
 .list-group p {
   margin: 0;
 }
@@ -561,6 +553,7 @@ h6 {
 .list-group-item {
   padding: 10px;
   font-size: 12px;
+  color: #414142;
   border-top: 1px solid #ddd;
 }
 .list-group-item:first-child {
@@ -568,7 +561,7 @@ h6 {
 }
 .list-group-item:active {
   color: #fff;
-  background-color: #217bf4;
+  background-color: #4f9dfb;
 }
 
 .list-group-header {

@@ -15,6 +15,10 @@
     text-overflow: ellipsis;
   }
 
+  strong {
+    font-weight: bold;
+  }
+
   p {
     margin: 0
   }
@@ -22,6 +26,7 @@
 .list-group-item {
   padding: 10px;
   font-size: 12px;
+  color: #414142;
   border-top: 1px solid #ddd;
 
   &:first-child {
@@ -29,10 +34,9 @@
   }
   &:active {
     color: #fff;
-    background-color: #217bf4;
+    background-color: #4f9dfb;
   }
 }
-
 .list-group-header {
   padding: 10px;
 }
