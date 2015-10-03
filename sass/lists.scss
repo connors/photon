@@ -36,7 +36,8 @@
   &:first-child {
     border-top: 0;
   }
-  &:active {
+  &:active,
+  &.selected {
     color: #fff;
     background-color: $primary-color;
   }

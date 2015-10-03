@@ -262,6 +262,30 @@ h6 {
   padding-left: 20px;
 }
 
+.padded-top {
+  padding-top: 10px;
+}
+
+.padded-top-less {
+  padding-top: 5px;
+}
+
+.padded-top-more {
+  padding-top: 20px;
+}
+
+.padded-bottom {
+  padding-bottom: 10px;
+}
+
+.padded-bottom-less {
+  padding-bottom: 5px;
+}
+
+.padded-bottom-more {
+  padding-bottom: 20px;
+}
+
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
@@ -537,7 +561,7 @@ img {
 .list-group-item:first-child {
   border-top: 0;
 }
-.list-group-item:active {
+.list-group-item:active, .list-group-item.selected {
   color: #fff;
   background-color: #57acf5;
 }
