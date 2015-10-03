@@ -17,7 +17,7 @@ $line-height-default: 1.6 !default;
 // Colors
 // --------------------------------------------------
 
-// Main theme colors
+// Main colors
 $primary-color: #57acf5 !default;
 $chrome-color:  #fff !default;
 
@@ -32,7 +32,10 @@ $negative-color: #fc605b !default;
 $warning-color: #fdbc40 !default;
 
 // Shades
-$dark-color: #405057 !default;
+$dark-color: #57acf5 !default;
+
+// Focus color
+$focus-input-color: lighten($primary-color, 10%)  !default;
 
 // Other
 // --------------------------------------------------

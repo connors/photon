@@ -74,17 +74,6 @@ textarea {
   margin: 0;
 }
 
-button,
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer;
-}
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -433,7 +422,7 @@ h6 {
 
 .toolbar-dark {
   box-shadow: none;
-  background-color: #405057;
+  background-color: #57acf5;
 }
 .toolbar-dark .title {
   text-shadow: none;
@@ -476,7 +465,7 @@ h6 {
 
 label {
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 5px;
 }
 
@@ -488,10 +477,6 @@ input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
   line-height: normal;
-}
-
-input[type="file"] {
-  display: block;
 }
 
 select[multiple],
@@ -510,6 +495,10 @@ select[size] {
   border: 1px solid #ddd;
   border-radius: 3px;
   outline: none;
+}
+.form-control:focus {
+  border-color: #87c4f8;
+  box-shadow: 3px 3px 0 #87c4f8, -3px -3px 0 #87c4f8, -3px 3px 0 #87c4f8, 3px -3px 0 #87c4f8;
 }
 
 textarea {
@@ -562,10 +551,6 @@ textarea {
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: 10px;
-}
-
-.search {
-  border-radius: 30px;
 }
 
 .pane-group {

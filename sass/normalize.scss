@@ -148,26 +148,6 @@ textarea {
 }
 
 //
-// 1. Improve usability and consistency of cursor style between image-type
-//    `input` and others.
-//
-
-button,
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer; // 1
-}
-
-//
-// Re-set default cursor for disabled elements.
-//
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-//
 // Fix the cursor style for Chrome's increment/decrement buttons. For certain
 // `font-size` values of the `input`, it causes the cursor style of the
 // decrement button to change from `default` to `text`.

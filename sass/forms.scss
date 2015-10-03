@@ -5,7 +5,7 @@
 
 label {
   display: inline-block;
-  font-size: $font-size-default +1;
+  font-size: $font-size-default;
   margin-bottom: 5px;
 }
 input[type="search"] {
@@ -15,9 +15,6 @@ input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
   line-height: normal;
-}
-input[type="file"] {
-  display: block;
 }
 // Make multiple select elements height not fixed
 select[multiple],
@@ -35,6 +32,14 @@ select[size] {
   border: 1px solid $border-color;
   border-radius: $default-border-radius;
   outline: none;
+
+  &:focus {
+    border-color: $focus-input-color;
+    box-shadow: 3px 3px 0 $focus-input-color,
+                -3px -3px 0 $focus-input-color,
+                -3px 3px 0 $focus-input-color,
+                3px -3px 0 $focus-input-color;
+  }
 }
 // Reset height for `textarea`s
 textarea {
@@ -95,8 +100,4 @@ textarea {
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: 10px; // space out consecutive inline controls
-}
-
-.search {
-  border-radius: 30px;
 }
