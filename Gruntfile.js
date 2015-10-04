@@ -1,5 +1,5 @@
 /*!
- * Photon 's Gruntfile
+ * Photon's Gruntfile
  * Copyright 2015 Connor Sears
  * Licensed under MIT (https://github.com/connors/photon/blob/master/LICENSE)
  */
@@ -16,10 +16,8 @@ module.exports = function(grunt) {
 
     // Metadata.
     meta: {
-        docsAssetsPath: 'docs-assets/',
-        jsPath:         'js/',
         srcPath:        'sass/',
-        distPath:       'dist/'
+        distPath:       'dist/css'
     },
 
     banner: '/*!\n' +
@@ -31,6 +29,11 @@ module.exports = function(grunt) {
             ' * v<%= pkg.version %> designed by @connors.\n' +
             ' * =====================================================\n' +
             ' */\n',
+
+    clean: {
+      dist: ['<%= meta.distPath %>']
+    },
+
     sass: {
       options: {
         sourcemap: 'none',
@@ -42,16 +45,41 @@ module.exports = function(grunt) {
         dest: '<%= meta.distPath %>css/<%= pkg.name %>.css'
       }
 		},
-		watch: {
-			css: {
-				files: '**/*.scss',
-				tasks: ['sass']
-			}
-		}
+
+    usebanner: {
+      dist: {
+        options: {
+          position: 'top',
+          banner: '<%= banner %>'
+        },
+        files: {
+          src: [
+            '<%= meta.distPath %>css/*.css'
+          ]
+        }
+      }
+    },
+
+    cssmin: {
+      options: {
+        keepSpecialComments: '*' // keep all important comments
+      },
+      ratchet: {
+        src: '<%= meta.distPath %>css/<%= pkg.name %>.css',
+        dest: '<%= meta.distPath %>css/<%= pkg.name %>.min.css'
+      }
+    },
 
   });
 
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default',['watch']);
+
+  // Load the plugins
+  require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
+  require('time-grunt')(grunt);
+
+  // Tasks
+  grunt.registerTask('dist-css', ['sass', 'usebanner', 'cssmin']);
+  grunt.registerTask('dist', ['clean', 'dist-css']);
+
+  grunt.registerTask('default', ['dist']);
 };
