@@ -25,7 +25,7 @@ photon/
 ## Development
 
 1. Install node dependencies: `npm install`.
-2. Open the app: `npm start`.
+2. Open the example app: `npm start`.
 
 Modifying source Sass files? Open a second Terminal tab and run `grunt` to kick off a build the compiled `photon.css`.
 
