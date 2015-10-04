@@ -11,7 +11,7 @@
 }
 
 body {
-  font: 14px/1.4 "Roboto", "Helvetica Neue", Helvetica, arial, sans-serif;
+  font: 14px/1.6 "Roboto", "Helvetica Neue", Helvetica, arial, sans-serif;
   color: #333;
 }
 
@@ -21,12 +21,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  margin-bottom: .25em;
+  margin-bottom: .18em;
   font-size: 1.7em;
 }
 
 h3 {
-  margin-bottom: .5em;
+  margin-bottom: .15em;
   font-size: 1.25em;
 }
 
@@ -35,7 +35,8 @@ h5 {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
   font-size: 1em;
   color: #66;
 }
