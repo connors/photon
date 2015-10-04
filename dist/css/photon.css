@@ -316,6 +316,7 @@ h6 {
   border: 1px solid transparent;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+  -webkit-app-region: no-drag;
 }
 .btn:focus {
   outline: none;
@@ -444,6 +445,7 @@ h6 {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  -webkit-app-region: no-drag;
 }
 .btn-group .btn {
   position: relative;
@@ -514,6 +516,7 @@ h6 {
 
 .toolbar-footer {
   border-top: 1px solid #c2c0c2;
+  -webkit-app-region: drag;
 }
 
 .toolbar-dark {
@@ -545,6 +548,7 @@ h6 {
   padding-right: 3px;
   padding-left: 3px;
   padding-bottom: 3px;
+  -webkit-app-region: drag;
 }
 .toolbar-actions:before, .toolbar-actions:after {
   display: table;

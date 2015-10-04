@@ -8,6 +8,7 @@
   position: relative;
   display: inline-block;
   vertical-align: middle; // match .btn alignment given font-size hack above
+  -webkit-app-region: no-drag;
 
   .btn {
     position: relative;
