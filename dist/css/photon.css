@@ -305,6 +305,7 @@ h6 {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
 }
 .btn:focus {
   outline: none;
@@ -321,8 +322,10 @@ h6 {
 
 .btn-default {
   color: #333;
-  border-color: #bcbbbc;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+  border-top-color: #c2c0c2;
+  border-right-color: #c2c0c2;
+  border-bottom-color: #a19fa1;
+  border-left-color: #c2c0c2;
   background-color: #fcfcfc;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f1f1f1));
   background-image: -webkit-linear-gradient(top, #fcfcfc 0%, #f1f1f1 100%);
@@ -338,35 +341,67 @@ h6 {
 .btn-negative,
 .btn-warning {
   color: #fff;
-  border: 0;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary {
-  background-color: #57acf5;
+  border-color: #297ef8;
+  border-bottom-color: #0758ce;
+  background-color: #6eb4f7;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6eb4f7), color-stop(100%, #1a82fb));
+  background-image: -webkit-linear-gradient(top, #6eb4f7 0%, #1a82fb 100%);
+  background-image: linear-gradient(to bottom, #6eb4f7 0%, #1a82fb 100%);
 }
 .btn-primary:active {
-  background-color: #0f88f1;
+  background-color: #3e9bf4;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e9bf4), color-stop(100%, #0469de));
+  background-image: -webkit-linear-gradient(top, #3e9bf4 0%, #0469de 100%);
+  background-image: linear-gradient(to bottom, #3e9bf4 0%, #0469de 100%);
 }
 
 .btn-positive {
-  background-color: #34c84a;
+  border-color: #29a03b;
+  border-bottom-color: #248b34;
+  background-color: #5bd46d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5bd46d), color-stop(100%, #29a03b));
+  background-image: -webkit-linear-gradient(top, #5bd46d 0%, #29a03b 100%);
+  background-image: linear-gradient(to bottom, #5bd46d 0%, #29a03b 100%);
 }
 .btn-positive:active {
-  background-color: #248b34;
+  background-color: #34c84a;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #34c84a), color-stop(100%, #248b34));
+  background-image: -webkit-linear-gradient(top, #34c84a 0%, #248b34 100%);
+  background-image: linear-gradient(to bottom, #34c84a 0%, #248b34 100%);
 }
 
 .btn-negative {
-  background-color: #fc605b;
+  border-color: #fb2f29;
+  border-bottom-color: #fb1710;
+  background-color: #fd918d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fd918d), color-stop(100%, #fb2f29));
+  background-image: -webkit-linear-gradient(top, #fd918d 0%, #fb2f29 100%);
+  background-image: linear-gradient(to bottom, #fd918d 0%, #fb2f29 100%);
 }
 .btn-negative:active {
-  background-color: #fb1710;
+  background-color: #fc605b;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fc605b), color-stop(100%, #fb1710));
+  background-image: -webkit-linear-gradient(top, #fc605b 0%, #fb1710 100%);
+  background-image: linear-gradient(to bottom, #fc605b 0%, #fb1710 100%);
 }
 
 .btn-warning {
-  background-color: #fdbc40;
+  border-color: #fcaa0e;
+  border-bottom-color: #ee9d02;
+  background-color: #fece72;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fece72), color-stop(100%, #fcaa0e));
+  background-image: -webkit-linear-gradient(top, #fece72 0%, #fcaa0e 100%);
+  background-image: linear-gradient(to bottom, #fece72 0%, #fcaa0e 100%);
 }
 .btn-warning:active {
-  background-color: #ee9d02;
+  background-color: #fdbc40;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdbc40), color-stop(100%, #ee9d02));
+  background-image: -webkit-linear-gradient(top, #fdbc40 0%, #ee9d02 100%);
+  background-image: linear-gradient(to bottom, #fdbc40 0%, #ee9d02 100%);
 }
 
 .btn .icon {
@@ -424,7 +459,7 @@ h6 {
   border-radius: 0;
 }
 .btn-group .btn + .btn {
-  border-left: 1px solid #bcbbbc;
+  border-left: 1px solid #c2c0c2;
 }
 .btn-group .btn + .btn.active {
   border-left: 0;
@@ -456,14 +491,14 @@ h6 {
 }
 
 .toolbar-header {
-  border-bottom: 1px solid #bcbbbc;
+  border-bottom: 1px solid #c2c0c2;
 }
 .toolbar-header .title {
   margin-top: 1px;
 }
 
 .toolbar-footer {
-  border-top: 1px solid #bcbbbc;
+  border-top: 1px solid #c2c0c2;
 }
 
 .toolbar-dark {
@@ -543,8 +578,8 @@ select[size] {
   outline: none;
 }
 .form-control:focus {
-  border-color: #87c4f8;
-  box-shadow: 3px 3px 0 #87c4f8, -3px -3px 0 #87c4f8, -3px 3px 0 #87c4f8, 3px -3px 0 #87c4f8;
+  border-color: #6db3fd;
+  box-shadow: 3px 3px 0 #6db3fd, -3px -3px 0 #6db3fd, -3px 3px 0 #6db3fd, 3px -3px 0 #6db3fd;
 }
 
 textarea {
