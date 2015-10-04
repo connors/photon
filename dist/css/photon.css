@@ -673,6 +673,16 @@ img {
 .nav-group-item:active, .nav-group-item.selected {
   background-color: #dcdfe1;
 }
+.nav-group-item .icon {
+  width: 18px;
+  height: 18px;
+  float: left;
+  color: #737475;
+  margin-top: -3px;
+  margin-right: 7px;
+  font-size: 18px;
+  text-align: center;
+}
 
 .nav-group-title {
   margin: 0;
@@ -691,7 +701,6 @@ img {
 }
 .icon:before {
   position: relative;
-  top: 2px;
   display: inline-block;
   font-family: "photon-entypo";
   speak: none;

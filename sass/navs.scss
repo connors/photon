@@ -18,6 +18,17 @@
   &.selected {
     background-color: #dcdfe1;
   }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    float: left;
+    color: #737475;
+    margin-top: -3px;
+    margin-right: 7px;
+    font-size: 18px;
+    text-align: center;
+  }
 }
 .nav-group-title {
   margin: 0;
