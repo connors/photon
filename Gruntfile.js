@@ -17,12 +17,12 @@ module.exports = function(grunt) {
     // Metadata.
     meta: {
         srcPath:        'sass/',
-        distPath:       'dist/css'
+        distPath:       'dist/'
     },
 
     banner: '/*!\n' +
             ' * =====================================================\n' +
-            ' * Photon v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * Photon v<%= pkg.version %>\n' +
             ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * Licensed under <%= pkg.license %> (https://github.com/connors/proton/blob/master/LICENSE)\n' +
             ' *\n' +
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
             ' */\n',
 
     clean: {
-      dist: ['<%= meta.distPath %>']
+      dist: ['<%= meta.distPath %>/css']
     },
 
     sass: {
