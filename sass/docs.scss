@@ -68,7 +68,7 @@ p {
   }
 
   .col {
-    padding: 2rem;
+    padding: 4rem 2rem;
     flex: 1;
   }
 
@@ -83,19 +83,26 @@ p {
 
 // Masthead
 .masthead {
+  height: 88vh;
+  min-height: 400px;
   color: #fff;
-  @include directional-gradient(#0a1855, #da0024)
+  border-bottom: 1px solid #ddd;
+  background-color: #222;
 }
 
 // Sections
 .docs-section {
   border-bottom: 1px solid #ddd;
 }
+.docs-section-gray {
+  background-color: #f8f8f8;
+}
 
 // Marketing bits
 .marketing-icon {
   position: relative;
-  display: inline-block;
+  display: none;
+  //display: inline-block;
   width: 66px;
   height: 66px;
   margin-bottom: 10px;
