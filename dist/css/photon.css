@@ -379,6 +379,12 @@ h6 {
   margin-right: 5px;
 }
 
+.btn-dropdown:after {
+  font-family: "photon-entypo";
+  margin-left: 5px;
+  content: "";
+}
+
 .btn-group {
   position: relative;
   display: inline-block;
