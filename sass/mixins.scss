@@ -49,3 +49,15 @@
   background-image: -webkit-linear-gradient(left, $color-from 50%, $color-to 50%); // Chrome10+, Safari5.1+
   background-image:         linear-gradient(to right, $color-from 50%, $color-to 50%); // W3C
 }
+
+// From bottom left to top right
+@mixin directional-gradient($color-from, $color-to, $deg: 45deg) {
+  background-color: $color-from; // Old browsers
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%,$color-from), color-stop(100%,$color-to)); // Chrome, Safari4+
+  background-image: -webkit-linear-gradient($deg, $color-from 0%, $color-to 100%);           // Chrome10+, Safari5.1+
+  background-image:    -moz-linear-gradient($deg, $color-from 0%, $color-to 100%);           // FF3.6+
+  background-image:     -ms-linear-gradient($deg, $color-from 0%, $color-to 100%);           // IE10+
+  background-image:      -o-linear-gradient($deg, $color-from 0%, $color-to 100%);           // Opera 11.10+
+  background-image:         linear-gradient($deg, $color-from 0%, $color-to 100%);     // W3C
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color-from}', endColorstr='#{$color-to}', GradientType=1 ); // IE6-9
+}

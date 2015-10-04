@@ -4,7 +4,7 @@
 }
 
 body {
-  font: 16px/1.4 "Roboto", "Helvetica Neue", Helvetica, arial, sans-serif;
+  font: 14px/1.4 "Roboto", "Helvetica Neue", Helvetica, arial, sans-serif;
   color: #333;
 }
 
@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   margin-bottom: .25em;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 h3 {
@@ -22,10 +22,14 @@ h3 {
   font-size: 1.25em;
 }
 
+h5 {
+  font-weight: 400;
+}
+
 p {
   margin-bottom: 1.5em;
   font-size: 1em;
-  color: #555;
+  color: #66;
 }
 
 .lead {
@@ -59,8 +63,7 @@ p {
   }
 
   .col {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 2rem;
     flex: 1;
   }
 
@@ -73,4 +76,76 @@ p {
   .split-section .col:first-child {
     border-right: 1px solid #ddd;
   }
+}
+.masthead {
+  color: #fff;
+  background-color: #0a1855;
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0a1855), color-stop(100%, #da0024));
+  background-image: -webkit-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
+  background-image: -moz-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
+  background-image: -ms-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
+  background-image: -o-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
+  background-image: linear-gradient(45deg, #0a1855 0%, #da0024 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a1855', endColorstr='#da0024', GradientType=1 );
+}
+
+.docs-section {
+  border-bottom: 1px solid #ddd;
+}
+
+.app-section {
+  margin-top: -1px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: none;
+  color: #fff;
+  background-image: url("../img/photo-couch.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 48em) {
+  .app-section {
+    display: block;
+  }
+}
+.app-section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2em;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.app-section-lead {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.3em;
+  opacity: .8;
+}
+
+.app-section-credit {
+  opacity: .7;
+}
+.app-section-credit a {
+  color: #fff;
+}
+
+.demo-app-container {
+  height: 450px;
+  margin-right: 70px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+}
+.demo-app-container .demo-app {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 4px;
+}
+
+.text-centered {
+  text-align: center;
 }
