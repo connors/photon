@@ -673,7 +673,7 @@ img {
 }
 .list-group-item:active, .list-group-item.selected {
   color: #fff;
-  background-color: #57acf5;
+  background-color: #116cd6;
 }
 
 .list-group-header {
@@ -2196,7 +2196,7 @@ tbody {
 tr:active,
 .table-striped tr:active:nth-child(even) {
   color: #fff;
-  background-color: #57acf5;
+  background-color: #116cd6;
 }
 
 th {

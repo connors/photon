@@ -38,7 +38,8 @@ $warning-color: #fdbc40 !default;
 // Shades
 $dark-color: #57acf5 !default;
 
-// Focus color
+// Focus and active colors
+$active-color: #116cd6;
 $focus-input-color: lighten($primary-color, 10%)  !default;
 
 // Other
