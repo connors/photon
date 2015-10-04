@@ -4,7 +4,7 @@ UI toolkit for building desktop apps with Electron.
 
 ## Getting started
 
-* Clone the repo with `git clone https://github.com/connors/photon.git`
+Clone the repo with `git clone https://github.com/connors/photon.git`
 
 ### What's included
 
@@ -29,7 +29,7 @@ photon/
 
 Modifying source Sass files? Open a second Terminal tab and run `grunt` to kick off a build the compiled `photon.css`.
 
-## Running the documentation
+## Local documentation
 
 1. Make sure you've installed [Jekyll](http://jekyllrb.com) with `gem install jekyll`
 2. Run `grunt server` to build the docs and open the docs in your browser.
