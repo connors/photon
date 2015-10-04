@@ -5,9 +5,11 @@
 img {
   -webkit-user-drag: text;
 }
+
 .img-circle {
   border-radius: 50%;
 }
+
 .img-rounded {
   border-radius: $default-border-radius;
 }

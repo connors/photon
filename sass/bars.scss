@@ -7,6 +7,7 @@
   background-color: #fff;
   @include clearfix;
 }
+
 .toolbar-header {
   border-bottom: 1px solid $border-color;
 
@@ -14,6 +15,7 @@
     margin-top: 1px;
   }
 }
+
 .toolbar-footer {
   border-top: 1px solid $border-color;
 }

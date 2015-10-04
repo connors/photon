@@ -10,6 +10,7 @@
   left: 0;
   display: flex;
 }
+
 .pane {
   position: relative;
   overflow-y: auto;
@@ -20,18 +21,22 @@
     border-left: 0;
   }
 }
+
 .pane-sm {
   max-width: 220px;
   min-width: 150px;
 }
+
 .pane-mini {
   width: 80px;
   flex: none;
 }
+
 .pane-one-fourth {
   width: 25%;
   flex: none;
 }
+
 .pane-one-third {
   width: 33.3%;
 }

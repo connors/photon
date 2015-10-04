@@ -12,21 +12,15 @@
   margin: 0;
   padding: 0;
 
-  strong,
-  p {
+
+  * {
+    margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
-  strong {
-    font-weight: bold;
-  }
-
-  p {
-    margin: 0
-  }
 }
+
 .list-group-item {
   padding: 10px;
   font-size: 12px;
@@ -42,6 +36,7 @@
     background-color: $primary-color;
   }
 }
+
 .list-group-header {
   padding: 10px;
 }
@@ -50,12 +45,15 @@
 .media-object {
   margin-top: 3px;
 }
+
 .media-object.pull-left {
   margin-right: 10px
 }
+
 .media-object.pull-right {
   margin-left: 10px
 }
+
 .media-body {
   overflow: hidden;
 }

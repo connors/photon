@@ -8,19 +8,23 @@ label {
   font-size: $font-size-default;
   margin-bottom: 5px;
 }
+
 input[type="search"] {
   box-sizing: border-box;
 }
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
   line-height: normal;
 }
+
 // Make multiple select elements height not fixed
 select[multiple],
 select[size] {
   height: auto;
 }
+
 .form-control {
   display: block;
   width: 100%;
@@ -41,6 +45,7 @@ select[size] {
                 3px -3px 0 $focus-input-color;
   }
 }
+
 // Reset height for `textarea`s
 textarea {
   height: auto;
@@ -72,6 +77,7 @@ textarea {
     font-weight: normal;
   }
 }
+
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
@@ -96,6 +102,7 @@ textarea {
   vertical-align: middle;
   font-weight: normal;
 }
+
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;

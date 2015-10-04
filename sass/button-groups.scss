@@ -15,9 +15,12 @@
 
     // Bring the "active" button to the front
     &:focus,
-    &:active,
-    &.active {
+    &:active{
       z-index: 2;
+    }
+
+    &.active {
+      z-index: 3;
     }
   }
 }
@@ -49,12 +52,18 @@
     border-left: 1px solid $border-color;
   }
 
+  .btn + .btn.active {
+    border-left: 0;
+  }
+
   // Selected state
   .active {
     color: #fff;
     border: 1px solid transparent;
     background-color: #6d6c6d;
   }
+  
+  // Invert the icon in the active button
   .active .icon {
     color: #fff;
   }

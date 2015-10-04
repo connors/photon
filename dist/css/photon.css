@@ -388,8 +388,11 @@ h6 {
   position: relative;
   float: left;
 }
-.btn-group .btn:focus, .btn-group .btn:active, .btn-group .btn.active {
+.btn-group .btn:focus, .btn-group .btn:active {
   z-index: 2;
+}
+.btn-group .btn.active {
+  z-index: 3;
 }
 
 .btn-group .btn + .btn,
@@ -411,6 +414,9 @@ h6 {
 }
 .btn-group .btn + .btn {
   border-left: 1px solid #ddd;
+}
+.btn-group .btn + .btn.active {
+  border-left: 0;
 }
 .btn-group .active {
   color: #fff;
@@ -633,17 +639,11 @@ img {
   margin: 0;
   padding: 0;
 }
-.list-group strong,
-.list-group p {
+.list-group * {
+  margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.list-group strong {
-  font-weight: bold;
-}
-.list-group p {
-  margin: 0;
 }
 
 .list-group-item {
