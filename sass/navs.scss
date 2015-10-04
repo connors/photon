@@ -21,7 +21,7 @@
   }
 
   .icon {
-    width: 18px;
+    width: 19px; // Prevents a one pixel cutoff
     height: 18px;
     float: left;
     color: #737475;
