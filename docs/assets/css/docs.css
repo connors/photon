@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -9,6 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
   font-weight: 300;
 }
 
@@ -94,6 +96,42 @@ p {
   border-bottom: 1px solid #ddd;
 }
 
+.marketing-icon {
+  position: relative;
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #0a1855;
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0a1855), color-stop(100%, #da0024));
+  background-image: -webkit-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
+  background-image: -moz-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
+  background-image: -ms-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
+  background-image: -o-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
+  background-image: linear-gradient(45deg, #0a1855 0%, #da0024 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a1855', endColorstr='#da0024', GradientType=1 );
+}
+.marketing-icon .icon {
+  position: relative;
+  color: #aaa;
+  font-size: 24px;
+  line-height: 66px;
+  z-index: 2;
+}
+.marketing-icon:after {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 64px;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  z-index: 1;
+}
+
 .app-section {
   margin-top: -1px;
   padding-top: 80px;
@@ -152,3 +190,41 @@ p {
 .text-centered {
   text-align: center;
 }
+
+@font-face {
+  font-family: "photon-entypo";
+  src: url("/dist/fonts/photon-entypo.eot");
+  src: url("/dist/fonts/photon-entypo.eot?#iefix") format("eot"), url("/dist/fonts/photon-entypo.woff") format("woff"), url("/dist/fonts/photon-entypo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon:before {
+  position: relative;
+  display: inline-block;
+  font-family: "photon-entypo";
+  speak: none;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bucket:before {
+  content: '\e8d5';
+}
+
+/* '' */
+.icon-code:before {
+  content: '\e834';
+}
+
+/* '' */
+.icon-window:before {
+  content: '\e86d';
+}
+
+/* '' */
