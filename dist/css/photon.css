@@ -366,11 +366,17 @@ h6 {
 
 .btn .icon {
   float: left;
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   color: #737475;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1;
+}
+
+.btn .icon-text {
+  margin-right: 5px;
 }
 
 .btn-group {
