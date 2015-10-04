@@ -108,3 +108,12 @@ textarea {
   margin-top: 0;
   margin-left: 10px; // space out consecutive inline controls
 }
+
+// Form actions
+.form-actions .btn {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
