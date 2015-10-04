@@ -87,11 +87,58 @@ module.exports = function(grunt) {
       options: {
         keepSpecialComments: '*' // keep all important comments
       },
-      ratchet: {
+      photon: {
         src: '<%= meta.distPath %>css/<%= pkg.name %>.css',
         dest: '<%= meta.distPath %>css/<%= pkg.name %>.min.css'
+      },
+      docs: {
+        src: [
+          '<%= meta.docsAssetsPath %>css/docs.css',
+          '<%= meta.docsAssetsPath %>css/pygments-manni.css'
+        ],
+        dest: '<%= meta.docsAssetsPath %>css/docs.min.css'
       }
     },
+
+    watch: {
+      options: {
+        hostname: 'localhost',
+        livereload: true,
+        port: 8000
+      },
+      css: {
+        files: '<%= meta.srcPath %>**/*.scss',
+        tasks: ['dist-css', 'copy']
+      },
+      html: {
+        files: '<%= meta.docsPath %>**',
+        tasks: ['jekyll']
+      }
+    },
+
+    jekyll: {
+      options: {
+        config: '_config.yml'
+      },
+      docs: {},
+      github: {
+        options: {
+          raw: 'github: true'
+        }
+      }
+    },
+
+    connect: {
+      site: {
+        options: {
+          base: '_site/',
+          hostname: 'localhost',
+          livereload: true,
+          open: true,
+          port: 8000
+        }
+      }
+    }
 
   });
 
@@ -103,6 +150,7 @@ module.exports = function(grunt) {
   // Tasks
   grunt.registerTask('dist-css', ['sass', 'usebanner', 'cssmin']);
   grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
+  grunt.registerTask('server', ['dist', 'jekyll:docs', 'connect', 'watch']);
 
   grunt.registerTask('default', ['dist']);
 };
