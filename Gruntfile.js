@@ -102,7 +102,7 @@ module.exports = function(grunt) {
 
   // Tasks
   grunt.registerTask('dist-css', ['sass', 'usebanner', 'cssmin']);
-  grunt.registerTask('dist', ['clean', 'dist-css']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
 
   grunt.registerTask('default', ['dist']);
 };
