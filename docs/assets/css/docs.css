@@ -1,3 +1,76 @@
-h1 {
-  font-weight: normal;
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.4 "Roboto", "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+h2 {
+  margin-bottom: .25em;
+  font-size: 2em;
+}
+
+h3 {
+  margin-bottom: .5em;
+  font-size: 1.25em;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  color: #555;
+}
+
+.lead {
+  font-size: 1.1em;
+  color: #777;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.container:before, .container:after {
+  display: table;
+  content: " ";
+}
+.container:after {
+  clear: both;
+}
+
+@media (min-width: 48em) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 60rem;
+  }
+
+  .col-group {
+    display: flex;
+  }
+
+  .col {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex: 1;
+  }
+
+  .split-section {
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffffff), color-stop(50%, #f8f8f8));
+    background-image: -webkit-linear-gradient(left, #ffffff 50%, #f8f8f8 50%);
+    background-image: linear-gradient(to right, #ffffff 50%, #f8f8f8 50%);
+  }
+  .split-section .col:first-child {
+    border-right: 1px solid #ddd;
+  }
 }

@@ -94,7 +94,8 @@ module.exports = function(grunt) {
       docs: {
         src: [
           '<%= meta.docsAssetsPath %>css/docs.css',
-          '<%= meta.docsAssetsPath %>css/pygments-manni.css'
+          '<%= meta.docsAssetsPath %>css/pygments-manni.css',
+          '<%= meta.docsAssetsPath %>css/normalize.css'
         ],
         dest: '<%= meta.docsAssetsPath %>css/docs.min.css'
       }

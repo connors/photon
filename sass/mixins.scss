@@ -33,9 +33,19 @@
 }
 
 // Gradients
+
+// From top to bottom
 @mixin linear-gradient($color-from, $color-to) {
   background-color: $color-from; // Old browsers
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color-from), color-stop(100%,$color-to)); // Chrome, Safari4+
   background-image: -webkit-linear-gradient(top, $color-from 0%, $color-to 100%);           // Chrome10+, Safari5.1+
-  background-image:         linear-gradient(to bottom, $color-from 0%, $color-to 100%);     // W3C
+  background-image:         linear-gradient(to bottom, $color-from 0%, $color-to 100%);  // W3C
+}
+
+// From left to right
+@mixin split-linear-gradient($color-from, $color-to) {
+  background-color: $color-from; // Old browsers
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%,$color-from), color-stop(50%,$color-to)); // Chrome, Safari4+
+  background-image: -webkit-linear-gradient(left, $color-from 50%, $color-to 50%); // Chrome10+, Safari5.1+
+  background-image:         linear-gradient(to right, $color-from 50%, $color-to 50%); // W3C
 }
