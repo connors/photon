@@ -57,8 +57,8 @@
 
 // For primary buttons
 .btn-primary {
-  border-color: #297ef8;
-  border-bottom-color: darken(#297ef8, 15%);
+  border-color: #388df8;
+  border-bottom-color: darken(#388df8, 15%);
   @include linear-gradient(#6eb4f7, #1a82fb);
 
   &:active {

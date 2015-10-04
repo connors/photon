@@ -2,6 +2,6 @@
   "name": "proton-example-app",
   "version": "1.0.0",
   "description": "A simple example app for Proton",
-  "main": "main.js",
+  "main": "app.js",
   "author": "Connor Sears"
 }
