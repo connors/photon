@@ -16,8 +16,11 @@ module.exports = function(grunt) {
 
     // Metadata.
     meta: {
+        distPath:       'dist/',
+        docsAssetsPath: 'docs/assets/',
+        docsDistPath:   'docs/dist/',
+        docsPath:       'docs/',
         srcPath:        'sass/',
-        distPath:       'dist/'
     },
 
     banner: '/*!\n' +
@@ -31,7 +34,7 @@ module.exports = function(grunt) {
             ' */\n',
 
     clean: {
-      dist: ['<%= meta.distPath %>/css']
+      dist: ['<%= meta.distPath %>/css', '<%= meta.docsDistPath %>/css']
     },
 
     sass: {
@@ -43,6 +46,10 @@ module.exports = function(grunt) {
       core: {
         src: 'sass/photon.scss',
         dest: '<%= meta.distPath %>css/<%= pkg.name %>.css'
+      },
+      docs: {
+        src: 'sass/docs.scss',
+        dest: '<%= meta.docsAssetsPath %>css/docs.css'
       }
 		},
 
@@ -57,6 +64,22 @@ module.exports = function(grunt) {
             '<%= meta.distPath %>css/*.css'
           ]
         }
+      }
+    },
+
+    copy: {
+      fonts: {
+        expand: true,
+        src: 'fonts/*',
+        dest: '<%= meta.distPath %>'
+      },
+      docs: {
+        expand: true,
+        cwd: '<%= meta.distPath %>',
+        src: [
+          '**/*'
+        ],
+        dest: '<%= meta.docsDistPath %>'
       }
     },
 
