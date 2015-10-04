@@ -24,7 +24,7 @@ body {
   font-size: $font-size-default;
   line-height: $line-height-default;
   color: $gray-color;
-  background-color: $chrome-color;
+  background-color: transparent;
 }
 
 hr {
@@ -61,6 +61,7 @@ h6 { font-size: 12px; }
   left: 0;
 	display: flex;
   flex-direction: column;
+  background-color: $chrome-color;
 }
 
 .window-content {

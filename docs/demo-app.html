@@ -7,20 +7,245 @@
 
     <!-- Photon.css -->
     <link rel="stylesheet" href="/dist/css/photon.min.css">
+
+    <style>
+      .window {
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .sidebar {
+        background-color: #f5f5f4;
+      }
+    </style>
   </head>
   <body>
     <div class="window">
       <header class="toolbar toolbar-header">
         <h1 class="title">Photon</h1>
+
+        <div class="toolbar-actions">
+
+          <div class="btn-group">
+            <button class="btn btn-default">
+              <span class="icon icon-home"></span>
+            </button>
+            <button class="btn btn-default">
+              <span class="icon icon-folder"></span>
+            </button>
+            <button class="btn btn-default active">
+              <span class="icon icon-cloud"></span>
+            </button>
+            <button class="btn btn-default">
+              <span class="icon icon-popup"></span>
+            </button>
+            <button class="btn btn-default">
+              <span class="icon icon-shuffle"></span>
+            </button>
+          </div>
+
+          <button class="btn btn-default">
+            <span class="icon icon-home icon-text"></span>
+            Filters
+          </button>
+
+          <button class="btn btn-default btn-dropdown pull-right js-popover-trigger">
+            <span class="icon icon-megaphone"></span>
+          </button>
+        </div>
       </header>
 
       <div class="window-content">
         <div class="pane-group">
-          <div class="pane pane-sm sidebar padded-more">
-            side
+          <div class="pane pane-sm sidebar">
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Favorites</h5>
+              <a class="nav-group-item active">
+                <span class="icon icon-home"></span>
+                connors
+              </a>
+              <span class="nav-group-item">
+                <span class="icon icon-download"></span>
+                Downloads
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-folder"></span>
+                Documents
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-signal"></span>
+                AirPlay
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-print"></span>
+                Applications
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-cloud"></span>
+                Desktop
+              </span>
+            </nav>
+
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Tags</h5>
+              <span class="nav-group-item" href="#">
+                <span class="icon icon-record" style="color:#fc605b"></span>
+                Red
+              </span>
+              <span class="nav-group-item" href="#">
+                <span class="icon icon-record" style="color:#fdbc40"></span>
+                Orange
+              </span>
+              <span class="nav-group-item" href="#">
+                <span class="icon icon-record" style="color:#34c84a"></span>
+                Green
+              </span>
+              <span class="nav-group-item" href="#">
+                <span class="icon icon-record" style="color:#57acf5"></span>
+                Blue
+              </span>
+            </nav>
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Devices</h5>
+              <span class="nav-group-item">
+                <span class="icon icon-drive"></span>
+                Backup disk
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-drive"></span>
+                Backup disk
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-drive"></span>
+                Backup disk
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-drive"></span>
+                Backup disk
+              </span>
+            </nav>
           </div>
-          <div class="pane padded-more">
-            main
+          <div class="pane">
+            <table class="table-striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Kind</th>
+                  <th>File Size</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+                <tr>
+                  <td>photon.css</td>
+                  <td>CSS</td>
+                  <td>28K</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

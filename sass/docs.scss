@@ -55,7 +55,7 @@ p {
   @include clearfix;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 32em) {
   .container {
     padding-left: 0;
     padding-right: 0;
@@ -103,7 +103,7 @@ p {
   background-position: center;
 }
 // The demo is useless on mobile
-@media (min-width: 48em) {
+@media (min-width: 32em) {
   .app-section {
     display: block;
   }
@@ -139,6 +139,8 @@ p {
   margin-right: 70px;
   margin-bottom: 30px;
   margin-left: 70px;
+  border-radius: 4px;
+  overflow: hidden;
   box-shadow: 0 0 60px rgba(0,0,0,.3);
 
   .demo-app {

@@ -142,7 +142,7 @@ body {
   font-size: 13px;
   line-height: 1.6;
   color: #333;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 hr {
@@ -194,6 +194,7 @@ h6 {
   left: 0;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 .window-content {
