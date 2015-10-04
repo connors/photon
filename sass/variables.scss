@@ -23,7 +23,11 @@ $chrome-color:  #fff !default;
 
 // Copy
 $gray-color: #333 !default;
+
+// Borders
 $border-color: #ddd !default;
+$dark-border-color: #bcbbbc !default;
+$toolbar-border-color: #939293 !default;
 
 // Action colors
 $default-color:  #fff !default;
@@ -41,9 +45,10 @@ $focus-input-color: lighten($primary-color, 10%)  !default;
 // --------------------------------------------------
 
 // Border radius
-$default-border-radius: 3px;
+$default-border-radius: 4px;
 
 // Padding
 $padding: 10px;
+$padding-mini: 3px;
 $padding-less: 5px;
 $padding-more: 20px;

@@ -33,11 +33,13 @@
 // Normal buttons
 .btn-default {
   color: $gray-color;
-  background-color: $chrome-color;
-  border-color: $border-color;
+  border-color: $dark-border-color;
+  box-shadow: 0 1px 0 rgba(0,0,0,.04);
+  @include linear-gradient(#fcfcfc, #f1f1f1);
 
   &:active {
     background-color: #ddd;
+    background-image: none;
   }
 }
 
