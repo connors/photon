@@ -84,22 +84,12 @@
   }
 }
 
-// Button groups
-.btn-group {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle; // match .btn alignment given font-size hack above
-
-  .btn {
-    position: relative;
-    float: left;
-
-    // Bring the "active" button to the front
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      z-index: 2;
-    }
-  }
+// Icons in buttons
+.btn .icon {
+  float: left;
+  width: 15px;
+  height: 15px;
+  color: #737475;
+  font-size: 15px;
+  line-height: 1;
 }

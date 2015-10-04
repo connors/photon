@@ -364,6 +364,15 @@ h6 {
   background-color: #ee9d02;
 }
 
+.btn .icon {
+  float: left;
+  width: 15px;
+  height: 15px;
+  color: #737475;
+  font-size: 15px;
+  line-height: 1;
+}
+
 .btn-group {
   position: relative;
   display: inline-block;
@@ -373,7 +382,7 @@ h6 {
   position: relative;
   float: left;
 }
-.btn-group .btn:hover, .btn-group .btn:focus, .btn-group .btn:active, .btn-group .btn.active {
+.btn-group .btn:focus, .btn-group .btn:active, .btn-group .btn.active {
   z-index: 2;
 }
 
@@ -396,6 +405,14 @@ h6 {
 }
 .btn-group .btn + .btn {
   border-left: 1px solid #ddd;
+}
+.btn-group .active {
+  color: #fff;
+  border: 1px solid transparent;
+  background-color: #6d6c6d;
+}
+.btn-group .active .icon {
+  color: #fff;
 }
 
 .toolbar {
@@ -670,7 +687,7 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.nav-group-item:active, .nav-group-item.selected {
+.nav-group-item:active, .nav-group-item.active {
   background-color: #dcdfe1;
 }
 .nav-group-item .icon {
@@ -695,7 +712,7 @@ img {
 @font-face {
   font-family: "photon-entypo";
   src: url("../fonts/photon-entypo.eot");
-  src: url("../fonts/photon-entypo.eot?#iefix") format("eot"), url("../fonts/photon-entypo.woff2") format("woff2"), url("../fonts/photon-entypo.woff") format("woff"), url("../fonts/photon-entypo.ttf") format("truetype");
+  src: url("../fonts/photon-entypo.eot?#iefix") format("eot"), url("../fonts/photon-entypo.woff") format("woff"), url("../fonts/photon-entypo.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
