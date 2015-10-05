@@ -75,7 +75,6 @@ a {
 }
 
 .container {
-  position: relative;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -110,16 +109,12 @@ a {
   }
 }
 .nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
   display: block;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .nav:before, .nav:after {
   display: table;
@@ -137,139 +132,41 @@ a {
   float: left;
   margin-left: 30px;
   font-size: 14px;
-  color: #666;
+  color: #eee;
 }
 .nav-item:hover {
-  color: #888;
+  color: #fff;
 }
 .nav-item.title {
   margin-left: 0;
   float: left;
-  color: #333;
+  color: #fff;
 }
 
 .masthead {
   position: relative;
-  height: 88vh;
-  min-height: 400px;
-  border-bottom: 1px solid #ddd;
-  background-color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f8f8f8));
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
-  background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  padding-bottom: 80px;
+  color: #fff;
+  background-image: url("/assets/img/photo-couch.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .masthead .masthead-content {
-  position: relative;
-  top: 50%;
-  z-index: 20;
-  transform: translatey(-50%);
+  margin-top: 50px;
 }
 .masthead .masthead-title {
-  padding-right: 25rem;
-  font-size: 30px;
-}
-
-.docs-section {
-  border-bottom: 1px solid #ddd;
-}
-
-.docs-section-gray {
-  background-color: #f8f8f8;
-}
-
-.marketing-icon {
-  position: relative;
-  display: none;
-  width: 66px;
-  height: 66px;
-  margin-bottom: 10px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: #0a1855;
-  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0a1855), color-stop(100%, #da0024));
-  background-image: -webkit-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
-  background-image: -moz-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
-  background-image: linear-gradient(45deg, #0a1855 0%, #da0024 100%);
-}
-.marketing-icon .icon {
-  position: relative;
-  color: #aaa;
-  font-size: 24px;
-  line-height: 66px;
-  z-index: 2;
-}
-.marketing-icon:after {
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 64px;
-  height: 64px;
-  background-color: #fff;
-  border-radius: 50%;
-  content: "";
-  z-index: 1;
-}
-
-.app-section {
-  position: relative;
-  margin-top: -1px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  display: none;
-  color: #fff;
-  background-color: #000;
-  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #000), color-stop(100%, #061f51));
-  background-image: -webkit-linear-gradient(45deg, #000 0%, #061f51 100%);
-  background-image: -moz-linear-gradient(45deg, #000 0%, #061f51 100%);
-  background-image: linear-gradient(45deg, #000 0%, #061f51 100%);
-}
-
-@media (min-width: 32em) {
-  .app-section {
-    display: block;
-  }
-}
-.canvas-particles {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: block;
-  z-index: 10;
-  opacity: .2;
-}
-
-.app-section-title,
-.app-section-lead,
-.app-section-credit,
-.demo-app-container {
-  position: relative;
-  z-index: 20;
-}
-
-.app-section-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   font-size: 2.1em;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-.app-section-lead {
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: #fff;
-  font-weight: 300;
-  font-size: 1.3em;
-  opacity: .9;
-}
-
 .demo-app-container {
-  height: 450px;
+  height: 400px;
   margin-right: 35px;
   margin-bottom: 40px;
   margin-left: 35px;
+  display: none;
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
@@ -279,6 +176,41 @@ a {
   height: 100%;
   border: 0;
   border-radius: 4px;
+}
+
+@media (min-width: 32em) {
+  .demo-app-container {
+    display: block;
+  }
+}
+.docs-section {
+  border-bottom: 1px solid #ddd;
+}
+
+.docs-section-gray {
+  background-color: #f8f8f8;
+}
+
+.oss-section {
+  position: relative;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  background-color: #000;
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #000), color-stop(100%, #0f2b3c));
+  background-image: -webkit-linear-gradient(45deg, #000 0%, #0f2b3c 100%);
+  background-image: -moz-linear-gradient(45deg, #000 0%, #0f2b3c 100%);
+  background-image: linear-gradient(45deg, #000 0%, #0f2b3c 100%);
+}
+.oss-section a {
+  color: #fff;
+  text-decoration: underline;
+}
+.oss-section p {
+  color: #cccccc;
+}
+
+.footer {
+  background-color: #f8f8f8;
 }
 
 .text-centered {
