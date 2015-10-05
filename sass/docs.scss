@@ -83,11 +83,33 @@ p {
 
 // Masthead
 .masthead {
+  position: relative;
   height: 88vh;
   min-height: 400px;
   color: #fff;
   border-bottom: 1px solid #ddd;
-  background-color: #222;
+  background-color: #151515;
+
+  .masthead-content {
+    position: relative;
+    z-index: 20;
+    text-align: center;
+  }
+
+  .masthead-title {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    font-size: 40px
+  }
+
+  .canvas-particles {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 10;
+  }
 }
 
 // Sections

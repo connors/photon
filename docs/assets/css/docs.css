@@ -81,11 +81,30 @@ p {
   }
 }
 .masthead {
+  position: relative;
   height: 88vh;
   min-height: 400px;
   color: #fff;
   border-bottom: 1px solid #ddd;
-  background-color: #111;
+  background-color: #151515;
+}
+.masthead .masthead-content {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+}
+.masthead .masthead-title {
+  padding-right: 10rem;
+  padding-left: 10rem;
+  font-size: 40px;
+}
+.masthead .canvas-particles {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 10;
 }
 
 .docs-section {
@@ -108,10 +127,7 @@ p {
   background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0a1855), color-stop(100%, #da0024));
   background-image: -webkit-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
   background-image: -moz-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
-  background-image: -ms-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
-  background-image: -o-linear-gradient(45deg, #0a1855 0%, #da0024 100%);
   background-image: linear-gradient(45deg, #0a1855 0%, #da0024 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a1855', endColorstr='#da0024', GradientType=1 );
 }
 .marketing-icon .icon {
   position: relative;
