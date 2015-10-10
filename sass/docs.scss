@@ -281,16 +281,23 @@ a {
   }
 }
 
-// Component section (split)
 .component-section {
+  margin-bottom: 30px;
   border-bottom: 1px solid #ddd;
-  @include split-linear-gradient(#fff, #f5f5f5);
+}
 
-  .col {
-    border-left: 1px solid #ddd;
+// Component section (split)
+@media (min-width: 32em) {
+  .component-section {
+    margin-bottom: 0;
+    @include split-linear-gradient(#fff, #f5f5f5);
 
-    &:first-child {
-      border-left: 0;
+    .col {
+      border-left: 1px solid #ddd;
+
+      &:first-child {
+        border-left: 0;
+      }
     }
   }
 }
