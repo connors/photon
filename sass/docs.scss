@@ -56,13 +56,14 @@ a {
 
 .btn {
   display: inline-block;
-  padding: 6px 30px;
+  padding: 10px 15px;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
+  text-decoration: none;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -71,13 +72,14 @@ a {
 
 .btn-download {
   padding: 12px 30px;
-  //color: #fff;
   border-color: #ddd;
-  //background-color: #4b92c6;
+}
+
+.btn-components {
+  padding: 12px 30px;
 }
 
 .btn-inversed {
-  padding: 12px 30px;
   color: #fff;
   border-color: rgba(255,255,255,.5);
 
@@ -122,8 +124,8 @@ a {
 
 // Navbar
 .nav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   margin-left: 2rem;
   margin-right: 2rem;
   display: block;
@@ -137,8 +139,9 @@ a {
 .nav-item {
   float: left;
   margin-left: 30px;
-  font-size: 14px;
+  font-size: .8em;
   color: #eee;
+  line-height: 1;
 
   &:hover {
     color: #fff;
@@ -147,6 +150,7 @@ a {
   &.title {
     margin-left: 0;
     float: left;
+    font-size: 1em;
     color: #fff;
   }
 }
@@ -213,13 +217,17 @@ a {
   text-shadow: 0 0 3px rgba(0,0,0,.3);
   @include directional-gradient(#000, #0f2b3c);
 
-  a {
+  a:not(.btn) {
     color: #fff;
     text-decoration: underline;
   }
 
   p {
     color: darken(#ffffff, 20%);
+  }
+
+  .btn {
+    margin-top: 20px;
   }
 }
 

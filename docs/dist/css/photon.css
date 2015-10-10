@@ -2275,3 +2275,60 @@ th:last-child,
 td:last-child {
   border-right: 0;
 }
+
+.tab-group {
+  margin-top: -1px;
+  display: flex;
+  border-top: 1px solid #989698;
+  border-bottom: 1px solid #989698;
+}
+
+.tab-item {
+  position: relative;
+  flex: 1;
+  padding: 3px;
+  font-size: 12px;
+  text-align: center;
+  border-left: 1px solid #989698;
+  transition: background-image .1s linear;
+  background-color: #b8b6b8;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8b6b8), color-stop(100%, #b0aeb0));
+  background-image: -webkit-linear-gradient(top, #b8b6b8 0%, #b0aeb0 100%);
+  background-image: linear-gradient(to bottom, #b8b6b8 0%, #b0aeb0 100%);
+}
+.tab-item:first-child {
+  border-left: 0;
+}
+.tab-item.active {
+  background-color: #d4d2d4;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d4d2d4), color-stop(100%, #cccacc));
+  background-image: -webkit-linear-gradient(top, #d4d2d4 0%, #cccacc 100%);
+  background-image: linear-gradient(to bottom, #d4d2d4 0%, #cccacc 100%);
+}
+.tab-item .icon-close-tab {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #666;
+  opacity: 0;
+  transition: opacity .1s linear;
+  border-radius: 3px;
+  transform: translateY(-50%);
+}
+.tab-item:hover:not(.active) {
+  background-color: #afadaf;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #afadaf), color-stop(100%, #a8a6a8));
+  background-image: -webkit-linear-gradient(top, #afadaf 0%, #a8a6a8 100%);
+  background-image: linear-gradient(to bottom, #afadaf 0%, #a8a6a8 100%);
+}
+.tab-item:hover .icon-close-tab {
+  opacity: 1;
+}
+.tab-item .icon-close-tab:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}

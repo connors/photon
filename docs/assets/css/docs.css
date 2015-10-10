@@ -47,13 +47,14 @@ a {
 
 .btn {
   display: inline-block;
-  padding: 6px 30px;
+  padding: 10px 15px;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
+  text-decoration: none;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -65,8 +66,11 @@ a {
   border-color: #ddd;
 }
 
-.btn-inversed {
+.btn-components {
   padding: 12px 30px;
+}
+
+.btn-inversed {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.5);
 }
@@ -109,8 +113,8 @@ a {
   }
 }
 .nav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   margin-left: 2rem;
   margin-right: 2rem;
   display: block;
@@ -131,8 +135,9 @@ a {
 .nav-item {
   float: left;
   margin-left: 30px;
-  font-size: 14px;
+  font-size: .8em;
   color: #eee;
+  line-height: 1;
 }
 .nav-item:hover {
   color: #fff;
@@ -140,6 +145,7 @@ a {
 .nav-item.title {
   margin-left: 0;
   float: left;
+  font-size: 1em;
   color: #fff;
 }
 
@@ -201,12 +207,15 @@ a {
   background-image: -moz-linear-gradient(45deg, #000 0%, #0f2b3c 100%);
   background-image: linear-gradient(45deg, #000 0%, #0f2b3c 100%);
 }
-.oss-section a {
+.oss-section a:not(.btn) {
   color: #fff;
   text-decoration: underline;
 }
 .oss-section p {
   color: #cccccc;
+}
+.oss-section .btn {
+  margin-top: 20px;
 }
 
 .text-centered {

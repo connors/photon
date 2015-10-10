@@ -1,0 +1,55 @@
+// Tabs
+
+.tab-group {
+  margin-top: -1px;
+  display: flex;
+  border-top: 1px solid #989698;
+  border-bottom: 1px solid #989698;
+}
+
+.tab-item {
+  position: relative;
+  flex: 1;
+  padding: 3px;
+  font-size: 12px;
+  text-align: center;
+  border-left: 1px solid #989698;
+  transition: background-image .1s linear;
+  @include linear-gradient(#b8b6b8, #b0aeb0);
+
+  &:first-child {
+    border-left: 0;
+  }
+
+  &.active {
+    @include linear-gradient(#d4d2d4, #cccacc);
+  }
+
+  .icon-close-tab {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #666;
+    opacity: 0;
+    transition: opacity .1s linear;
+    border-radius: 3px;
+    transform: translateY(-50%);
+  }
+
+  &:hover:not(.active) {
+    @include linear-gradient(#afadaf, #a8a6a8);
+  }
+
+  &:hover .icon-close-tab {
+    opacity: 1;
+  }
+
+  .icon-close-tab:hover {
+    background-color: rgba(0,0,0,.08);
+  }
+}
