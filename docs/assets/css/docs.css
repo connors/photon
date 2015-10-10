@@ -325,3 +325,7 @@ a {
 }
 
 /* '' */
+.forms-component {
+  height: 420px;
+  overflow: visible;
+}

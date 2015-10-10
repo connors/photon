@@ -335,3 +335,11 @@ a {
 .icon-bucket:before { content: '\e8d5'; } /* '' */
 .icon-code:before { content: '\e834'; } /* '' */
 .icon-window:before { content: '\e86d'; } /* '' */
+
+
+// Component specific CSS
+
+.forms-component {
+  height: 420px;
+  overflow: visible;
+}
