@@ -52,6 +52,17 @@ a {
   text-decoration: none;
 }
 
+// Code
+.heading-code {
+  margin-top: 2em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #777;
+}
+.highlight {
+  font-size: .9em;
+}
+
 // Buttons
 
 .btn {
@@ -155,6 +166,21 @@ a {
   }
 }
 
+.sub-masthead .nav-item {
+  color: #666;
+
+  &:hover {
+    color: #999;
+  }
+
+  &.title {
+    margin-left: 0;
+    float: left;
+    font-size: 1em;
+    color: #333;
+  }
+}
+
 // Masthead
 .masthead {
   position: relative;
@@ -175,7 +201,6 @@ a {
     text-shadow: 0 0 3px rgba(0,0,0,.3);
   }
 }
-
 
 // Container for the app
 .demo-app-container {
@@ -201,6 +226,11 @@ a {
   .demo-app-container {
     display: block;
   }
+}
+
+// Sub page masthead
+.sub-masthead {
+  border-bottom: 1px solid #ddd;
 }
 
 // Sections
@@ -230,6 +260,21 @@ a {
     margin-top: 20px;
   }
 }
+
+// Component section (split)
+.component-section {
+  border-bottom: 1px solid #ddd;
+  @include split-linear-gradient(#fff, #f5f5f5);
+
+  .col {
+    border-left: 1px solid #ddd;
+
+    &:first-child {
+      border-left: 0;
+    }
+  }
+}
+
 
 // Footer
 .footer {

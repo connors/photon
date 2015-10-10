@@ -45,6 +45,17 @@ a {
   text-decoration: none;
 }
 
+.heading-code {
+  margin-top: 2em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.highlight {
+  font-size: .9em;
+}
+
 .btn {
   display: inline-block;
   padding: 10px 15px;
@@ -149,6 +160,19 @@ a {
   color: #fff;
 }
 
+.sub-masthead .nav-item {
+  color: #666;
+}
+.sub-masthead .nav-item:hover {
+  color: #999;
+}
+.sub-masthead .nav-item.title {
+  margin-left: 0;
+  float: left;
+  font-size: 1em;
+  color: #333;
+}
+
 .masthead {
   position: relative;
   padding-bottom: 80px;
@@ -189,6 +213,10 @@ a {
     display: block;
   }
 }
+.sub-masthead {
+  border-bottom: 1px solid #ddd;
+}
+
 .docs-section {
   border-bottom: 1px solid #ddd;
 }
@@ -216,6 +244,20 @@ a {
 }
 .oss-section .btn {
   margin-top: 20px;
+}
+
+.component-section {
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #f5f5f5));
+  background-image: -webkit-linear-gradient(left, #fff 50%, #f5f5f5 50%);
+  background-image: linear-gradient(to right, #fff 50%, #f5f5f5 50%);
+}
+.component-section .col {
+  border-left: 1px solid #ddd;
+}
+.component-section .col:first-child {
+  border-left: 0;
 }
 
 .text-centered {
