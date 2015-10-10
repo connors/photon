@@ -43,6 +43,96 @@ title: Photon Components
   <div class="container">
     <div class="col-group">
       <div class="col">
+        <h2>Bars with actions</h2>
+        <p>Bars are placed at the top and bottom of core sections of your application.</p>
+
+        <h5 class="heading-code">Markup:</h5>
+{% highlight html %}
+<header class="toolbar toolbar-header">
+  <h1 class="title">Header with actions</h1>
+
+  <div class="toolbar-actions">
+    <div class="btn-group">
+      <button class="btn btn-default">
+        <span class="icon icon-home"></span>
+      </button>
+      <button class="btn btn-default">
+        <span class="icon icon-folder"></span>
+      </button>
+      <button class="btn btn-default active">
+        <span class="icon icon-cloud"></span>
+      </button>
+      <button class="btn btn-default">
+        <span class="icon icon-popup"></span>
+      </button>
+      <button class="btn btn-default">
+        <span class="icon icon-shuffle"></span>
+      </button>
+    </div>
+
+    <button class="btn btn-default">
+      <span class="icon icon-home icon-text"></span>
+      Filters
+    </button>
+
+    <button class="btn btn-default btn-dropdown pull-right js-popover-trigger">
+      <span class="icon icon-megaphone"></span>
+    </button>
+  </div>
+</header>
+{% endhighlight %}
+      </div>
+      <div class="col">
+        <div class="example-container example-component-container example-component-window">
+          <iframe class="component-example" src="/components/bars-actions.html"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="component-section">
+  <div class="container">
+    <div class="col-group">
+      <div class="col">
+        <h2>Bars with tabs</h2>
+        <p>Bars are placed at the top and bottom of core sections of your application.</p>
+
+        <h5 class="heading-code">Markup:</h5>
+{% highlight html %}
+<header class="toolbar toolbar-header">
+  <h1 class="title">Header the tabs</h1>
+</header>
+
+<div class="tab-group">
+  <div class="tab-item">
+    <span class="icon icon-cancel icon-close-tab"></span>
+    Tab
+  </div>
+  <div class="tab-item active">
+    <span class="icon icon-cancel icon-close-tab"></span>
+    Tab active
+  </div>
+  <div class="tab-item">
+    <span class="icon icon-cancel icon-close-tab"></span>
+    Tab
+  </div>
+</div>
+{% endhighlight %}
+      </div>
+      <div class="col">
+        <div class="example-container example-component-container example-component-window">
+          <iframe class="component-example" src="/components/bars-tabs.html"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="component-section">
+  <div class="container">
+    <div class="col-group">
+      <div class="col">
         <h2>Buttons</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
 
@@ -68,7 +158,7 @@ title: Photon Components
   <div class="container">
     <div class="col-group">
       <div class="col">
-        <h2>Buttons Large</h2>
+        <h2>Buttons large</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
 
         <h5 class="heading-code">Markup:</h5>
@@ -93,7 +183,7 @@ title: Photon Components
   <div class="container">
     <div class="col-group">
       <div class="col">
-        <h2>Buttons Mini</h2>
+        <h2>Buttons mini</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
 
         <h5 class="heading-code">Markup:</h5>
