@@ -14,7 +14,6 @@
   font-size: 12px;
   text-align: center;
   border-left: 1px solid #989698;
-  transition: background-image .1s linear;
   @include linear-gradient(#b8b6b8, #b0aeb0);
 
   &:first-child {
@@ -29,20 +28,35 @@
     position: absolute;
     top: 50%;
     left: 5px;
-    width: 14px;
-    height: 14px;
-    font-size: 14px;
-    line-height: 14px;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    line-height: 15px;
     text-align: center;
     color: #666;
     opacity: 0;
-    transition: opacity .1s linear;
+    transition: opacity .1s linear, background-color .1s linear;
     border-radius: 3px;
     transform: translateY(-50%);
+    z-index: 10;
   }
 
-  &:hover:not(.active) {
-    @include linear-gradient(#afadaf, #a8a6a8);
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(0,0,0,.08);
+    opacity: 0;
+    transition: opacity .1s linear;
+    z-index: 1;
+  }
+
+  // Okay, I know... this is nuts but...
+  &:hover:not(.active):after {
+    opacity: 1;
   }
 
   &:hover .icon-close-tab {

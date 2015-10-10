@@ -589,7 +589,7 @@ select[size] {
   display: block;
   width: 100%;
   min-height: 25px;
-  padding: 3px 10px;
+  padding: 5px 10px;
   font-size: 13px;
   line-height: 1.6;
   background-color: #fff;
@@ -2290,7 +2290,6 @@ td:last-child {
   font-size: 12px;
   text-align: center;
   border-left: 1px solid #989698;
-  transition: background-image .1s linear;
   background-color: #b8b6b8;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8b6b8), color-stop(100%, #b0aeb0));
   background-image: -webkit-linear-gradient(top, #b8b6b8 0%, #b0aeb0 100%);
@@ -2309,22 +2308,32 @@ td:last-child {
   position: absolute;
   top: 50%;
   left: 5px;
-  width: 14px;
-  height: 14px;
-  font-size: 14px;
-  line-height: 14px;
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
   color: #666;
   opacity: 0;
-  transition: opacity .1s linear;
+  transition: opacity .1s linear, background-color .1s linear;
   border-radius: 3px;
   transform: translateY(-50%);
+  z-index: 10;
 }
-.tab-item:hover:not(.active) {
-  background-color: #afadaf;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #afadaf), color-stop(100%, #a8a6a8));
-  background-image: -webkit-linear-gradient(top, #afadaf 0%, #a8a6a8 100%);
-  background-image: linear-gradient(to bottom, #afadaf 0%, #a8a6a8 100%);
+.tab-item:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transition: opacity .1s linear;
+  z-index: 1;
+}
+.tab-item:hover:not(.active):after {
+  opacity: 1;
 }
 .tab-item:hover .icon-close-tab {
   opacity: 1;
