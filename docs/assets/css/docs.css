@@ -192,10 +192,6 @@ a {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-.example-container {
-  border-radius: 6px;
-  overflow: hidden;
-}
 .example-container:before, .example-container:after {
   display: table;
   content: " ";
@@ -205,6 +201,8 @@ a {
 }
 
 .example-component-window {
+  border-radius: 6px;
+  overflow: hidden;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   border: 1px solid #bebebe;
 }
@@ -220,6 +218,8 @@ a {
   margin-bottom: 40px;
   margin-left: 5rem;
   display: none;
+  border-radius: 6px;
+  overflow: hidden;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
 }
 

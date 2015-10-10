@@ -138,6 +138,7 @@ html {
 body {
   height: 100%;
   padding: 0;
+  margin: 0;
   font-family: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
   font-size: 13px;
   line-height: 1.6;

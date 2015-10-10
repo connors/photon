@@ -16,10 +16,10 @@ html {
   overflow: hidden;
 }
 
-// We fix position the body and scroll `.content`.
 body {
   height: 100%;
   padding: 0;
+  margin: 0;
   font-family: $font-family-default;
   font-size: $font-size-default;
   line-height: $line-height-default;
