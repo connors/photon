@@ -210,10 +210,11 @@ a {
 
 // Wrap the example in window style (border and box-shadow)
 .example-component-window {
-  border-radius: 6px;
+  height: 300px;
   overflow: hidden;
   box-shadow: 0 0 30px rgba(0,0,0,.1);
   border: 1px solid #bebebe;
+  border-radius: 6px;
 }
 
 .example-component-container {
