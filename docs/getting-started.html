@@ -1,23 +1,115 @@
 ---
 layout: default
-title: Photon • Getting started
+title: Photon · Getting started
 ---
 
 
 <div class="sub-masthead">
   <div class="container">
     {% include nav.html %}
-  </div>
-</div>
-
-
-<div class="subpage-header">
-  <div class="container">
-    <div class="col-group">
-      <div class="col">
-        <h1 class="subpage-title">Getting started</h1>
-        <p class="subpage-lead">Now that you've downloaded Photon, you're well on your way</p>
-      </div>
+    <div class="subpage-header-content">
+      <h1 class="subpage-title">Getting started</h1>
+      <p class="subpage-lead">Now that you've downloaded Photon, you're well on your way</p>
     </div>
   </div>
 </div>
+
+<section class="docs-section">
+  <div class="container">
+    <div class="col-group">
+      <div class="col">
+        <h2>What's included</h2>
+        <p>Photon is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.</p>
+
+        <hr class="docs-hr">
+
+        <h3>Precompiled Photon</h3>
+        <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) photon. You'll see something like this:</p>
+
+{% highlight html %}
+photon/
+├── css/
+│   ├── photon.css
+│   ├── photon.min.css
+└── fonts/
+    ├── photon-entypo.eot
+    ├── photon-entypo.svg
+    ├── photon-entypo.ttf
+    └── photon-entypo.woff
+{% endhighlight %}
+
+        <p>This is the most basic form of Photon: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS (photon.*), as well as compiled and minified CSS (photon.min.*). The Entypo fonts are also included.</p>
+
+
+        <hr class="docs-hr">
+
+        <h3>Photon source code</h3>
+        <p>The Photon source code download includes the precompiled CSS, and font assets, along with source Sass, and documentation. More specifically, it includes the following and more:</p>
+{% highlight html %}
+photon/
+├── sass/
+├── fonts/
+└── dist/
+    ├── css/
+    └── fonts/
+{% endhighlight %}
+
+        <p>The <code>sass/</code> and <code>fonts/</code> are the source code for our CSS and icon fonts (respectively).
+        The <code>dist/</code> folder includes everything listed in the precompiled download section above.
+        The <code>docs/</code> folder includes the source code for our documentation, and <code>examples/</code> of Photon usage.
+        Beyond that, any other included file provides support for packages, license information, and development.</p>
+      </div>
+      <div class="col col-one-third">
+        <h3>Source code</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <a class="btn btn-docs" href="#">Download</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="docs-section">
+    <div class="container">
+      <div class="col-group">
+        <div class="col">
+          <h2>Basic Template</h2>
+          <p></p>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photon</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="photon.css">
+
+    <!-- Electron Javascript -->
+    <script src="index.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <!-- Wrap your entire app inside .window -->
+    <div class="window">
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Photon</h1>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="padded-more">
+          <h1>Welcome to Photon</h1>
+          <p>
+            Thanks for downloading Photon. This is an example HTML page that's linked up to compiled Photon CSS, has the proper meta tags
+            and the HTML structure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{% endhighlight %}
+      </div>
+    </div>
+  </div>
+</section>
