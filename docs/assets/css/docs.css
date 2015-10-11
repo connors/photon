@@ -120,6 +120,7 @@ a {
   }
 
   .col {
+    min-width: 0;
     padding-right: 3rem;
     padding-left: 3rem;
     flex: 1;
@@ -187,11 +188,14 @@ a {
 }
 
 .subpage-header-content {
-  padding-top: 4.5rem;
-  padding-bottom: 5rem;
-  text-align: center;
+  padding: 2.5rem 1rem 3rem;
 }
 
+@media (min-width: 32em) {
+  .subpage-header-content {
+    padding: 4.5rem 3rem 5rem;
+  }
+}
 .subpage-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -406,7 +410,7 @@ a {
 }
 
 .icons-component {
-  height: 550px;
+  height: 670px;
 }
 
 .docs-hr {
