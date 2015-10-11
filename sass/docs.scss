@@ -183,6 +183,23 @@ a {
   }
 }
 
+.subpage-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.subpage-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.subpage-lead {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.3em;
+  font-weight: 300;
+  opacity: .8;
+}
+
 // Masthead
 .masthead {
   position: relative;
@@ -313,7 +330,6 @@ a {
     }
   }
 }
-
 
 // Footer
 .footer {
