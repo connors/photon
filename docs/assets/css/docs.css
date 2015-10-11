@@ -177,6 +177,32 @@ a {
   color: #fff;
 }
 
+.masthead {
+  position: relative;
+  padding-bottom: 80px;
+  color: #fff;
+  background-image: url("/assets/img/photo-couch.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.masthead-content {
+  margin-top: 50px;
+}
+
+.masthead-title {
+  margin: 0;
+  padding: 0 1rem 1.5rem;
+  font-size: 1.5em;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 32em) {
+  .masthead-title {
+    padding: 0 8rem 2rem;
+    font-size: 2.1em;
+  }
+}
 .sub-masthead {
   color: #fff;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
@@ -208,24 +234,6 @@ a {
   font-size: 1.3em;
   font-weight: 300;
   opacity: .8;
-}
-
-.masthead {
-  position: relative;
-  padding-bottom: 80px;
-  color: #fff;
-  background-image: url("/assets/img/photo-couch.png");
-  background-size: cover;
-  background-position: center;
-}
-.masthead .masthead-content {
-  margin-top: 50px;
-}
-.masthead .masthead-title {
-  width: 700px;
-  margin: 0 auto 30px;
-  font-size: 2.1em;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .example-container:before, .example-container:after {
