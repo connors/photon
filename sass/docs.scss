@@ -332,8 +332,25 @@ a {
 }
 
 // Footer
-.footer {
- // nothing yet
+.footer-content {
+  font-size: .8em;
+  opacity: .8;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 32em) {
+  .footer-content {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
 }
 
 // Utilities

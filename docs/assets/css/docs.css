@@ -316,6 +316,25 @@ a {
     padding-bottom: 0;
   }
 }
+.footer-content {
+  font-size: .8em;
+  opacity: .8;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: inline-block;
+}
+
+@media (min-width: 32em) {
+  .footer-content {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+}
 .text-centered {
   text-align: center;
 }
