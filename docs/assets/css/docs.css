@@ -103,6 +103,11 @@ a {
   clear: both;
 }
 
+.col {
+  position: relative;
+  padding: 3rem 1rem;
+}
+
 @media (min-width: 32em) {
   .container {
     padding-left: 0;
@@ -115,8 +120,8 @@ a {
   }
 
   .col {
-    position: relative;
-    padding: 3rem 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     flex: 1;
   }
 
@@ -127,8 +132,8 @@ a {
 .nav {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   display: block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -140,6 +145,12 @@ a {
   clear: both;
 }
 
+@media (min-width: 32em) {
+  .nav {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 .nav-group {
   float: right;
 }
@@ -159,6 +170,10 @@ a {
   float: left;
   font-size: 1em;
   color: #fff;
+}
+
+.sub-masthead {
+  border-bottom: 1px solid #ddd;
 }
 
 .sub-masthead .nav-item {
@@ -258,10 +273,6 @@ a {
   height: 100%;
   display: block;
   border: 0;
-}
-
-.sub-masthead {
-  border-bottom: 1px solid #ddd;
 }
 
 .docs-section {
