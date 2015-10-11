@@ -203,6 +203,20 @@ a {
     font-size: 2.1em;
   }
 }
+.photo-credit {
+  position: absolute;
+  left: 50%;
+  bottom: 1em;
+  font-size: .8em;
+  color: #fff;
+  transform: translatex(-50%);
+  transition: opacity .5s linear;
+  opacity: .5;
+}
+.photo-credit:hover {
+  opacity: .9;
+}
+
 .sub-masthead {
   color: #fff;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);

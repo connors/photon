@@ -212,6 +212,21 @@ a {
   }
 }
 
+.photo-credit {
+  position: absolute;
+  left: 50%;
+  bottom: 1em;
+  font-size: .8em;
+  color: #fff;
+  transform: translatex(-50%);
+  transition: opacity .5s linear;
+  opacity: .5;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
 // Sub page masthead
 .sub-masthead {
   color: #fff;
