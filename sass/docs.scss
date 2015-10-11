@@ -123,6 +123,7 @@ a {
     position: relative;
     padding: 3rem 2rem;
     flex: 1;
+
   }
 
   .split-section {
@@ -217,9 +218,17 @@ a {
   border-radius: 6px;
 }
 
-.example-component-container {
-  position: -webkit-sticky;
-  top: 3rem;
+// The demo is useless on mobile
+@media (min-width: 32em) {
+  .example-component-container {
+  	position: -webkit-sticky;
+  	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky;
+  	position: sticky;
+    top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .demo-app-container {
@@ -233,19 +242,19 @@ a {
   box-shadow: 0 0 60px rgba(0,0,0,.3);
 }
 
+// The demo is useless on mobile
+@media (min-width: 32em) {
+  .demo-app-container {
+    display: block;
+  }
+}
+
 .demo-app,
 .component-example {
   width: 100%;
   height: 100%;
   display: block;
   border: 0;
-}
-
-// The demo is useless on mobile
-@media (min-width: 32em) {
-  .demo-app-container {
-    display: block;
-  }
 }
 
 // Sub page masthead
@@ -297,6 +306,9 @@ a {
 
       &:first-child {
         border-left: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
       }
     }
   }

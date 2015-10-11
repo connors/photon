@@ -208,11 +208,17 @@ a {
   border-radius: 6px;
 }
 
-.example-component-container {
-  position: -webkit-sticky;
-  top: 3rem;
+@media (min-width: 32em) {
+  .example-component-container {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
-
 .demo-app-container {
   height: 380px;
   margin-right: 5rem;
@@ -224,6 +230,11 @@ a {
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
 }
 
+@media (min-width: 32em) {
+  .demo-app-container {
+    display: block;
+  }
+}
 .demo-app,
 .component-example {
   width: 100%;
@@ -232,11 +243,6 @@ a {
   border: 0;
 }
 
-@media (min-width: 32em) {
-  .demo-app-container {
-    display: block;
-  }
-}
 .sub-masthead {
   border-bottom: 1px solid #ddd;
 }
@@ -288,6 +294,9 @@ a {
   }
   .component-section .col:first-child {
     border-left: 0;
+  }
+  .component-section .col:last-child {
+    padding-bottom: 0;
   }
 }
 .text-centered {
