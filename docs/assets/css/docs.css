@@ -129,10 +129,6 @@ a {
   .col-one-third {
     max-width: 33.333%;
   }
-
-  .split-section .col:first-child {
-    border-right: 1px solid #ddd;
-  }
 }
 .nav {
   position: relative;
@@ -275,7 +271,7 @@ a {
 
 @media (min-width: 32em) {
   .subpage-header-content {
-    padding: 4.5rem 3rem 5rem;
+    padding: 3rem 3rem 4rem;
   }
 }
 .subpage-title {
