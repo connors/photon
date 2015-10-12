@@ -390,6 +390,10 @@ a {
   &.last-component-section {
     margin-bottom: 0;
   }
+
+  .col {
+    padding-top: 0;
+  }
 }
 
 // Component section (split)
@@ -400,6 +404,7 @@ a {
     @include split-linear-gradient(#fff, #f5f5f5);
 
     .col {
+      padding-top: 3rem;
       border-left: 1px solid #ddd;
 
       &:first-child {
