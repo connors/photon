@@ -18,11 +18,17 @@ photon/
 ├── css/
 │   ├── photon.css
 │   ├── photon.min.css
-└── fonts/
-    ├── photon-entypo.eot
-    ├── photon-entypo.svg
-    ├── photon-entypo.ttf
-    └── photon-entypo.woff
+├── fonts/
+│   ├── photon-entypo.eot
+│   ├── photon-entypo.svg
+│   ├── photon-entypo.ttf
+│   └── photon-entypo.woff
+└── template-app/
+    ├── js/
+    │   └── menu.js
+    ├── app.js
+    ├── index.html
+    └── package.json
 ```
 
 We provide compiled CSS (`photon.*`), as well as the minified CSS. The Entypo fonts are included.
