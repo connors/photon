@@ -31,7 +31,7 @@ photon/
     └── package.json
 ```
 
-We provide compiled CSS (`photon.*`), as well as the minified CSS. The Entypo fonts are included.
+We provide compiled CSS (`photon.*`), as well as the minified CSS. We also include the Entypo fonts and a template Electron application for you to quickly get started.
 
 ## Documentation
 
