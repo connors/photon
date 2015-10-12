@@ -1,4 +1,4 @@
-# Contributing to Ratchet
+# Contributing to Photon
 
 ## Types of issues
 
@@ -112,7 +112,7 @@ commits.
 Please follow this process; it's the best way to get your work included in the
 project:
 
-1. [Fork](https://github.com/twbs/ratchet/fork) the project.
+1. [Fork](https://github.com/connors/photon/fork) the project.
 
 2. Clone your fork (`git clone
    git@github.com:<your-username>/<repo-name>.git`).

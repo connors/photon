@@ -29,7 +29,7 @@ We provide compiled CSS (`photon.*`), as well as the minified CSS. The Entypo fo
 
 ## Documentation
 
-Photons's documentation is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://photonkit.com>. The docs may also be run locally.
+Photon's documentation is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://photonkit.com>. The docs may also be run locally.
 
 ### Running documentation locally
 
