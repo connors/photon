@@ -296,6 +296,10 @@ h6 {
   padding-bottom: 20px;
 }
 
+.sidebar {
+  background-color: #f5f5f4;
+}
+
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
