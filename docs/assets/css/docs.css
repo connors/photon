@@ -383,6 +383,9 @@ a {
 .component-section .col {
   padding-top: 0;
 }
+.component-section p {
+  margin-bottom: 3rem;
+}
 
 @media (min-width: 32em) {
   .component-section {
