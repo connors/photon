@@ -83,7 +83,7 @@ a {
 
 .btn-inversed {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.7);
 }
 .btn-inversed:hover {
   border-color: #fff;
@@ -135,12 +135,14 @@ a {
   }
 }
 .nav {
+  position: relative;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   margin-left: 1rem;
   margin-right: 1rem;
   display: block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 10;
 }
 .nav:before, .nav:after {
   display: table;
@@ -183,11 +185,23 @@ a {
   color: #fff;
   background-image: url("/assets/img/photo-couch.png");
   background-size: cover;
-  background-position: center;
+}
+.masthead:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: #000;
+  opacity: .25;
+  z-index: 1;
 }
 
 .masthead-content {
+  position: relative;
   margin-top: 50px;
+  z-index: 10;
 }
 
 .masthead-title {
@@ -198,6 +212,13 @@ a {
 }
 
 @media (min-width: 32em) {
+  .masthead {
+    background-position: center;
+  }
+  .masthead:after {
+    display: none;
+  }
+
   .masthead-title {
     padding: 0 8rem 3rem;
     font-size: 2.1em;
@@ -209,9 +230,11 @@ a {
   bottom: 1em;
   font-size: .8em;
   color: #fff;
+  white-space: nowrap;
   transform: translatex(-50%);
   transition: opacity .5s linear;
   opacity: .5;
+  z-index: 10;
 }
 .photo-credit:hover {
   opacity: .9;

@@ -569,6 +569,9 @@ label {
   display: inline-block;
   font-size: 13px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 input[type="search"] {
