@@ -5,6 +5,6 @@
   "main": "app.js",
   "author": "Connor Sears",
   "scripts": {
-    "start": "electron"
+    "start": "electron ."
   }
 }

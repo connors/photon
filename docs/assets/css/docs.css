@@ -69,10 +69,39 @@ a {
   border-color: #999;
 }
 
-.btn-components {
-  padding: 12px 30px;
+.btn-download {
+  margin-bottom: 1rem;
+  color: #0f2b3c;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.btn-download:hover {
+  border-color: transparent;
+  background-color: #fff;
 }
 
+.btn-components,
+.btn-download {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding: 12px 30px;
+  display: block;
+}
+
+@media (min-width: 32em) {
+  .btn-components,
+  .btn-download {
+    margin-right: 0;
+    margin-left: 0;
+    display: inline-block;
+  }
+
+  .btn-download {
+    margin-right: 1rem;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
 .btn-inversed {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.7);
