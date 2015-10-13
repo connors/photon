@@ -388,7 +388,6 @@ a {
 }
 .oss-section a:not(.btn) {
   color: #fff;
-  text-decoration: underline;
 }
 .oss-section p {
   color: #cccccc;
