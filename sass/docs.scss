@@ -177,6 +177,7 @@ a {
   margin-left: $mobile-spacing;
   margin-right: $mobile-spacing;
   display: block;
+  font-weight: 500;
   border-bottom: 1px solid rgba(255,255,255,.2);
   z-index: 10;
   @include clearfix;
@@ -458,6 +459,7 @@ a {
 
 .footer-content {
   font-size: .8em;
+  font-weight: 500;
   opacity: .8;
 }
 
