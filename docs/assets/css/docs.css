@@ -45,13 +45,6 @@ a {
   text-decoration: none;
 }
 
-.heading-code {
-  margin-top: 2.5em;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  color: #777;
-}
-
 .highlight {
   font-size: .9em;
 }
@@ -155,7 +148,7 @@ a {
 }
 
 .nav-item {
-  margin-right: 1em;
+  margin-right: 1rem;
   font-size: .8em;
   color: #fff;
   line-height: 1;
@@ -186,7 +179,7 @@ a {
   }
 
   .nav-item {
-    margin-right: 3em;
+    margin-right: 3rem;
     float: left;
   }
 
@@ -319,7 +312,7 @@ a {
 .demo-app-container {
   height: 450px;
   margin-right: 3rem;
-  margin-bottom: 40px;
+  margin-bottom: 3rem;
   margin-left: 3rem;
   display: none;
   border-radius: 6px;
@@ -370,17 +363,14 @@ a {
 }
 
 .component-section {
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
   border-bottom: 1px solid #ddd;
 }
 .component-section.last-component-section {
   margin-bottom: 0;
 }
-.component-section .col {
+.component-section .col:last-child {
   padding-top: 0;
-}
-.component-section p {
-  margin-bottom: 3rem;
 }
 
 @media (min-width: 32em) {
@@ -400,9 +390,14 @@ a {
     border-left: 0;
   }
   .component-section .col:last-child {
+    padding-top: 3rem;
     padding-bottom: 0;
   }
 }
+.component-description {
+  margin-bottom: 2rem;
+}
+
 .footer {
   margin-top: -1px;
   border-top: 1px solid #ddd;
@@ -429,6 +424,14 @@ a {
 }
 .text-centered {
   text-align: center;
+}
+
+.docs-hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: 0 0;
+  border: 0;
+  border-bottom: 1px solid #ddd;
 }
 
 @font-face {
@@ -482,12 +485,4 @@ a {
 
 .icons-component {
   height: 670px;
-}
-
-.docs-hr {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background: 0 0;
-  border: 0;
-  border-bottom: 1px solid #ddd;
 }
