@@ -47,6 +47,10 @@ p {
   color: #66;
 }
 
+.download-decription {
+  margin-bottom: 1em;
+}
+
 .lead {
   font-size: 1.1em;
   color: #777;
@@ -84,6 +88,14 @@ a {
   }
 }
 
+.btn-components,
+.btn-download {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding: 12px 30px;
+  display: block;
+}
+
 .btn-download {
   margin-bottom: 1rem;
   color: #0f2b3c;
@@ -94,14 +106,6 @@ a {
     border-color: transparent;
     background-color: #fff;
   }
-}
-
-.btn-components,
-.btn-download {
-  margin-right: 2rem;
-  margin-left: 2rem;
-  padding: 12px 30px;
-  display: block;
 }
 
 @media (min-width: 32em) {
