@@ -588,11 +588,6 @@ input[type="checkbox"] {
   line-height: normal;
 }
 
-select[multiple],
-select[size] {
-  height: auto;
-}
-
 .form-control {
   display: block;
   width: 100%;
@@ -639,27 +634,6 @@ textarea {
   position: absolute;
   margin-left: -20px;
   margin-top: 4px;
-}
-
-.radio + .radio,
-.checkbox + .checkbox {
-  margin-top: -5px;
-}
-
-.radio-inline,
-.checkbox-inline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  vertical-align: middle;
-  font-weight: normal;
-}
-
-.radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px;
 }
 
 .form-actions .btn {
