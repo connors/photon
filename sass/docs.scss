@@ -28,12 +28,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   margin-bottom: .18em;
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 h3 {
   margin-bottom: .15em;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 h5 {
@@ -44,7 +44,8 @@ p {
   margin-top: .5em;
   margin-bottom: .5em;
   font-size: 1em;
-  color: #66;
+  font-weight: 300;
+  color: #555;
 }
 
 .download-decription {
@@ -315,6 +316,7 @@ a {
 .subpage-title {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 300;
 }
 
 .subpage-lead {
