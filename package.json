@@ -18,7 +18,7 @@
     "url": "https://github.com/connors/photon/issues"
   },
   "scripts": {
-    "start": "electron example-components"
+    "start": "electron dist/template-app"
   },
   "license": "MIT",
   "devDependencies": {
