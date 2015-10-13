@@ -61,13 +61,12 @@ a {
   text-decoration: none;
   color: #666;
   background-image: none;
-  border: 1px solid transparent;
+  border: 1px solid #ddd;
   border-radius: 4px;
   transition: all .2s linear;
 }
-
-.btn-docs {
-  border-color: #ddd;
+.btn:hover {
+  border-color: #999;
 }
 
 .btn-components {
