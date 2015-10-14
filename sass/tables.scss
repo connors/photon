@@ -28,6 +28,11 @@ tr:active,
   background-color: $active-color;
 }
 
+thead tr:active {
+  color: $gray-color;
+  background-color: #f5f5f4;
+}
+
 th {
   font-weight: normal;
   border-right: 1px solid $border-color;
