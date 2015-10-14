@@ -37,6 +37,9 @@ th {
 th,
 td {
   padding: 2px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   &:last-child {
     border-right: 0;
