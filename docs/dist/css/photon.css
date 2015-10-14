@@ -528,6 +528,10 @@ h6 {
 .toolbar-dark {
   box-shadow: none;
   background-color: #57acf5;
+  background-color: #57acf5;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #57acf5), color-stop(100%, #2794f2));
+  background-image: -webkit-linear-gradient(top, #57acf5 0%, #2794f2 100%);
+  background-image: linear-gradient(to bottom, #57acf5 0%, #2794f2 100%);
 }
 .toolbar-dark .title {
   text-shadow: none;
