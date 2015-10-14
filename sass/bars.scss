@@ -26,6 +26,7 @@
 .toolbar-dark {
   box-shadow: none;
   background-color: $dark-color;
+  @include linear-gradient($dark-color, darken($dark-color, 10%));
 
   .title {
     text-shadow: none;
