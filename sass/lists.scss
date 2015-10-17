@@ -30,7 +30,9 @@
   &:first-child {
     border-top: 0;
   }
-  &:active,
+  
+  &.active,
+  // `.selected` is deprecated. Use `.active` instead.
   &.selected {
     color: #fff;
     background-color: $active-color;

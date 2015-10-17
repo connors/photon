@@ -715,7 +715,7 @@ img {
 .list-group-item:first-child {
   border-top: 0;
 }
-.list-group-item:active, .list-group-item.selected {
+.list-group-item.active, .list-group-item.selected {
   color: #fff;
   background-color: #116cd6;
 }
