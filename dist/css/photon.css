@@ -1,10 +1,10 @@
 /*!
  * =====================================================
- * Photon v0.1.1
+ * Photon v0.1.2
  * Copyright 2015 Connor Sears
  * Licensed under MIT (https://github.com/connors/proton/blob/master/LICENSE)
  *
- * v0.1.1 designed by @connors.
+ * v0.1.2 designed by @connors.
  * =====================================================
  */
 
@@ -300,6 +300,10 @@ h6 {
   background-color: #f5f5f4;
 }
 
+.draggable {
+  -webkit-app-region: drag;
+}
+
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
@@ -525,15 +529,6 @@ h6 {
   -webkit-app-region: drag;
 }
 
-.toolbar-dark {
-  box-shadow: none;
-  background-color: #57acf5;
-}
-.toolbar-dark .title {
-  text-shadow: none;
-  color: #fff;
-}
-
 .title {
   margin: 0;
   font-size: 12px;
@@ -589,7 +584,7 @@ input[type="checkbox"] {
 }
 
 .form-control {
-  display: block;
+  display: inline-block;
   width: 100%;
   min-height: 25px;
   padding: 5px 10px;
@@ -715,7 +710,7 @@ img {
 .list-group-item:first-child {
   border-top: 0;
 }
-.list-group-item:active, .list-group-item.selected {
+.list-group-item.active, .list-group-item.selected {
   color: #fff;
   background-color: #116cd6;
 }
@@ -2330,4 +2325,9 @@ td:last-child {
 }
 .tab-item .icon-close-tab:hover {
   background-color: rgba(0, 0, 0, 0.08);
+}
+
+.tab-item-fixed {
+  flex: none;
+  padding: 3px 10px;
 }

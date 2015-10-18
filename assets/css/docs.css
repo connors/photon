@@ -76,8 +76,8 @@ a {
 
 .btn-components,
 .btn-download {
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
   padding: 12px 30px;
   display: block;
 }
@@ -154,71 +154,6 @@ a {
 
   .col-one-third {
     max-width: 33.333%;
-  }
-}
-.nav {
-  position: relative;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  display: block;
-  font-weight: 500;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  z-index: 10;
-}
-.nav:before, .nav:after {
-  display: table;
-  content: " ";
-}
-.nav:after {
-  clear: both;
-}
-
-.title {
-  display: block;
-  font-size: 1em;
-  color: #fff;
-}
-
-.nav-item {
-  margin-right: 1rem;
-  font-size: .8em;
-  color: #fff;
-  line-height: 1;
-  opacity: .7;
-  transition: opacity .15s linear;
-}
-.nav-item:hover {
-  opacity: 1;
-}
-
-.nav-group {
-  display: block;
-}
-
-@media (min-width: 32em) {
-  .nav {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
-  .title {
-    float: left;
-  }
-
-  .nav-group {
-    margin-top: .5em;
-    float: right;
-  }
-
-  .nav-item {
-    margin-right: 3rem;
-    float: left;
-  }
-
-  .nav-item:last-child {
-    margin-right: 0;
   }
 }
 .masthead {
@@ -316,14 +251,71 @@ a {
   opacity: .8;
 }
 
-.example-container:before, .example-container:after {
+.nav {
+  position: relative;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: block;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 10;
+}
+.nav:before, .nav:after {
   display: table;
   content: " ";
 }
-.example-container:after {
+.nav:after {
   clear: both;
 }
 
+.title {
+  display: block;
+  font-size: 1em;
+  color: #fff;
+}
+
+.nav-item {
+  margin-right: .7rem;
+  font-size: .8em;
+  color: #fff;
+  line-height: 1;
+  opacity: .7;
+  transition: opacity .15s linear;
+}
+.nav-item:hover {
+  opacity: 1;
+}
+
+.nav-group {
+  display: block;
+}
+
+@media (min-width: 32em) {
+  .nav {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .title {
+    float: left;
+  }
+
+  .nav-group {
+    margin-top: .5em;
+    float: right;
+  }
+
+  .nav-item {
+    margin-right: 3rem;
+    float: left;
+  }
+
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+}
 .example-component-window {
   height: 300px;
   overflow: hidden;
@@ -376,6 +368,11 @@ a {
   background-color: #f8f8f8;
 }
 
+@media (min-width: 32em) {
+  .basic-template-section {
+    border-top: 1px solid #ddd;
+  }
+}
 .oss-section {
   position: relative;
   color: #fff;
@@ -395,7 +392,15 @@ a {
 .oss-section .btn {
   margin-top: 20px;
 }
+.oss-section .col:last-child {
+  padding-top: 0;
+}
 
+@media (min-width: 32em) {
+  .oss-section .col:last-child {
+    padding-top: 3rem;
+  }
+}
 .component-section {
   margin-bottom: 1rem;
   border-bottom: 1px solid #ddd;
@@ -515,9 +520,10 @@ a {
 }
 
 .forms-component {
-  height: 420px;
+  height: 430px;
 }
 
 .icons-component {
-  height: 670px;
+  height: 700px;
+  overflow: hidden;
 }
