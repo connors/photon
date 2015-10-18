@@ -156,71 +156,6 @@ a {
     max-width: 33.333%;
   }
 }
-.nav {
-  position: relative;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  display: block;
-  font-weight: 500;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  z-index: 10;
-}
-.nav:before, .nav:after {
-  display: table;
-  content: " ";
-}
-.nav:after {
-  clear: both;
-}
-
-.title {
-  display: block;
-  font-size: 1em;
-  color: #fff;
-}
-
-.nav-item {
-  margin-right: 1rem;
-  font-size: .8em;
-  color: #fff;
-  line-height: 1;
-  opacity: .7;
-  transition: opacity .15s linear;
-}
-.nav-item:hover {
-  opacity: 1;
-}
-
-.nav-group {
-  display: block;
-}
-
-@media (min-width: 32em) {
-  .nav {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
-  .title {
-    float: left;
-  }
-
-  .nav-group {
-    margin-top: .5em;
-    float: right;
-  }
-
-  .nav-item {
-    margin-right: 3rem;
-    float: left;
-  }
-
-  .nav-item:last-child {
-    margin-right: 0;
-  }
-}
 .masthead {
   position: relative;
   padding-bottom: 80px;
@@ -316,6 +251,71 @@ a {
   opacity: .8;
 }
 
+.nav {
+  position: relative;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: block;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 10;
+}
+.nav:before, .nav:after {
+  display: table;
+  content: " ";
+}
+.nav:after {
+  clear: both;
+}
+
+.title {
+  display: block;
+  font-size: 1em;
+  color: #fff;
+}
+
+.nav-item {
+  margin-right: 1rem;
+  font-size: .8em;
+  color: #fff;
+  line-height: 1;
+  opacity: .7;
+  transition: opacity .15s linear;
+}
+.nav-item:hover {
+  opacity: 1;
+}
+
+.nav-group {
+  display: block;
+}
+
+@media (min-width: 32em) {
+  .nav {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .title {
+    float: left;
+  }
+
+  .nav-group {
+    margin-top: .5em;
+    float: right;
+  }
+
+  .nav-item {
+    margin-right: 3rem;
+    float: left;
+  }
+
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+}
 .example-container:before, .example-container:after {
   display: table;
   content: " ";

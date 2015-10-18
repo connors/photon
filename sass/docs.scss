@@ -169,69 +169,7 @@ a {
   }
 }
 
-// Navbar
-.nav {
-  position: relative;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  margin-left: $mobile-spacing;
-  margin-right: $mobile-spacing;
-  display: block;
-  font-weight: 500;
-  border-bottom: 1px solid rgba(255,255,255,.2);
-  z-index: 10;
-  @include clearfix;
-}
-
-.title {
-  display: block;
-  font-size: 1em;
-  color: #fff;
-}
-
-.nav-item {
-  margin-right: $mobile-spacing;
-  font-size: .8em;
-  color: #fff;
-  line-height: 1;
-  opacity: .7;
-  transition: opacity .15s linear;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
-.nav-group {
-  display: block;
-}
-
-@media (min-width: 32em) {
-  .nav {
-    margin-left: $desktop-spacing;
-    margin-right: $desktop-spacing;
-  }
-
-  .title {
-    float: left;
-  }
-
-  .nav-group {
-    margin-top: .5em;
-    float: right;
-  }
-
-  .nav-item {
-    margin-right: $desktop-spacing;
-    float: left;
-  }
-
-  .nav-item:last-child {
-    margin-right: 0;
-  }
-}
-
-// Masthead
+// Masthead Jumbotron
 .masthead {
   position: relative;
   padding-bottom: 80px;
@@ -327,6 +265,68 @@ a {
   font-size: 1.3em;
   font-weight: 300;
   opacity: .8;
+}
+
+// Navbar inside each masthead and sub masthead
+.nav {
+  position: relative;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-left: $mobile-spacing;
+  margin-right: $mobile-spacing;
+  display: block;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  z-index: 10;
+  @include clearfix;
+}
+
+.title {
+  display: block;
+  font-size: 1em;
+  color: #fff;
+}
+
+.nav-item {
+  margin-right: $mobile-spacing;
+  font-size: .8em;
+  color: #fff;
+  line-height: 1;
+  opacity: .7;
+  transition: opacity .15s linear;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.nav-group {
+  display: block;
+}
+
+@media (min-width: 32em) {
+  .nav {
+    margin-left: $desktop-spacing;
+    margin-right: $desktop-spacing;
+  }
+
+  .title {
+    float: left;
+  }
+
+  .nav-group {
+    margin-top: .5em;
+    float: right;
+  }
+
+  .nav-item {
+    margin-right: $desktop-spacing;
+    float: left;
+  }
+
+  .nav-item:last-child {
+    margin-right: 0;
+  }
 }
 
 // Container for iframed examples
