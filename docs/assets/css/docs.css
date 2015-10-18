@@ -395,7 +395,15 @@ a {
 .oss-section .btn {
   margin-top: 20px;
 }
+.oss-section .col:last-child {
+  padding-top: 0;
+}
 
+@media (min-width: 32em) {
+  .oss-section .col:last-child {
+    padding-top: 3rem;
+  }
+}
 .component-section {
   margin-bottom: 1rem;
   border-bottom: 1px solid #ddd;

@@ -408,6 +408,16 @@ a {
   .btn {
     margin-top: 20px;
   }
+
+  .col:last-child {
+    padding-top: 0; // Give the two sections consistent spaceing on mobile
+  }
+}
+
+@media (min-width: 32em) {
+  .oss-section .col:last-child {
+    padding-top: $desktop-spacing;
+  }
 }
 
 .component-section {
