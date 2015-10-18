@@ -347,6 +347,7 @@ a {
   	position: -o-sticky;
   	position: sticky;
     top: $desktop-spacing;
+    min-width: 310px;
     margin-bottom: $desktop-spacing;
   }
 }

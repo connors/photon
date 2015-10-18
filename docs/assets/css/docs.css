@@ -332,6 +332,7 @@ a {
     position: -o-sticky;
     position: sticky;
     top: 3rem;
+    min-width: 310px;
     margin-bottom: 3rem;
   }
 }
