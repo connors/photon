@@ -300,6 +300,10 @@ h6 {
   background-color: #f5f5f4;
 }
 
+.draggable {
+  -webkit-app-region: drag;
+}
+
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
