@@ -388,6 +388,12 @@ a {
   background-color: #f8f8f8;
 }
 
+@media (min-width: 32em) {
+  .basic-template-section {
+    border-top: 1px solid #ddd;
+  }
+}
+
 .oss-section {
   position: relative;
   color: #fff;
