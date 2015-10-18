@@ -24,11 +24,6 @@
     @include linear-gradient(#d4d2d4, #cccacc);
   }
 
-  &.fixed {
-    flex: none;
-    padding: 3px 10px;
-  }
-
   .icon-close-tab {
     position: absolute;
     top: 50%;
@@ -71,4 +66,9 @@
   .icon-close-tab:hover {
     background-color: rgba(0,0,0,.08);
   }
+}
+
+.tab-item-fixed {
+  flex: none;
+  padding: 3px 10px;
 }
