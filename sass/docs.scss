@@ -329,11 +329,6 @@ a {
   }
 }
 
-// Container for iframed examples
-.example-container {
-  @include clearfix;
-}
-
 // Wrap the example in window style (border and box-shadow)
 .example-component-window {
   height: 300px;
@@ -352,11 +347,11 @@ a {
   	position: -o-sticky;
   	position: sticky;
     top: $desktop-spacing;
-    min-width: 310px;
     margin-bottom: $desktop-spacing;
   }
 }
 
+// This is the homepage's demo
 .demo-app-container {
   height: 450px;
   margin-right: $desktop-spacing;
@@ -387,6 +382,7 @@ a {
 .docs-section {
   border-bottom: 1px solid #ddd;
 }
+
 .docs-section-gray {
   background-color: #f8f8f8;
 }
@@ -542,9 +538,10 @@ a {
 }
 
 .forms-component {
-  height: 420px;
+  height: 430px;
 }
 
 .icons-component {
-  height: 670px;
+  height: 700px;
+  overflow: hidden;
 }

@@ -316,14 +316,6 @@ a {
     margin-right: 0;
   }
 }
-.example-container:before, .example-container:after {
-  display: table;
-  content: " ";
-}
-.example-container:after {
-  clear: both;
-}
-
 .example-component-window {
   height: 300px;
   overflow: hidden;
@@ -340,7 +332,6 @@ a {
     position: -o-sticky;
     position: sticky;
     top: 3rem;
-    min-width: 310px;
     margin-bottom: 3rem;
   }
 }
@@ -523,9 +514,10 @@ a {
 }
 
 .forms-component {
-  height: 420px;
+  height: 430px;
 }
 
 .icons-component {
-  height: 670px;
+  height: 700px;
+  overflow: hidden;
 }

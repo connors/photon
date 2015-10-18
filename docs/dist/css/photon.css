@@ -589,7 +589,7 @@ input[type="checkbox"] {
 }
 
 .form-control {
-  display: block;
+  display: inline-block;
   width: 100%;
   min-height: 25px;
   padding: 5px 10px;
