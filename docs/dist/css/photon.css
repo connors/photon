@@ -529,15 +529,6 @@ h6 {
   -webkit-app-region: drag;
 }
 
-.toolbar-dark {
-  box-shadow: none;
-  background-color: #57acf5;
-}
-.toolbar-dark .title {
-  text-shadow: none;
-  color: #fff;
-}
-
 .title {
   margin: 0;
   font-size: 12px;

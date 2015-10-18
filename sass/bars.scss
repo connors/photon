@@ -22,17 +22,6 @@
   -webkit-app-region: drag;
 }
 
-// A dark variation of the toolbar
-.toolbar-dark {
-  box-shadow: none;
-  background-color: $dark-color;
-
-  .title {
-    text-shadow: none;
-    color: #fff;
-  }
-}
-
 // Simple centered title to go in the toolbar
 .title {
   margin: 0;
