@@ -24,6 +24,11 @@
     @include linear-gradient(#d4d2d4, #cccacc);
   }
 
+  &.fixed {
+    flex: none;
+    padding: 3px 10px;
+  }
+
   .icon-close-tab {
     position: absolute;
     top: 50%;
