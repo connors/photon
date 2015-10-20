@@ -1,6 +1,6 @@
 {
   "name": "photon",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "authors": [
     "Connor Sears"
   ],
@@ -17,9 +17,9 @@
   "homepage": "http://photonkit.com/",
   "ignore": [
     "/.*",
-	  "CNAME",
-	  "_config.yml",
-	  "CONTRIBUTING.md",
-	  "docs"
+    "CNAME",
+    "_config.yml",
+    "CONTRIBUTING.md",
+    "docs"
   ]
 }
