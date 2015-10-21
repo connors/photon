@@ -33,6 +33,7 @@ input[type="checkbox"] {
   border: 1px solid $border-color;
   border-radius: $default-border-radius;
   outline: none;
+  -webkit-app-region: no-drag;
 
   &:focus {
     border-color: $focus-input-color;
