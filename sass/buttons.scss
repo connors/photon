@@ -112,15 +112,25 @@
   height: 14px;
   margin-top: 1px;
   margin-bottom: 1px;
-  color: #737475;
   font-size: 14px;
   line-height: 1;
 }
 
 // Add the margin next to the icon if there is text in the button too
+// assume 1 icon max in a button only
 .btn .icon-text {
   margin-right: 5px;
+
+  // For the icon is on the right side of the button text
+  //   add the margin to the left of the text
+  &.pull-right {
+    margin-right: 0;
+    margin-left: 5px;
+    float: right;
+  }
 }
+
+
 
 // This utility class add a down arrow icon to the button
 .btn-dropdown:after {
