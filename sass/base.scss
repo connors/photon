@@ -2,14 +2,6 @@
 // Base styles
 // --------------------------------------------------
 
-* {
-  cursor: default;
-  -webkit-user-drag: text;
-  -webkit-user-select: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 html {
   height: 100%;
   width: 100%;
@@ -25,6 +17,11 @@ body {
   line-height: $line-height-default;
   color: $gray-color;
   background-color: transparent;
+  cursor: default;
+  -webkit-user-drag: text;
+  -webkit-user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 hr {
