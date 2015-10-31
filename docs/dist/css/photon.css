@@ -674,6 +674,7 @@ textarea {
 
 .pane-one-third {
   width: 33.3%;
+  flex: none;
 }
 
 img {
