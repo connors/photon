@@ -87,10 +87,6 @@ module.exports = function(grunt) {
       options: {
         keepSpecialComments: '*' // keep all important comments
       },
-      photon: {
-        src: '<%= meta.distPath %>css/<%= pkg.name %>.css',
-        dest: '<%= meta.distPath %>css/<%= pkg.name %>.min.css'
-      },
       docs: {
         src: [
           '<%= meta.docsAssetsPath %>css/docs.css',
