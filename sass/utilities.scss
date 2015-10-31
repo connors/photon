@@ -111,6 +111,11 @@
   -webkit-app-region: drag;
 }
 
+// within draggable regions, allow specific elements to be exempted.
+.not-draggable {
+  -webkit-app-region: no-drag;
+}
+
 // Clearfix
 .clearfix {
   @include clearfix();
