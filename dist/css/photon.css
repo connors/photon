@@ -304,6 +304,10 @@ h6 {
   -webkit-app-region: drag;
 }
 
+.not-draggable {
+  -webkit-app-region: no-drag;
+}
+
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
@@ -594,6 +598,7 @@ input[type="checkbox"] {
   border: 1px solid #ddd;
   border-radius: 4px;
   outline: none;
+  -webkit-app-region: no-drag;
 }
 .form-control:focus {
   border-color: #6db3fd;
