@@ -13,13 +13,12 @@ Take note that our master branch is our active, unstable development branch and 
 
 ### What's included
 
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+Within the download you'll find the following directories and files, logically grouping common assets. You'll see something like this:
 
 ```
 photon/
 ├── css/
 │   ├── photon.css
-│   ├── photon.min.css
 ├── fonts/
 │   ├── photon-entypo.eot
 │   ├── photon-entypo.svg
@@ -33,7 +32,7 @@ photon/
     └── package.json
 ```
 
-We provide compiled CSS (`photon.*`), as well as the minified CSS. We also include the Entypo fonts and a template Electron application for you to quickly get started.
+We provide compiled CSS (`photon.*`). We also include the Entypo fonts and a template Electron application for you to quickly get started.
 
 ## Documentation
 
