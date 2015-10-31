@@ -154,6 +154,8 @@ a {
   }
 
   .col-group {
+    display: -webkit-flex; // Make the grid work in older Safari browsers
+    display: -ms-flex; // Make the grid work in older IE browsers
     display: flex
   }
 
