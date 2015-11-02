@@ -1,4 +1,4 @@
-# Photon
+# [Photon](http://photonkit.com/)
 
 [![Build Status](https://img.shields.io/travis/connors/photon/master.svg)](https://travis-ci.org/connors/photon)
 
