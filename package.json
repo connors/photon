@@ -18,7 +18,8 @@
     "url": "https://github.com/connors/photon/issues"
   },
   "scripts": {
-    "start": "electron dist/template-app"
+    "start": "electron dist/template-app",
+    "build": "grunt"
   },
   "license": "MIT",
   "devDependencies": {
@@ -38,5 +39,8 @@
     "grunt-sed": "twbs/grunt-sed#v0.2.0",
     "load-grunt-tasks": "~3.2.0",
     "time-grunt": "~1.2.0"
+  },
+  "dependencies": {
+    "grunt-cli": "^0.1.13"
   }
 }
