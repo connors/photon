@@ -5,6 +5,7 @@
 // Type
 // --------------------------------------------------
 
+$font-path: '../fonts/' !default;
 // Try to use the system's font on whatever platform the user is on.
 $font-family-default: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif !default;
 $font-size-default: 13px !default;
