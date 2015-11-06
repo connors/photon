@@ -753,6 +753,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-height: 24px;
 }
 .nav-group-item:active, .nav-group-item.active {
   background-color: #dcdfe1;
