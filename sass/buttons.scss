@@ -46,7 +46,7 @@
   border-left-color: $dark-border-color;
   @include linear-gradient(#fcfcfc, #f1f1f1);
 
-  &:active {
+  &:active:not(.disabled) {
     background-color: #ddd;
     background-image: none;
   }
@@ -115,6 +115,14 @@
   color: #737475;
   font-size: 14px;
   line-height: 1;
+}
+
+.btn.disabled {
+  color: #b7b7b7;
+}
+
+.btn.disabled .icon {
+  color: #b7b7b7;
 }
 
 // Add the margin next to the icon if there is text in the button too
