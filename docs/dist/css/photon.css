@@ -598,6 +598,7 @@ input[type="checkbox"] {
   border: 1px solid #ddd;
   border-radius: 4px;
   outline: none;
+  -webkit-user-select: text;
   -webkit-app-region: no-drag;
 }
 .form-control:focus {
