@@ -18,7 +18,6 @@ before_install:
   - export GEMDIR=$(rvm gemdir)
 
 install:
-  - travis_retry npm install -g grunt-cli
   - travis_retry npm install
   - travis_retry gem install --no-document "jekyll:~>3.0.0" "rouge:~>1.10" "sass:~>3.4"
 

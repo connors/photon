@@ -58,7 +58,7 @@ Please file a GitHub issue to [report a bug](https://github.com/connors/photon/i
 1. Install node dependencies: `npm install`.
 2. Open the example app: `npm start`.
 
-Modifying source Sass files? Open a second Terminal tab and run `grunt` to kick off a build the compiled `photon.css`.
+Modifying source Sass files? Open a second Terminal tab and run `npm run build` to kick off a build of the compiled `photon.css`.
 
 ## Versioning
 
