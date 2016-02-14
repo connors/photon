@@ -602,7 +602,7 @@ input[type="checkbox"] {
 }
 .form-control:focus {
   border-color: #6db3fd;
-  box-shadow: 3px 3px 0 #6db3fd, -3px -3px 0 #6db3fd, -3px 3px 0 #6db3fd, 3px -3px 0 #6db3fd;
+  box-shadow: 0 0 0 3px #6db3fd;
 }
 
 textarea {
