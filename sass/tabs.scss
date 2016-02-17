@@ -72,3 +72,22 @@
   flex: none;
   padding: 3px 10px;
 }
+.tab-closing {
+    animation: tab-closing 500ms;
+}
+.tab-opening {
+    animation: tab-opening 500ms;
+}
+@keyframes tab-closing {
+    to {
+        flex: .0001
+    }
+}
+@keyframes tab-opening {
+    from {
+        flex: .0001
+    }
+    to {
+        flex: 1
+    }
+}
