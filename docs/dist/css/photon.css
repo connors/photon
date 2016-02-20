@@ -123,7 +123,6 @@ th {
 
 * {
   cursor: default;
-  -webkit-user-drag: text;
   -webkit-user-select: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -185,6 +184,20 @@ h5 {
 
 h6 {
   font-size: 12px;
+}
+
+input,
+textarea {
+  -webkit-user-select: text;
+}
+
+form,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-user-select: text;
+  -webkit-app-region: no-drag;
 }
 
 .window {
@@ -598,8 +611,6 @@ input[type="checkbox"] {
   border: 1px solid #ddd;
   border-radius: 4px;
   outline: none;
-  -webkit-user-select: text;
-  -webkit-app-region: no-drag;
 }
 .form-control:focus {
   border-color: #6db3fd;
