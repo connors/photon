@@ -523,11 +523,6 @@ h6 {
 
 .toolbar {
   min-height: 22px;
-  box-shadow: inset 0 1px 0 #f5f4f5;
-  background-color: #e8e6e8;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e6e8), color-stop(100%, #d1cfd1));
-  background-image: -webkit-linear-gradient(top, #e8e6e8 0%, #d1cfd1 100%);
-  background-image: linear-gradient(to bottom, #e8e6e8 0%, #d1cfd1 100%);
 }
 .toolbar:before, .toolbar:after {
   display: table;
@@ -552,15 +547,7 @@ h6 {
 .title {
   margin: 0;
   font-size: 12px;
-  font-weight: 400;
-  text-align: center;
-  color: #555;
   cursor: default;
-}
-
-.toolbar-borderless {
-  border-top: 0;
-  border-bottom: 0;
 }
 
 .toolbar-actions {

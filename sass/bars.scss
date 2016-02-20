@@ -4,8 +4,6 @@
 
 .toolbar {
   min-height: 22px;
-  box-shadow: inset 0 1px 0 #f5f4f5;
-  @include linear-gradient(#e8e6e8, #d1cfd1);
   @include clearfix;
 }
 
@@ -26,16 +24,7 @@
 .title {
   margin: 0;
   font-size: 12px;
-  font-weight: 400;
-  text-align: center;
-  color: #555;
   cursor: default;
-}
-
-// Borderless toolbar for the clean look
-.toolbar-borderless {
-  border-top: 0;
-  border-bottom: 0;
 }
 
 // Buttons in toolbars
