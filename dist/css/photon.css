@@ -313,7 +313,7 @@ h6 {
 }
 
 .sidebar {
-  background-color: #f5f5f4;
+  background-color: #f6f6f6;
 }
 
 .draggable {
@@ -546,8 +546,8 @@ h6 {
 }
 
 .toolbar-actions {
-  margin-top: 4px;
-  margin-bottom: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding-right: 3px;
   padding-left: 3px;
   padding-bottom: 3px;

@@ -51,6 +51,11 @@ $focus-input-color: lighten($primary-color, 10%)  !default;
 // Border radius
 $default-border-radius: 4px;
 
+// Padding
+$padding: 10px;
+$padding-mini: 3px;
+$padding-less: 5px;
+$padding-more: 20px;
 
 // Bars
 // --------------------------------------------------
@@ -66,6 +71,12 @@ $default-border-radius: 4px;
 
 .toolbar-footer {
   border-top: 1px solid $dark-border-color;
+}
+
+// Buttons in toolbars
+.toolbar-actions {
+  margin-top: 4px;
+  margin-bottom: 3px;
 }
 
 // Simple centered title to go in the toolbar
@@ -290,4 +301,80 @@ th {
   .icon-close-tab:hover {
     background-color: rgba(0,0,0,.08);
   }
+}
+
+// Padding
+.padded {
+  padding: $padding;
+}
+
+.padded-less {
+  padding: $padding-less;
+}
+
+.padded-more {
+  padding: $padding-more;
+}
+
+// Vertical Padding
+.padded-vertically {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+.padded-vertically-less {
+  padding-top: $padding-less;
+  padding-bottom: $padding-less;
+}
+
+.padded-vertically-more {
+  padding-top: $padding-more;
+  padding-bottom: $padding-more;
+}
+
+// Horizontal Padding
+.padded-horizontally {
+  padding-right: $padding;
+  padding-left: $padding;
+}
+
+.padded-horizontally-less {
+  padding-right: $padding-less;
+  padding-left: $padding-less;
+}
+
+.padded-horizontally-more {
+  padding-right: $padding-more;
+  padding-left: $padding-more;
+}
+
+// Padding top
+.padded-top {
+  padding-top: $padding;
+}
+
+.padded-top-less {
+  padding-top: $padding-less;
+}
+
+.padded-top-more {
+  padding-top: $padding-more;
+}
+
+// Padding bottom
+.padded-bottom {
+  padding-bottom: $padding;
+}
+
+.padded-bottom-less {
+  padding-bottom: $padding-less;
+}
+
+.padded-bottom-more {
+  padding-bottom: $padding-more;
+}
+
+// Set the background-color to set a sidebar back a bit.
+.sidebar {
+  background-color: #f5f5f4;
 }
