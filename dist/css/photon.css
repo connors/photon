@@ -124,6 +124,23 @@ th {
 * {
   cursor: default;
   -webkit-user-select: none;
+}
+
+input,
+textarea {
+  -webkit-user-select: text;
+}
+
+form,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-user-select: text;
+  -webkit-app-region: no-drag;
+}
+
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -184,20 +201,6 @@ h5 {
 
 h6 {
   font-size: 12px;
-}
-
-input,
-textarea {
-  -webkit-user-select: text;
-}
-
-form,
-input,
-optgroup,
-select,
-textarea {
-  -webkit-user-select: text;
-  -webkit-app-region: no-drag;
 }
 
 .window {

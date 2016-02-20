@@ -3,8 +3,6 @@
 // --------------------------------------------------
 
 * {
-  cursor: default;
-  -webkit-user-select: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -50,21 +48,6 @@ h3 { font-size: 24px; }
 h4 { font-size: 18px; }
 h5 { font-size: 14px; }
 h6 { font-size: 12px; }
-
-// Forms
-input,
-textarea {
-  -webkit-user-select: text;
-}
-
-form,
-input,
-optgroup,
-select,
-textarea {
-  -webkit-user-select: text;
-  -webkit-app-region:  no-drag;
-}
 
 // Basic app structure
 .window {

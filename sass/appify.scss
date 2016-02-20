@@ -1,0 +1,23 @@
+//
+// Basic styles that make web elements behave more like native applications
+// ------------------------------------------------------------------------
+
+* {
+  cursor: default;
+  -webkit-user-select: none;
+}
+
+// Forms
+input,
+textarea {
+  -webkit-user-select: text;
+}
+
+form,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-user-select: text;
+  -webkit-app-region:  no-drag;
+}

@@ -4,8 +4,9 @@
 // Mixins
 @import "mixins.scss";
 
-// Normalize, Base, & Utilities CSS
+// Normalize, Appify, Base, & Utilities CSS
 @import "normalize.scss";
+@import "appify.scss";
 @import "base.scss";
 @import "utilities.scss";
 
