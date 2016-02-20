@@ -75,7 +75,7 @@ $default-border-radius: 4px;
   color: #555;
 }
 
-// Buttons.css
+// Buttons
 // --------------------------------------------------
 
 .btn {
@@ -173,4 +173,64 @@ $default-border-radius: 4px;
 // Icons in buttons
 .btn .icon {
   color: #737475;
+}
+
+
+// Forms
+// --------------------------------------------------
+
+.form-control {
+  display: inline-block;
+  background-color: $chrome-color;
+  border: 1px solid $border-color;
+  border-radius: $default-border-radius;
+
+  &:focus {
+    border-color: $focus-input-color;
+    box-shadow: 0 0 0 3px $focus-input-color;
+  }
+}
+
+
+// Images
+// --------------------------------------------------
+
+.img-rounded {
+  border-radius: $default-border-radius;
+}
+
+
+// Lists
+// --------------------------------------------------
+
+.list-group-item {
+  color: #414142;
+  border-top: 1px solid $border-color;
+
+  &.active,
+  // `.selected` is deprecated. Use `.active` instead.
+  &.selected {
+    background-color: $active-color;
+  }
+}
+
+
+// Navs
+// --------------------------------------------------
+
+.nav-group-item {
+  color: $gray-color;
+
+  &:active,
+  &.active {
+    background-color: #dcdfe1;
+  }
+
+  .icon {
+    color: #737475;
+  }
+}
+
+.nav-group-title {
+  color: lighten($gray-color, 20%);
 }

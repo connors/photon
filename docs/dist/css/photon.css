@@ -706,7 +706,7 @@ img {
 .list-group-item {
   padding: 10px;
   font-size: 12px;
-  color: #414142;
+  color: #555;
   border-top: 1px solid #ddd;
 }
 .list-group-item:first-child {
@@ -757,7 +757,7 @@ img {
   width: 19px;
   height: 18px;
   float: left;
-  color: #737475;
+  color: #777;
   margin-top: -3px;
   margin-right: 7px;
   font-size: 18px;

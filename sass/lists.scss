@@ -24,13 +24,13 @@
 .list-group-item {
   padding: 10px;
   font-size: 12px;
-  color: #414142;
+  color: #555;
   border-top: 1px solid $border-color;
 
   &:first-child {
     border-top: 0;
   }
-  
+
   &.active,
   // `.selected` is deprecated. Use `.active` instead.
   &.selected {

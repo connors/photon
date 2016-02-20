@@ -132,3 +132,40 @@
 .btn .icon {
   color: #737475;
 }
+
+.form-control {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.form-control:focus {
+  border-color: #6db3fd;
+  box-shadow: 0 0 0 3px #6db3fd;
+}
+
+.img-rounded {
+  border-radius: 4px;
+}
+
+.list-group-item {
+  color: #414142;
+  border-top: 1px solid #ddd;
+}
+.list-group-item.active, .list-group-item.selected {
+  background-color: #116cd6;
+}
+
+.nav-group-item {
+  color: #333;
+}
+.nav-group-item:active, .nav-group-item.active {
+  background-color: #dcdfe1;
+}
+.nav-group-item .icon {
+  color: #737475;
+}
+
+.nav-group-title {
+  color: #666666;
+}
