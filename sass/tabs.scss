@@ -1,10 +1,11 @@
-// Tabs
+// Tabs.scss
+// --------------------------------------------------
 
 .tab-group {
   margin-top: -1px;
   display: flex;
-  border-top: 1px solid #989698;
-  border-bottom: 1px solid #989698;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
 }
 
 .tab-item {
@@ -13,7 +14,7 @@
   padding: 3px;
   font-size: 12px;
   text-align: center;
-  border-left: 1px solid #989698;
+  border-left: 1px solid #999;
   @include linear-gradient(#b8b6b8, #b0aeb0);
 
   &:first-child {

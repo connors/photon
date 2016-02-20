@@ -2223,7 +2223,7 @@ table {
 }
 
 thead {
-  background-color: #f5f5f4;
+  background-color: #f6f6f6;
 }
 
 tbody {
@@ -2231,7 +2231,7 @@ tbody {
 }
 
 .table-striped tr:nth-child(even) {
-  background-color: #f5f5f4;
+  background-color: #f6f6f6;
 }
 
 tr:active,
@@ -2242,7 +2242,7 @@ tr:active,
 
 thead tr:active {
   color: #333;
-  background-color: #f5f5f4;
+  background-color: #f6f6f6;
 }
 
 th {
@@ -2266,8 +2266,8 @@ td:last-child {
 .tab-group {
   margin-top: -1px;
   display: flex;
-  border-top: 1px solid #989698;
-  border-bottom: 1px solid #989698;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
 }
 
 .tab-item {
@@ -2276,7 +2276,7 @@ td:last-child {
   padding: 3px;
   font-size: 12px;
   text-align: center;
-  border-left: 1px solid #989698;
+  border-left: 1px solid #999;
   background-color: #b8b6b8;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8b6b8), color-stop(100%, #b0aeb0));
   background-image: -webkit-linear-gradient(top, #b8b6b8 0%, #b0aeb0 100%);
