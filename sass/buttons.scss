@@ -39,10 +39,7 @@
 // Normal buttons
 .btn-default {
   color: $gray-color;
-  border-top-color: $dark-border-color;
-  border-right-color: $dark-border-color;
-  border-bottom-color: $darker-bottom-border-color;
-  border-left-color: $dark-border-color;
+  border-color: $dark-border-color;
   background-color: #fafafa;
 
   &:active {
@@ -60,45 +57,37 @@
 
 // For primary buttons
 .btn-primary {
-  border-color: #388df8;
-  border-bottom-color: darken(#388df8, 15%);
-  @include linear-gradient(#6eb4f7, #1a82fb);
+  background-color: $primary-color;
 
   &:active {
-    @include linear-gradient(darken(#6eb4f7, 10%), darken(#1a82fb, 10%));
+    background-color: darken($primary-color, 10%);
   }
 }
 
 // For positive buttons
 .btn-positive {
-  border-color: darken($positive-color, 10%);
-  border-bottom-color: darken($positive-color, 15%);
-  @include linear-gradient(lighten($positive-color, 10%), darken($positive-color, 10%));
+  background-color: $positive-color;
 
   &:active {
-    @include linear-gradient($positive-color, darken($positive-color, 15%));
+    background-color: darken($positive-color, 10%);
   }
 }
 
 // For negative actions
 .btn-negative {
-  border-color: darken($negative-color, 10%);
-  border-bottom-color: darken($negative-color, 15%);
-  @include linear-gradient(lighten($negative-color, 10%), darken($negative-color, 10%));
+  background-color: $negative-color;
 
   &:active {
-    @include linear-gradient($negative-color, darken($negative-color, 15%));
+    background-color: darken($negative-color, 10%);
   }
 }
 
 // For warning actions
 .btn-warning {
-  border-color: darken($warning-color, 10%);
-  border-bottom-color: darken($warning-color, 15%);
-  @include linear-gradient(lighten($warning-color, 10%), darken($warning-color, 10%));
+  background-color: $warning-color;
 
   &:active {
-    @include linear-gradient($warning-color, darken($warning-color, 15%));
+    background-color: darken($warning-color, 10%);
   }
 }
 

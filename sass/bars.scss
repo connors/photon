@@ -31,10 +31,10 @@
 // Buttons in toolbars
 .toolbar-actions {
   margin-top: 10px;
-  margin-bottom: 10px;
-  padding-right: 3px;
-  padding-left: 3px;
-  padding-bottom: 3px;
+  margin-bottom: 7px;
+  padding-right: $padding-less;
+  padding-left: $padding-less;
+  padding-bottom: $padding-less;
   -webkit-app-region: drag;
   @include clearfix;
 

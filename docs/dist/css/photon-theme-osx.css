@@ -27,6 +27,9 @@
 .toolbar-actions {
   margin-top: 4px;
   margin-bottom: 3px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
 }
 
 .title {
@@ -146,6 +149,10 @@
 .form-control:focus {
   border-color: #6db3fd;
   box-shadow: 0 0 0 3px #6db3fd;
+}
+
+.pane {
+  border-left: 1px solid #ddd;
 }
 
 .img-rounded {

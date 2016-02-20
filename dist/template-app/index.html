@@ -5,52 +5,18 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/photon.css">
+    <!-- <link rel="stylesheet" href="../css/photon-theme-osx.css"> -->
 
     <!-- Javascript -->
     <script src="js/menu.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="window">
-
-      <!-- .toolbar-header sits at the top of your app -->
-      <header class="toolbar toolbar-header">
-        <h1 class="title">Photon</h1>
-
-        <div class="toolbar-actions">
-          <div class="btn-group">
-            <button class="btn btn-default">
-              <span class="icon icon-home"></span>
-            </button>
-            <button class="btn btn-default">
-              <span class="icon icon-folder"></span>
-            </button>
-            <button class="btn btn-default active">
-              <span class="icon icon-cloud"></span>
-            </button>
-            <button class="btn btn-default">
-              <span class="icon icon-popup"></span>
-            </button>
-            <button class="btn btn-default">
-              <span class="icon icon-shuffle"></span>
-            </button>
-          </div>
-
-          <button class="btn btn-default">
-            <span class="icon icon-home icon-text"></span>
-            Filters
-          </button>
-
-          <button class="btn btn-default btn-dropdown pull-right js-popover-trigger" type="button">
-            <span class="icon icon-megaphone"></span>
-          </button>
-        </div>
-      </header>
-
       <!-- Your app's content goes inside .window-content -->
       <div class="window-content">
         <div class="pane-group">
           <div class="pane pane-sm sidebar">
-            <nav class="nav-group">
+            <!-- <nav class="nav-group">
               <h5 class="nav-group-title">Favorites</h5>
               <span class="nav-group-item">
                 <span class="icon icon-home"></span>
@@ -80,130 +46,152 @@
                 <span class="icon icon-monitor"></span>
                 Desktop
               </span>
-            </nav>
+            </nav> -->
           </div>
 
-          <div class="pane">
-            <table class="table-striped">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Kind</th>
-                  <th>Date Modified</th>
-                  <th>Author</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>bars.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>base.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>button-groups.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>buttons.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>docs.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>forms.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>grid.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>icons.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>images.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>lists.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>mixins.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>navs.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>normalize.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>photon.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>tables.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>tabs.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>utilities.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-                <tr>
-                  <td>variables.scss</td>
-                  <td>Document</td>
-                  <td>Oct 13, 2015</td>
-                  <td>connors</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="pane pane-borderless">
+            <div class="window">
+
+            <!-- .toolbar-header sits at the top of your app -->
+            <header class="toolbar toolbar-header">
+              <div class="toolbar-actions">
+                <button class="btn btn-default btn-large">
+                  <span class="icon icon-home icon-text"></span>
+                  Home
+                </button>
+
+                <button class="btn btn-primary btn-large pull-right" type="button">
+                  Primary Button
+                </button>
+              </div>
+            </header>
+
+            <div class="window-content">
+              <div class="pane-group">
+                <div class="pane">
+                  <table class="table-striped">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Kind</th>
+                        <th>Date Modified</th>
+                        <th>Author</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>bars.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>base.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>button-groups.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>buttons.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>docs.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>forms.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>grid.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>icons.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>images.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>lists.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>mixins.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>navs.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>normalize.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>photon.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>tables.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>tabs.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>utilities.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                      <tr>
+                        <td>variables.scss</td>
+                        <td>Document</td>
+                        <td>Oct 13, 2015</td>
+                        <td>connors</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
