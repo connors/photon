@@ -345,7 +345,7 @@ h6 {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-app-region: no-drag;
 }
 .btn:focus {
@@ -372,14 +372,9 @@ h6 {
   border-right-color: #c2c0c2;
   border-bottom-color: #a19fa1;
   border-left-color: #c2c0c2;
-  background-color: #fcfcfc;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f1f1f1));
-  background-image: -webkit-linear-gradient(top, #fcfcfc 0%, #f1f1f1 100%);
-  background-image: linear-gradient(to bottom, #fcfcfc 0%, #f1f1f1 100%);
 }
 .btn-default:active {
-  background-color: #ddd;
-  background-image: none;
+  background-color: #ccc;
 }
 
 .btn-primary,
@@ -387,7 +382,6 @@ h6 {
 .btn-negative,
 .btn-warning {
   color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary {
@@ -456,7 +450,7 @@ h6 {
   height: 14px;
   margin-top: 1px;
   margin-bottom: 1px;
-  color: #737475;
+  color: #888;
   font-size: 14px;
   line-height: 1;
 }
@@ -514,7 +508,7 @@ h6 {
 .btn-group .active {
   color: #fff;
   border: 1px solid transparent;
-  background-color: #6d6c6d;
+  background-color: #777;
   background-image: none;
 }
 .btn-group .active .icon {
