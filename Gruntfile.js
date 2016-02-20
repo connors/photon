@@ -47,6 +47,10 @@ module.exports = function(grunt) {
         src: 'sass/photon.scss',
         dest: '<%= meta.distPath %>css/<%= pkg.name %>.css'
       },
+      osx: {
+        src: 'sass/theme-osx.scss',
+        dest: '<%= meta.distPath %>css/<%= pkg.name %>-theme-osx.css'
+      },
       docs: {
         src: 'sass/docs.scss',
         dest: '<%= meta.docsAssetsPath %>css/docs.css'
