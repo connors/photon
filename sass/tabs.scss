@@ -15,14 +15,14 @@
   font-size: 12px;
   text-align: center;
   border-left: 1px solid #999;
-  @include linear-gradient(#b8b6b8, #b0aeb0);
+  background-color: #fafafa;
 
   &:first-child {
     border-left: 0;
   }
 
   &.active {
-    @include linear-gradient(#d4d2d4, #cccacc);
+    background-color: #ddd;
   }
 
   .icon-close-tab {
