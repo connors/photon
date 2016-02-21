@@ -91,6 +91,16 @@
   }
 }
 
+// Link buttons
+.btn-link {
+  color: $primary-color;
+  background: none;
+
+  &:active {
+    color: darken($primary-color, 10%);
+  }
+}
+
 // Icons in buttons
 .btn .icon {
   float: left;

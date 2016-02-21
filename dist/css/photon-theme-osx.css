@@ -136,6 +136,14 @@
   background-image: linear-gradient(to bottom, #fdbc40 0%, #ee9d02 100%);
 }
 
+.btn-link {
+  color: #3b99fc;
+  box-shadow: none;
+}
+.btn-link:active {
+  color: #097ffb;
+}
+
 .btn .icon {
   color: #737475;
 }

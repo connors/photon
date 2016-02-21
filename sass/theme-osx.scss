@@ -182,6 +182,16 @@ $padding-more: 20px;
   }
 }
 
+// Link buttons
+.btn-link {
+  color: $primary-color;
+  box-shadow: none;
+
+  &:active {
+    color: darken($primary-color, 10%);
+  }
+}
+
 // Icons in buttons
 .btn .icon {
   color: #737475;

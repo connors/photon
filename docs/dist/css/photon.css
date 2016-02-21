@@ -409,6 +409,14 @@ h6 {
   background-color: #fcaa0e;
 }
 
+.btn-link {
+  color: #57acf5;
+  background: none;
+}
+.btn-link:active {
+  color: #2794f2;
+}
+
 .btn .icon {
   float: left;
   width: 14px;
