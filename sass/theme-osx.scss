@@ -33,7 +33,6 @@ $gray-color: #333 !default;
 $border-color: #ddd !default;
 $dark-border-color: #c2c0c2 !default;
 $darker-bottom-border-color: #a19fa1 !default;
-$toolbar-border-color: #939293 !default;
 
 // Action colors
 $default-color:  #fff !default;
@@ -306,7 +305,21 @@ th {
   }
 
   &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
     background-color: rgba(0,0,0,.08);
+    opacity: 0;
+    transition: opacity .1s linear;
+    z-index: 1;
+  }
+
+  // Okay, I know... this is nuts but...
+  &:hover:not(.active):after {
+    opacity: 1;
   }
 
   .icon-close-tab:hover {

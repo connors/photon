@@ -12,10 +12,27 @@
   </head>
   <body>
     <div class="window">
+      <div class="tab-group">
+        <div class="tab-item">
+          <span class="icon icon-cancel icon-close-tab"></span>
+          Tab
+        </div>
+        <div class="tab-item active">
+          <span class="icon icon-cancel icon-close-tab"></span>
+          Tab active
+        </div>
+        <div class="tab-item">
+          <span class="icon icon-cancel icon-close-tab"></span>
+          Tab
+        </div>
+        <div class="tab-item tab-item-fixed">
+          <span class="icon icon-plus"></span>
+        </div>
+      </div>
       <!-- Your app's content goes inside .window-content -->
       <div class="window-content">
         <div class="pane-group">
-          <div class="pane pane-sm sidebar">
+          <div class="pane pane-mini sidebar">
             <!-- <nav class="nav-group">
               <h5 class="nav-group-title">Favorites</h5>
               <span class="nav-group-item">
@@ -52,163 +69,207 @@
           <div class="pane pane-borderless">
             <div class="window">
 
-            <!-- .toolbar-header sits at the top of your app -->
-            <header class="toolbar toolbar-header">
-              <div class="toolbar-actions">
-                <div class="btn-group">
+              <div class="window-content">
+                <div class="pane-group">
+                  <div class="pane">
+                    <div class="padded-more">
+                      <h3>Buttons</h3>
+                      <button class="btn btn-large btn-default" type="button">Default</button>
+                      <button class="btn btn-large btn-primary" type="button">Primary</button>
+                      <button class="btn btn-large btn-positive" type="button">Positive</button>
+                      <button class="btn btn-large btn-negative" type="button">Negative</button>
+                      <button class="btn btn-large btn-warning" type="button">Warning</button>
+                    </div>
+
+                    <hr>
+
+                    <form class="padded-more">
+                      <h3>Forms</h3>
+                      <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <select class="form-control">
+                        <option>Option one</option>
+                        <option>Option two</option>
+                        <option>Option three</option>
+                        <option>Option four</option>
+                        <option>Option five</option>
+                        <option>Option six</option>
+                        <option>Option seven</option>
+                        <option>Option eight</option>
+                      </select>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> This is a checkbox
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> This is a checkbox too
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="radios" checked>
+                          Keep your options open
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="radios">
+                          Be sure to remember to check for unknown unknowns
+                        </label>
+                      </div>
+                      <div class="form-actions">
+                        <button type="submit" class="btn btn-form btn-default" type="button">Cancel</button>
+                        <button type="submit" class="btn btn-form btn-primary" type="submit">OK</button>
+                      </div>
+                    </form>
+
+
+                    <table class="table-striped">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Kind</th>
+                          <th>Date Modified</th>
+                          <th>Author</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>bars.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>base.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>button-groups.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>buttons.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>docs.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>forms.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>grid.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>icons.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>images.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>lists.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>mixins.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>navs.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>normalize.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>photon.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>tables.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>tabs.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>utilities.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                        <tr>
+                          <td>variables.scss</td>
+                          <td>Document</td>
+                          <td>Oct 13, 2015</td>
+                          <td>connors</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <footer class="toolbar toolbar-footer">
+                <div class="toolbar-actions">
                   <button class="btn btn-default btn-large">
-                    <span class="icon icon-home"></span>
+                    Default button
                   </button>
-                  <button class="btn btn-default btn-large">
-                    <span class="icon icon-folder"></span>
-                  </button>
-                  <button class="btn btn-default btn-large active">
-                    <span class="icon icon-cloud"></span>
-                  </button>
-                  <button class="btn btn-default btn-large">
-                    <span class="icon icon-popup"></span>
-                  </button>
-                  <button class="btn btn-default btn-large">
-                    <span class="icon icon-shuffle"></span>
+
+                  <button class="btn btn-primary btn-large pull-right" type="button">
+                    Primary Button
                   </button>
                 </div>
-
-                <button class="btn btn-default btn-large">
-                  <span class="icon icon-home icon-text"></span>
-                  Filters
-                </button>
-
-                <button class="btn btn-primary btn-large pull-right" type="button">
-                  Primary Button
-                </button>
-              </div>
-            </header>
-
-            <div class="window-content">
-              <div class="pane-group">
-                <div class="pane">
-                  <table class="table-striped">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Kind</th>
-                        <th>Date Modified</th>
-                        <th>Author</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>bars.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>base.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>button-groups.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>buttons.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>docs.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>forms.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>grid.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>icons.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>images.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>lists.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>mixins.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>navs.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>normalize.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>photon.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>tables.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>tabs.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>utilities.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                      <tr>
-                        <td>variables.scss</td>
-                        <td>Document</td>
-                        <td>Oct 13, 2015</td>
-                        <td>connors</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+              </footer>
             </div>
           </div>
         </div>

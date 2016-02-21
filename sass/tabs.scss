@@ -4,8 +4,8 @@
 .tab-group {
   margin-top: -1px;
   display: flex;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 
 .tab-item {
@@ -14,15 +14,15 @@
   padding: 3px;
   font-size: 12px;
   text-align: center;
-  border-left: 1px solid #999;
-  background-color: #fafafa;
+  border-left: 1px solid $border-color;
+  background-color: #eee;
 
   &:first-child {
     border-left: 0;
   }
 
   &.active {
-    background-color: #ddd;
+    background-color: #fafafa;
   }
 
   .icon-close-tab {
@@ -42,30 +42,8 @@
     z-index: 10;
   }
 
-  &:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: "";
-    background-color: rgba(0,0,0,.08);
-    opacity: 0;
-    transition: opacity .1s linear;
-    z-index: 1;
-  }
-
-  // Okay, I know... this is nuts but...
-  &:hover:not(.active):after {
-    opacity: 1;
-  }
-
   &:hover .icon-close-tab {
     opacity: 1;
-  }
-
-  .icon-close-tab:hover {
-    background-color: rgba(0,0,0,.08);
   }
 }
 

@@ -167,7 +167,7 @@ hr {
   overflow: hidden;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -367,11 +367,11 @@ h6 {
 
 .btn-default {
   color: #333;
-  border-color: #c2c0c2;
+  border-color: #ccc;
   background-color: #fafafa;
 }
 .btn-default:active {
-  background-color: #ccc;
+  background-color: #eee;
 }
 
 .btn-primary,
@@ -465,7 +465,7 @@ h6 {
   border-radius: 0;
 }
 .btn-group .btn + .btn {
-  border-left: 1px solid #c2c0c2;
+  border-left: 1px solid #ccc;
 }
 .btn-group .btn + .btn.active {
   border-left: 0;
@@ -492,14 +492,14 @@ h6 {
 }
 
 .toolbar-header {
-  border-bottom: 1px solid #c2c0c2;
+  border-bottom: 1px solid #ddd;
 }
 .toolbar-header .title {
   margin-top: 1px;
 }
 
 .toolbar-footer {
-  border-top: 1px solid #c2c0c2;
+  border-top: 1px solid #ddd;
   -webkit-app-region: drag;
 }
 
@@ -558,7 +558,7 @@ input[type="checkbox"] {
   font-size: 13px;
   line-height: 1.6;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 3px;
   outline: none;
 }
@@ -618,7 +618,7 @@ textarea {
   position: relative;
   overflow-y: auto;
   flex: 1;
-  border-left: 1px solid #c2c0c2;
+  border-left: 1px solid #ccc;
 }
 .pane:first-child {
   border-left: 0;
@@ -677,7 +677,7 @@ img {
   padding: 10px;
   font-size: 12px;
   color: #555;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd;
 }
 .list-group-item:first-child {
   border-top: 0;
@@ -2217,8 +2217,8 @@ thead tr:active {
 
 th {
   font-weight: normal;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 th,
@@ -2236,8 +2236,8 @@ td:last-child {
 .tab-group {
   margin-top: -1px;
   display: flex;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .tab-item {
@@ -2246,14 +2246,14 @@ td:last-child {
   padding: 3px;
   font-size: 12px;
   text-align: center;
-  border-left: 1px solid #999;
-  background-color: #fafafa;
+  border-left: 1px solid #ddd;
+  background-color: #eee;
 }
 .tab-item:first-child {
   border-left: 0;
 }
 .tab-item.active {
-  background-color: #ddd;
+  background-color: #fafafa;
 }
 .tab-item .icon-close-tab {
   position: absolute;
@@ -2271,26 +2271,8 @@ td:last-child {
   transform: translateY(-50%);
   z-index: 10;
 }
-.tab-item:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.08);
-  opacity: 0;
-  transition: opacity .1s linear;
-  z-index: 1;
-}
-.tab-item:hover:not(.active):after {
-  opacity: 1;
-}
 .tab-item:hover .icon-close-tab {
   opacity: 1;
-}
-.tab-item .icon-close-tab:hover {
-  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .tab-item-fixed {
