@@ -167,6 +167,7 @@
 }
 
 .nav-group-item {
+  padding: 2px 10px 2px 25px;
   color: #333;
 }
 .nav-group-item:active, .nav-group-item.active {
@@ -177,6 +178,9 @@
 }
 
 .nav-group-title {
+  font-size: 12px;
+  letter-spacing: normal;
+  text-transform: none;
   color: #666666;
 }
 
