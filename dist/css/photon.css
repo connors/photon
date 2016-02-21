@@ -157,7 +157,7 @@ body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
   font-size: 13px;
-  line-height: 1.4;
+  line-height: 1.6;
   color: #333;
   background-color: transparent;
 }
@@ -556,7 +556,7 @@ input[type="checkbox"] {
   min-height: 25px;
   padding: 5px 10px;
   font-size: 13px;
-  line-height: 1.4;
+  line-height: 1.6;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
