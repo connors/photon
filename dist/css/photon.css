@@ -157,7 +157,7 @@ body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.4;
   color: #333;
   background-color: transparent;
 }
@@ -313,7 +313,7 @@ h6 {
 }
 
 .sidebar {
-  background-color: #374249;
+  background-color: #fafafa;
 }
 
 .draggable {
@@ -556,7 +556,7 @@ input[type="checkbox"] {
   min-height: 25px;
   padding: 5px 10px;
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.4;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
@@ -564,7 +564,6 @@ input[type="checkbox"] {
 }
 .form-control:focus {
   border-color: #87c4f8;
-  box-shadow: 0 0 0 3px #87c4f8;
 }
 
 textarea {
@@ -618,7 +617,7 @@ textarea {
   position: relative;
   overflow-y: auto;
   flex: 1;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #ddd;
 }
 .pane:first-child {
   border-left: 0;

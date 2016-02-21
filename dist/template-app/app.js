@@ -23,8 +23,9 @@ app.on('ready', function() {
     height: 300,
     'min-width': 500,
     'min-height': 200,
-    'accept-first-mouse': true
-    //'title-bar-style': 'hidden'
+    'accept-first-mouse': true,
+    'title-bar-style': 'hidden',
+    frame: false 
   });
 
   // and load the index.html of the app.

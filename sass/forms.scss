@@ -36,7 +36,6 @@ input[type="checkbox"] {
 
   &:focus {
     border-color: $focus-input-color;
-    box-shadow: 0 0 0 3px $focus-input-color;
   }
 }
 
