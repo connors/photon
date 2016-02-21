@@ -3,6 +3,8 @@ _gh_pages
 _site
 .ruby-version
 .sass-cache
+dist/template-app/index-og.html
+docs/dist/template-app/index-og.html
 
 # Numerous always-ignore extensions
 *.diff
