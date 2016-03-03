@@ -2,13 +2,34 @@
 // The Grid.css
 // --------------------------------------------------
 
-.pane-group {
+// Only the root-level .pane-group is fixed positioned
+.window-content > .pane-group {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.pane-group {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  flex: 1;
+}
+
+// Vertical pane groups
+.pane-group-vertical {
+  flex-direction: column;
+  justify-content: space-between;
+  // Only apply these styles to direct .pane descendents
+  > .pane {
+    border-left: 0;
+    border-top: 1px solid $border-color;
+    &:first-child {
+      border-top: 0;
+    }
+  }
 }
 
 .pane {
