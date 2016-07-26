@@ -20,12 +20,12 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 600,
-    height: 300,
-    'min-width': 500,
-    'min-height': 200,
-    'accept-first-mouse': true,
-    'title-bar-style': 'hidden'
+    width: 800,
+    height: 600,
+    minWidth: 500,
+    minHeight: 200,
+    acceptFirstMouse: true,
+    titleBarStyle: 'hidden'
   });
 
   // and load the index.html of the app.
