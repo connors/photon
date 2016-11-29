@@ -11,6 +11,7 @@
 
 .toolbar-header {
   border-bottom: 1px solid $dark-border-color;
+  -webkit-app-region: drag;
 
   .title {
     margin-top: 1px;
