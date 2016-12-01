@@ -117,6 +117,14 @@
   line-height: 1;
 }
 
+// Icons in button variations
+.btn-primary .icon,
+.btn-positive .icon,
+.btn-negative .icon,
+.btn-warning .icon {
+  color: #fff;
+}
+
 // Add the margin next to the icon if there is text in the button too
 .btn .icon-text {
   margin-right: 5px;
