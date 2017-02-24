@@ -1,0 +1,37 @@
+//
+// Splitters.css
+// --------------------------------------------------
+$splitter-color: transparent;
+$splitter-size: 1px;
+$splitter-zone-size: 10px;
+
+// .splitter and .splitter elements are created automatically in resize.js
+
+.splitter {
+  background: $splitter-color;
+  width: $splitter-size;
+  position: relative;
+}
+.splitter-zone {
+  z-index: 1000;
+  cursor: col-resize;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: (-$splitter-zone-size / 2);
+  right: (-$splitter-zone-size / 2);
+}
+.splitter-vertical {
+  background: $splitter-color;
+  height: $splitter-size;
+  position: relative;
+}
+.splitter-zone-vertical {
+  z-index: 1000;
+  cursor: row-resize;
+  position: absolute;
+  top: (-$splitter-zone-size / 2);
+  bottom: (-$splitter-zone-size / 2);
+  left: 0;
+  right: 0;
+}
