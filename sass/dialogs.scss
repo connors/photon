@@ -1,0 +1,12 @@
+//
+// Dialogs.scss
+// --------------------------------------------------
+
+dialog {
+  padding: 0;
+  background-color: $chrome-color;
+  border: 1px solid #bebebe;
+  border-radius: 6px;
+  box-shadow: 0 0 30px rgba(0,0,0,.1);
+  overflow: hidden;
+}
