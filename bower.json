@@ -1,0 +1,25 @@
+{
+  "name": "photon",
+  "version": "0.1.2",
+  "authors": [
+    "Connor Sears"
+  ],
+  "description": "The fastest way to build beautiful Electron apps using simple HTML and CSS",
+  "main": "dist/css/photon.css",
+  "moduleType": [],
+  "keywords": [
+    "photon",
+    "html",
+    "css",
+    "electron"
+  ],
+  "license": "MIT",
+  "homepage": "http://photonkit.com/",
+  "ignore": [
+    "/.*",
+    "CNAME",
+    "_config.yml",
+    "CONTRIBUTING.md",
+    "docs"
+  ]
+}
