@@ -3,6 +3,13 @@
 // Adapted from Bootstrap's forms.less (https://github.com/twbs/bootstrap/blob/master/less/forms.less)
 // --------------------------------------------------
 
+input,
+select,
+textarea,
+button {
+  cursor: pointer;
+}
+
 label {
   display: inline-block;
   font-size: $font-size-default;
