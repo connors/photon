@@ -69,4 +69,9 @@
   .active .icon {
     color: #fff;
   }
+
+  // Invert the icon in the disabled status
+  .disabled .icon {
+    color: #b7b7b7;
+  }
 }
