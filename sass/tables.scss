@@ -11,7 +11,7 @@ table {
 }
 
 thead {
-  background-color: #f5f5f4;
+  background-color: #f5f5f5;
 }
 
 tbody {
@@ -19,7 +19,7 @@ tbody {
 }
 
 .table-striped tr:nth-child(even) {
-   background-color: #f5f5f4;
+   background-color: #f5f5f5;
 }
 
 tr:active,
@@ -30,7 +30,7 @@ tr:active,
 
 thead tr:active {
   color: $gray-color;
-  background-color: #f5f5f4;
+  background-color: #f5f5f5;
 }
 
 th {
@@ -39,9 +39,17 @@ th {
   border-bottom: 1px solid $border-color;
 }
 
+td {
+  color: lighten($gray-color, 27%);
+
+  &:first-child {
+    color: $gray-color;
+  }
+}
+
 th,
 td {
-  padding: 2px 15px;
+  padding: 1px 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
