@@ -377,7 +377,7 @@ h6 {
   background-image: -webkit-linear-gradient(top, #fcfcfc 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #fcfcfc 0%, #f1f1f1 100%);
 }
-.btn-default:active {
+.btn-default:active:not(.disabled) {
   background-color: #ddd;
   background-image: none;
 }
@@ -461,6 +461,14 @@ h6 {
   line-height: 1;
 }
 
+.btn.disabled {
+  color: #b7b7b7;
+}
+
+.btn.disabled .icon {
+  color: #b7b7b7;
+}
+
 .btn .icon-text {
   margin-right: 5px;
 }
@@ -519,6 +527,10 @@ h6 {
 }
 .btn-group .active .icon {
   color: #fff;
+}
+
+.btn-group .disabled .icon {
+  color: #b7b7b7;
 }
 
 .toolbar {
