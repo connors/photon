@@ -494,16 +494,13 @@ h6 {
 .btn-group .btn-group + .btn-group {
   margin-left: -1px;
 }
-.btn-group > .btn:first-child {
+.btn-group > .btn:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:last-child {
+.btn-group > .btn:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
-.btn-group > .btn:not(:first-child):not(:last-child) {
-  border-radius: 0;
 }
 .btn-group .btn + .btn {
   border-left: 1px solid #c2c0c2;
@@ -2296,6 +2293,7 @@ td:last-child {
   padding: 3px;
   font-size: 12px;
   text-align: center;
+  color: #666666;
   border-left: 1px solid #989698;
   background-color: #b8b6b8;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8b6b8), color-stop(100%, #b0aeb0));
@@ -2306,6 +2304,7 @@ td:last-child {
   border-left: 0;
 }
 .tab-item.active {
+  color: #333;
   background-color: #d4d2d4;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d4d2d4), color-stop(100%, #cccacc));
   background-image: -webkit-linear-gradient(top, #d4d2d4 0%, #cccacc 100%);
@@ -2320,7 +2319,7 @@ td:last-child {
   font-size: 15px;
   line-height: 15px;
   text-align: center;
-  color: #666;
+  color: #666666;
   opacity: 0;
   transition: opacity .1s linear, background-color .1s linear;
   border-radius: 3px;
