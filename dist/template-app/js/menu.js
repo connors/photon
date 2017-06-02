@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let filesContext = document.querySelectorAll('.file_arq');
   
   filesContext.forEach(function(el){
-    el.addEventListener('click', function (event) {
+    el.addEventListener('contextmenu', function (event) {
       event.preventDefault()
       menu.popup(remote.getCurrentWindow());
     })
