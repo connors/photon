@@ -769,7 +769,7 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.nav-group-item:active, .nav-group-item.active {
+.nav-group-item.active {
   background-color: #dcdfe1;
 }
 .nav-group-item .icon {
@@ -2253,8 +2253,8 @@ tbody {
   background-color: #f5f5f4;
 }
 
-tr:active,
-.table-striped tr:active:nth-child(even) {
+tr.active,
+.table-striped tr.active:nth-child(even) {
   color: #fff;
   background-color: #116cd6;
 }
