@@ -35,18 +35,14 @@
     margin-left: -1px;
   }
 
-  > .btn:first-child {
+  > .btn:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  > .btn:last-child {
+  > .btn:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-  }
-
-  > .btn:not(:first-child):not(:last-child) {
-    border-radius: 0;
   }
 
   .btn + .btn {
