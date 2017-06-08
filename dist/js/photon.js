@@ -11,13 +11,25 @@ const $ = require('jquery/dist/jquery.js');
 			if((event.ctrlKey||event.metaKey)){
 				toggling = true;
 				togglingState = !$this.hasClass('active');
-				$this.toggleClass('active');
+				$this.addClass('selected').toggleClass('active').siblings().removeClass('selected');
 				$(document).one('mouseup', () => {
 					toggling = false;
 				});
 
+			}else if(event.shiftKey){
+				const from = Math.max($this.siblings('.selected').index(),0);
+				const to = $this.index();
+
+				$this.siblings().removeClass('active');
+				const $children = $this.parent().children();
+				for(let i=Math.min(from,to); i<=Math.max(from,to); i++){
+					$children.eq(i).addClass('active');
+				}
+
 			}else{
-				$this.addClass('active').siblings().removeClass('active');
+				if(!$this.hasClass('active')||event.which==1){
+					$this.addClass('active selected').siblings().removeClass('active selected');
+				}
 			}
 
 			$this.closest('[data-select-multiple]').trigger('change');
@@ -28,7 +40,7 @@ const $ = require('jquery/dist/jquery.js');
 			if(toggling){
 				$this.toggleClass('active', togglingState);
 
-			}else if(event.buttons&1){
+			}else if(event.buttons&1&&!event.shiftKey){
 				$this.addClass('active').siblings().removeClass('active');
 
 			}else{
