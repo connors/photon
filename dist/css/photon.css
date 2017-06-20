@@ -461,6 +461,12 @@ h6 {
   line-height: 1;
 }
 
+.btn-positive .icon,
+.btn-negative .icon,
+.btn-warning .icon {
+  color: #fff;
+}
+
 .btn .icon-text {
   margin-right: 5px;
 }
