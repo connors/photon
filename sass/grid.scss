@@ -10,7 +10,7 @@
   left: 0;
   display: flex;
 
-  .pane {
+  > .pane {
     position: relative;
     overflow-y: auto;
     flex: 1;
@@ -21,22 +21,22 @@
     }
   }
 
-  .pane-sm {
+  > .pane-sm {
     max-width: 220px;
     min-width: 150px;
   }
 
-  .pane-mini {
+  > .pane-mini {
     width: 80px;
     flex: none;
   }
 
-  .pane-one-fourth {
+  > .pane-one-fourth {
     width: 25%;
     flex: none;
   }
 
-  .pane-one-third {
+  > .pane-one-third {
     width: 33.3%;
     flex: none;
   }
@@ -44,7 +44,7 @@
   &.vertical {
     flex-direction: column;
 
-    .pane {
+    > .pane {
       border-left: 0 none;
       border-top: 1px solid $border-color;
 
@@ -53,24 +53,24 @@
       }
     }
 
-    .pane-sm {
+    > .pane-sm {
       max-width: none;
       min-width: 0;
       max-height: 220px;
       min-height: 150px;
     }
 
-    .pane-mini {
+    > .pane-mini {
       width: auto;
       height: 80px;
     }
 
-    .pane-one-fourth {
+    > .pane-one-fourth {
       width: auto;
       height: 25%;
     }
 
-    .pane-one-third {
+    > .pane-one-third {
       width: auto;
       height: 33.3%;
     }

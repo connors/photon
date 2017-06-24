@@ -670,56 +670,56 @@ textarea {
   left: 0;
   display: flex;
 }
-.pane-group .pane {
+.pane-group > .pane {
   position: relative;
   overflow-y: auto;
   flex: 1;
   border-left: 1px solid #ddd;
 }
-.pane-group .pane:first-child {
+.pane-group > .pane:first-child {
   border-left: 0;
 }
-.pane-group .pane-sm {
+.pane-group > .pane-sm {
   max-width: 220px;
   min-width: 150px;
 }
-.pane-group .pane-mini {
+.pane-group > .pane-mini {
   width: 80px;
   flex: none;
 }
-.pane-group .pane-one-fourth {
+.pane-group > .pane-one-fourth {
   width: 25%;
   flex: none;
 }
-.pane-group .pane-one-third {
+.pane-group > .pane-one-third {
   width: 33.3%;
   flex: none;
 }
 .pane-group.vertical {
   flex-direction: column;
 }
-.pane-group.vertical .pane {
+.pane-group.vertical > .pane {
   border-left: 0 none;
   border-top: 1px solid #ddd;
 }
-.pane-group.vertical .pane:first-child {
+.pane-group.vertical > .pane:first-child {
   border-top: 0;
 }
-.pane-group.vertical .pane-sm {
+.pane-group.vertical > .pane-sm {
   max-width: none;
   min-width: 0;
   max-height: 220px;
   min-height: 150px;
 }
-.pane-group.vertical .pane-mini {
+.pane-group.vertical > .pane-mini {
   width: auto;
   height: 80px;
 }
-.pane-group.vertical .pane-one-fourth {
+.pane-group.vertical > .pane-one-fourth {
   width: auto;
   height: 25%;
 }
-.pane-group.vertical .pane-one-third {
+.pane-group.vertical > .pane-one-third {
   width: auto;
   height: 33.3%;
 }
