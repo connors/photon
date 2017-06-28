@@ -91,7 +91,10 @@ module.exports = function(grunt) {
 
     concat: {
       js: {
-        src: '<%= meta.jsPath %>/*.js',
+        src: [
+          '<%= meta.jsPath %>/photon.js',
+          '<%= meta.jsPath %>/*.js'
+        ],
         dest: '<%= meta.distPath %>/js/photon.js'
       },
     },

@@ -41,6 +41,14 @@
     flex: none;
   }
 
+  > .dragbar {
+    width: 8px;
+    margin: 0 -4px;
+    flex: none;
+    cursor: ew-resize;
+    z-index: 1;
+  }
+
   &.vertical {
     flex-direction: column;
 
@@ -73,6 +81,13 @@
     > .pane-one-third {
       width: auto;
       height: 33.3%;
+    }
+
+    > .dragbar {
+      height: 8px;
+      width: auto;
+      margin: -4px 0;
+      cursor: ns-resize;
     }
   }
 }
