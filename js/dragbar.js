@@ -20,8 +20,6 @@
 			function onMouseMove(event) {
 				const diff = (isVertical?event.clientY:event.clientX) - start;
 
-				console.log(diff);
-
 				$prev.css({ flex: '1 '+(sizes[0]+diff)+'px'});
 				$next.css({ flex: '1 '+(sizes[1]-diff)+'px'});
 			}

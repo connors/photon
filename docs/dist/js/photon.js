@@ -21,8 +21,6 @@ const $ = require('jquery/dist/jquery.js');
 			function onMouseMove(event) {
 				const diff = event.clientX - start;
 
-				console.log(diff);
-
 				$prev.css({ flex: '1 '+(widths[0]+diff)+'px'});
 				$next.css({ flex: '1 '+(widths[1]-diff)+'px'});
 			}
