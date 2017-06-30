@@ -377,7 +377,7 @@ h6 {
   background-image: -webkit-linear-gradient(top, #fcfcfc 0%, #f1f1f1 100%);
   background-image: linear-gradient(to bottom, #fcfcfc 0%, #f1f1f1 100%);
 }
-.btn-default:active {
+.btn-default:active:not([disabled]) {
   background-color: #ddd;
   background-image: none;
 }
@@ -398,7 +398,7 @@ h6 {
   background-image: -webkit-linear-gradient(top, #6eb4f7 0%, #1a82fb 100%);
   background-image: linear-gradient(to bottom, #6eb4f7 0%, #1a82fb 100%);
 }
-.btn-primary:active {
+.btn-primary:active:not([disabled]) {
   background-color: #3e9bf4;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e9bf4), color-stop(100%, #0469de));
   background-image: -webkit-linear-gradient(top, #3e9bf4 0%, #0469de 100%);
@@ -413,7 +413,7 @@ h6 {
   background-image: -webkit-linear-gradient(top, #5bd46d 0%, #29a03b 100%);
   background-image: linear-gradient(to bottom, #5bd46d 0%, #29a03b 100%);
 }
-.btn-positive:active {
+.btn-positive:active:not([disabled]) {
   background-color: #34c84a;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #34c84a), color-stop(100%, #248b34));
   background-image: -webkit-linear-gradient(top, #34c84a 0%, #248b34 100%);
@@ -428,7 +428,7 @@ h6 {
   background-image: -webkit-linear-gradient(top, #fd918d 0%, #fb2f29 100%);
   background-image: linear-gradient(to bottom, #fd918d 0%, #fb2f29 100%);
 }
-.btn-negative:active {
+.btn-negative:active:not([disabled]) {
   background-color: #fc605b;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fc605b), color-stop(100%, #fb1710));
   background-image: -webkit-linear-gradient(top, #fc605b 0%, #fb1710 100%);
@@ -443,7 +443,7 @@ h6 {
   background-image: -webkit-linear-gradient(top, #fece72 0%, #fcaa0e 100%);
   background-image: linear-gradient(to bottom, #fece72 0%, #fcaa0e 100%);
 }
-.btn-warning:active {
+.btn-warning:active:not([disabled]) {
   background-color: #fdbc40;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdbc40), color-stop(100%, #ee9d02));
   background-image: -webkit-linear-gradient(top, #fdbc40 0%, #ee9d02 100%);
@@ -466,6 +466,22 @@ h6 {
 .btn-negative .icon,
 .btn-warning .icon {
   color: #fff;
+}
+
+.btn[disabled] {
+  color: #b7b7b7;
+}
+
+.btn-primary[disabled],
+.btn-positive[disabled],
+.btn-negative[disabled],
+.btn-warning[disabled] {
+  color: rgba(255, 255, 255, 0.7);
+  filter: saturate(30%) brightness(110%);
+}
+
+.btn[disabled] .icon {
+  color: #b7b7b7;
 }
 
 .btn .icon-text {
@@ -523,6 +539,9 @@ h6 {
 }
 .btn-group .active .icon {
   color: #fff;
+}
+.btn-group [disabled] .icon {
+  color: #b7b7b7;
 }
 
 .toolbar {
