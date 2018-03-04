@@ -1,0 +1,213 @@
+progress {
+  -webkit-appearance: none;
+  border-radius: 3px 3px 3px 3px;
+  overflow: hidden;
+  height: 6px;
+}
+progress::-webkit-progress-bar {
+  background-color: rgba(0, 0, 0, 0.09);
+  box-sizing: border-box;
+  height: 6px;
+  border-radius: 3px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="100%" height="100%" style="fill: none; stroke: #c0c0c0; stroke-width: 1px;" rx="4px" ry="4px"/></svg>');
+  overflow: hidden;
+}
+progress::-webkit-progress-value {
+  height: 100%;
+  border-radius: 3px 0px 0px 3px;
+  background-color: #3b99fc;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>');
+}
+progress:not([value])::-webkit-progress-bar {
+  display: none;
+}
+progress:not([value]) {
+  background-color: #429bf8;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+  linear-gradient(to right, rgba(66, 155, 249, 0) 0%, #73b9fc 50%, rgba(66, 155, 249, 0) 100%);
+  animation: progressIndeterminate 2s infinite;
+}
+/*@keyframes progressIndeterminate {
+  0% {
+    background-position: 0px 0px, -100% 0px;
+  }
+  100% {
+    background-position: 0px 0px, 500px 0px;
+  }
+}*/
+
+@keyframes progressIndeterminate {
+  0% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -100%, #73b9fc -50%, #429bf8 0%);
+  }
+  2.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -95%, #73b9fc -45%, #429bf8 5%);
+  }
+  5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -90%, #73b9fc -40%, #429bf8 10%);
+  }
+  7.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -85%, #73b9fc -35%, #429bf8 15%);
+  }
+  10% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -80%, #73b9fc -30%, #429bf8 20%);
+  }
+  12.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -75%, #73b9fc -25%, #429bf8 25%);
+  }
+  15% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -70%, #73b9fc -20%, #429bf8 30%);
+  }
+  17.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -65%, #73b9fc -15%, #429bf8 35%);
+  }
+  20% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -60%, #73b9fc -10%, #429bf8 40%);
+  }
+  22.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -55%, #73b9fc -5%, #429bf8 45%);
+  }
+  25% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -50%, #73b9fc 0%, #429bf8 50%);
+  }
+  27.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -45%, #73b9fc 5%, #429bf8 55%);
+  }
+  30% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -40%, #73b9fc 10%, #429bf8 60%);
+  }
+  32.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -35%, #73b9fc 15%, #429bf8 65%);
+  }
+  35% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -30%, #73b9fc 20%, #429bf8 70%);
+  }
+  37.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -25%, #73b9fc 25%, #429bf8 75%);
+  }
+  40% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -20%, #73b9fc 30%, #429bf8 80%);
+  }
+  42.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -15%, #73b9fc 35%, #429bf8 85%);
+  }
+  45% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -10%, #73b9fc 40%, #429bf8 90%);
+  }
+  47.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 -5%, #73b9fc 45%, #429bf8 95%);
+  }
+  50% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 0%, #73b9fc 50%, #429bf8 100%);
+  }
+  52.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 5%, #73b9fc 55%, #429bf8 105%);
+  }
+  55% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 10%, #73b9fc 60%, #429bf8 110%);
+  }
+  57.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 15%, #73b9fc 65%, #429bf8 115%);
+  }
+  60% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 20%, #73b9fc 70%, #429bf8 120%);
+  }
+  62.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 25%, #73b9fc 75%, #429bf8 125%);
+  }
+  65% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 30%, #73b9fc 80%, #429bf8 130%);
+  }
+  67.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 35%, #73b9fc 85%, #429bf8 135%);
+  }
+  70% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 40%, #73b9fc 90%, #429bf8 140%);
+  }
+  72.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 45%, #73b9fc 95%, #429bf8 145%);
+  }
+  75% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 50%, #73b9fc 100%, #429bf8 150%);
+  }
+  77.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 55%, #73b9fc 105%, #429bf8 155%);
+  }
+  80% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 60%, #73b9fc 110%, #429bf8 160%);
+  }
+  82.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 65%, #73b9fc 115%, #429bf8 165%);
+  }
+  85% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 70%, #73b9fc 120%, #429bf8 170%);
+  }
+  87.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 75%, #73b9fc 125%, #429bf8 175%);
+  }
+  90% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 80%, #73b9fc 130%, #429bf8 180%);
+  }
+  92.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 85%, #73b9fc 135%, #429bf8 185%);
+  }
+  95% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 90%, #73b9fc 140%, #429bf8 190%);
+  }
+  97.5% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 95%, #73b9fc 145%, #429bf8 195%);
+  }
+  100% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>'),
+    linear-gradient(to right, #429bf8 100%, #73b9fc 150%, #429bf8 200%);
+  }
+}
+
+
+
+/*
+Animation created by:
+var defaultColor = "#429bf8";
+var focusColor = "#73b9fc";
+var step = 5; var startPos = -100; var endPos = 0; var middlePos = -50; var cssStr = ""; var defaultColor = "#429bf8"; var focusColor = "#73b9fc"; for (var i = 0; i <= 200; i = i + step) { var percentStep = (100 / (200 / step)) * (i / step); var str = "(to right, " + defaultColor + " " + (startPos + i) + "%, " + focusColor + " " + (middlePos + i) + "%, " + defaultColor + " " + (endPos + i) + "%)"; var completeStr = percentStep + '% {\n  background-image: url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="200%" height="100%" style="fill: none; stroke: #408ad6; stroke-width: 1px;" rx="4px" ry="4px"/></svg>\'),\n  linear-gradient' + str + ';\n}'; cssStr += completeStr + "\n"; } console.log(cssStr);
+*/

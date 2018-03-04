@@ -1,0 +1,107 @@
+tool-bar {
+  background-image: linear-gradient(rgb(233, 233, 233), rgb(210, 210, 210)) !important;
+  border-radius: 6px 6px 0px 0px;
+}
+
+
+
+
+.window.no-focus tool-bar,
+.window.no-focus tool-bar .btn.btn-default,
+.window.no-focus tool-bar .title,
+.window.no-focus .tab-item.active
+{
+  background-image: none;
+  background-color: rgb(245, 244, 245);
+  color: #bdbdbd;
+}
+.window.no-focus tool-bar .btn.btn-default {
+  box-shadow: none;
+}
+.window.no-focus tool-bar .btn.btn-default,
+.window.no-focus tool-bar input
+{
+  border-color: #d4d4d4;
+}
+.window.no-focus tool-bar .btn.btn-default.active {
+  background-color: rgb(227, 227, 227);
+}
+.window.no-focus tool-bar input  {
+  background-color: transparent !important;
+}
+.window.no-focus .tab-group {
+  border-color: rgb(210, 210, 210);
+}
+.window.no-focus .tab-item:not(.btn) {
+  background-image: none;
+}
+.window.no-focus .tab-item {
+  background-color: rgb(223, 223, 223);
+  border-color: rgb(210, 210, 210);
+  color: rgb(110, 110, 110);
+}
+.window.no-focus .tab-item:hover {
+  background-color: rgb(223, 223, 223);
+}
+.window.no-focus .tab-item.active {
+  color: rgb(110, 110, 110);
+}
+.window.no-focus .pane-sm.sidebar {
+  background-color: rgb(246, 246, 246);
+}
+
+
+.window.no-focus .list-select li.active {
+  background-color: rgb(219, 219, 219);
+}
+
+
+
+.window.no-focus .btn-group .btn-segment.active {
+  background-image: none;
+  background-color: rgb(225, 225, 225);
+  border-color: #d5d5d5;
+  border-top-color: rgb(195, 195, 195);
+  border-bottom-color: rgb(174, 174, 174);
+  border-left-color: rgb(195, 195, 195);
+  border-right-color: rgb(195, 195, 195);
+  color: #111;
+  font-weight: 400;
+  box-shadow: none;
+
+}
+
+
+
+.window.no-focus .btn-system.btn-active {
+  background-image: none;
+  padding: 0px 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  border-radius: 4.5px;
+  border-top-color: rgb(198, 198, 198);
+  border-bottom-color: rgb(170, 170, 170);
+  border-left-color: rgb(192, 192, 192);
+  border-right-color: rgb(192, 192, 192);
+  color: #000;
+}
+
+
+
+.window.no-focus .slider-round {
+  /*rgb(98, 97, 98) rgb(117, 116, 117)*/
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" style="background-color: rgb(136, 135, 136);"></svg>');
+}
+
+
+
+.window {
+  background-color: transparent;
+}
+ph-window.vibrancy .pane-sm {
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+ph-window:not(.vibrancy) .pane-group {
+  background-color: rgba(255, 255, 255, 0.9);
+}

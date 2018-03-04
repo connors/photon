@@ -1,0 +1,252 @@
+messages-view {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+messages-view .toolbar {
+  height: 40px;
+  box-sizing: border-box;
+  border: 0px solid rgb(220, 220, 220);
+  background-color: rgb(240, 240, 240);
+  background-color: none !important;
+  -webkit-backdrop-filter: blur(1px);
+  background-image: none !important;
+  vertical-align: middle;
+  width: 100%;
+}
+messages-view .toolbar:first-child {
+  border-bottom-width: 1px;
+  -webkit-app-region: drag;
+  height: 55px;
+  box-sizing: padding-box;
+}
+messages-view .toolbar .bar-inner {
+  padding: 25px 0px 0px 10px;
+}
+messages-view .toolbar:last-child {
+  border-top-width: 1px;
+}
+messages-view .messages {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: calc(100% - 95px);
+  background-color: #fff;
+  overflow: scroll;
+  max-width: 100%;
+}
+messages-view .messages:last-child {
+  height: calc(100% - 55px);
+}
+messages-view .messages:first-child {
+  height: calc(100% - 40px);
+}
+messages-view .messages:only-child {
+  height: 100%;
+}
+messages-view .messages {
+  padding: 10px 0px;
+}
+messages-view .messages li {
+  width: 100%;
+  box-sizing: padding-box;
+  margin-bottom: 1px;
+  max-width: 100%;
+}
+messages-view .messages li:not([type="system"]) message-content {
+  display: inline-block;
+  max-width: 60%;
+  padding: 3px 10px;
+  border-radius: 13px;
+  text-align: left;
+  -webkit-user-select: all;
+}
+messages-view .messages li[type="self"] + li[type="extern"], messages-view .messages li[type="extern"] + li[type="self"] {
+  margin-top: 30px;
+}
+messages-view .messages li message-description, messages-view .messages li[type="system"]  {
+  color: rgb(142, 142, 147);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  margin-bottom: 10px;
+  display: block;
+}
+messages-view .messages li message-description:empty {
+  margin-bottom: 0;
+}
+messages-view .messages li[type="system"] {
+  width: 100%;
+  text-align: center;
+}
+messages-view .messages li[type="self"] {
+  text-align: right;
+  padding: 0px 15px 0px 0px;
+}
+messages-view .messages li[type="extern"] {
+  text-align: left;
+  padding: 0px 0px 0px 15px;
+}
+messages-view .messages li[type="self"] message-content {
+  background-image: linear-gradient(rgb(29, 144, 249), rgb(15, 132, 248));
+  border-radius: 13px 13px 0px 13px;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 200 200"><path d="m99.346298,7.99288c-1.596802,70.597116 40.814697,88.839121 95.653702,100.904123c-83.355003,30.709 -179.057491,-31.395599 -172.47681,-64.299004" style="stroke-width: 0px;"/></svg>'),
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect x="0px" y="0px" width="100%" height="100%" rx="13px" ry="13px"/></svg>'),
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 150 100"><polygon points="0,0 100,0 82,40"/><circle cx="22px" cy="-10px" r="70px"/><rect x="0px" y="0px" width="30px" height="10px"/></svg>');
+  -webkit-mask-position: calc(100% - 0.5px) calc(100% + 5px), left top, calc(100% + 0px) calc(100% + 6px);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 14px 14px, calc(100% - 7px) 100%, 22px 15px; /*calc(100% - 7px) 100%*/
+  color: #fff;
+  padding: 3px 15px 3px 10px;
+  font-weight: 300;
+  letter-spacing: 0.75px;
+}
+messages-view .messages li.active message-content {
+  background-image: none;
+  display: block;
+}
+messages-view .messages li[type="self"].active message-content {
+  background-color: rgb(101, 168, 234);
+}
+messages-view .messages li[type="extern"].active message-content {
+  background-color: rgb(206, 206, 210); /*rgb(195, 195, 200) rgb(182, 182, 188)*/
+}
+messages-view .messages li[type="extern"] message-content {
+  background-color: rgb(229, 229, 234);
+  border-radius: 13px 13px 13px 0px;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 200 200"><path d="m86.009041,7.99288c0.752159,35.298521 -6.505768,58.508318 -22.764336,73.401621c-16.258568,14.893303 -39.163565,22.470497 -64.994688,28.502502c78.527792,30.709 166.332777,-32.395599 160.133192,-65.299004" style="stroke-width: 0px;"/></svg>'),
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect x="0px" y="0px" width="100%" height="100%" rx="13px" ry="13px"/></svg>'),
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 150 100"><polygon points="0,0 100,0 82,40"/><circle cx="22px" cy="-10px" r="70px"/><rect x="0px" y="0px" width="30px" height="10px"/></svg>');
+  -webkit-mask-position: 0.5px calc(100% + 5px), 5.5px top, calc(100% + 0px) calc(100% + 6px);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 14px 14px, calc(100% - 6.5px) 100%, 22px 15px; /*calc(100% - 7px) 100%*/
+  padding: 3px 10px 3px 15px;
+  letter-spacing: 0.25px;
+}
+messages-view .messages li.attachment message-content {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+messages-view .messages li.attachment message-content img {
+  max-width: 100%;
+}
+messages-view .messages li audio::-webkit-media-controls-panel {
+  background-color: transparent;
+}
+messages-view .messages li[type="self"] {
+  --fillColor: #fff;
+}
+messages-view .messages li[type="extern"] {
+  --fillColor: #000;
+}
+
+
+audio {
+  display: block;
+}
+
+
+messages-view .messages li audio::-webkit-media-controls-play-button,
+messages-view .messages li audio::-webkit-media-controls-mute-button {
+  background-color: var(--fillColor);
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+}
+messages-view .messages li audio::-webkit-media-controls-play-button {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50%" cy="50%" r="47px" style="stroke: #fff; fill: none; stroke-width: 3px;"/><polygon style="" points="35,25 35,75 75,50"/></svg>');
+}
+messages-view .messages li audio::-webkit-media-controls-mute-button {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 50 50"> <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 24.15625 3 C 23.851862 3.0016554 23.551978 3.0607525 23.25 3.15625 C 22.646044 3.3472449 22.066553 3.706971 21.5625 4.21875 L 9.8125 15.96875 L 3 15.96875 C 1.3325274 15.96875 -0.03125 17.333644 -0.03125 19 L -0.03125 31 C -0.03125 32.666356 1.3325274 34.03125 3 34.03125 L 9.8125 34.03125 L 21.53125 45.6875 C 22.648622 46.810194 24.080674 47.300804 25.25 46.75 C 26.426482 46.195825 27 44.858857 27 43.3125 L 27 6.3125 C 27 4.8133767 26.234377 3.5647259 25.0625 3.15625 C 24.769531 3.054131 24.460638 2.9983446 24.15625 3 z M 24.1875 5 C 24.289815 4.9983755 24.366657 5.0065565 24.4375 5.03125 C 24.720873 5.1300241 25 5.3826233 25 6.3125 L 25 43.3125 C 25 44.380143 24.650018 44.853925 24.40625 44.96875 C 24.162482 45.083575 23.674799 45.092848 22.90625 44.3125 L 10.3125 31.71875 A 0.99009901 0.99009901 0 0 0 10.25 31.6875 C 10.325876 31.753128 10 31.121757 10 30.75 L 10 19.25 C 10 18.878243 10.336543 18.237645 10.25 18.3125 A 0.99009901 0.99009901 0 0 0 10.3125 18.25 L 22.96875 5.625 C 23.43592 5.1506686 23.880556 5.0048735 24.1875 5 z M 3 18.03125 L 8.1875 18.03125 C 8.05955 18.414989 8 18.830961 8 19.25 L 8 30.75 C 8 31.166241 8.0641841 31.58298 8.1875 31.96875 L 3 31.96875 C 2.4614726 31.96875 2.03125 31.537644 2.03125 31 L 2.03125 19 C 2.03125 18.462356 2.4614726 18.03125 3 18.03125 z M 31.90625 18.96875 A 1.0001 1.0001 0 0 0 31.78125 19 A 1.0001 1.0001 0 0 0 31.28125 20.71875 L 35.5625 25 L 31.28125 29.28125 A 1.016466 1.016466 0 1 0 32.71875 30.71875 L 37 26.4375 L 41.28125 30.71875 A 1.016466 1.016466 0 1 0 42.71875 29.28125 L 38.4375 25 L 42.71875 20.71875 A 1.0001 1.0001 0 0 0 41.875 19 A 1.0001 1.0001 0 0 0 41.28125 19.28125 L 37 23.5625 L 32.71875 19.28125 A 1.0001 1.0001 0 0 0 31.90625 18.96875 z" color="#000" overflow="visible" enable-background="accumulate" font-family="Bitstream Vera Sans"></path></svg>');
+}
+messages-view .messages li[type="self"] audio::-webkit-media-controls-play-button {
+  margin: 0px 5px;
+}
+messages-view .messages li[type="self"] audio::-webkit-media-controls-mute-button {
+  margin: 0px 10px 0px 0px;
+}
+messages-view .messages li[type="extern"] audio::-webkit-media-controls-play-button {
+  margin: 0px 10px;
+}
+messages-view .messages li[type="extern"] audio::-webkit-media-controls-mute-button {
+  margin: 0px 5px 0px 0px;
+}
+messages-view .messages li audio::-webkit-media-controls-timeline-container {
+  background-color: red;
+}
+messages-view .messages li audio::-webkit-media-controls-timeline {
+  background-color: var(--fillColor);
+}
+/*audio::-webkit-media-controls-volume-slider {
+    -webkit-filter: hue-rotate(143deg) saturate(10);
+}*/
+messages-view .messages li audio::-webkit-media-controls-timeline {
+  -webkit-filter: brightness(0);/*hsl(0, 0%, 100%)*/
+}
+messages-view .messages li[type="self"] audio::-webkit-media-controls-timeline {
+  -webkit-filter: brightness(0) invert(1);/*hsl(0, 0%, 100%)*/
+}
+messages-view .messages li audio::-webkit-media-controls-volume-slider {
+  display: none;
+}
+messages-view .messages li audio::-webkit-media-controls-current-time-display,
+messages-view .messages li audio::-webkit-media-controls-time-remaining-display {
+  color: var(--fillColor);
+}
+
+messages-view .messages li {
+
+}
+messages-view .messages li {
+
+}
+messages-view .message-input {
+  height: 23px;
+  font-size: 12px !important;
+  box-sizing: border-box;
+  border: 1px solid rgb(223, 223, 223) !important;
+  margin: calc((38px - 23px) / 2) 0px 0px 15px;
+  border-radius: 12px !important;
+  text-indent: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: rgb(75, 75, 75) !important; /*rgb(153, 153, 153)*/
+  outline: none;
+  cursor: text;
+  width: calc(100% - 60px);
+}
+messages-view .toolbar .btn-mic, messages-view .toolbar .btn-emojis {
+  background-color: transparent;
+  box-shadow: none;
+  height: 18px;
+  width: 18px;
+  background-color: rgb(127, 127, 127);
+  -webkit-mask-repeat: none;
+  -webkit-mask-position: left top;
+  -webkit-mask-size: 100% 100%;
+  margin-left: 10px;
+}
+messages-view .toolbar .btn:active {
+  background-color: rgb(50, 50, 50);
+}
+messages-view .toolbar .btn.btn-input {
+  margin-left: -25px;
+}
+messages-view .toolbar .btn.btn-emojis {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 50 50"><circle cx="25px" cy="25px" r="22px" style="stroke: #000; stroke-width: 2px; fill: none;"/><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" x="10px" y="27.5px" viewBox="0 0 50 50"><path d="m46.5,2.26709c-0.118263,8.581142 -6.52425,18.299341 -21.107145,18.299341c-14.425357,-0.463839 -21.110198,-9.510015 -21.267859,-18.601366l42.353917,0.00111z" style="stroke: #000; stroke-width: 4px; fill: none;"/></svg><circle cx="17.5px" cy="17.5px" r="3px"/><circle cx="32.5px" cy="17.5px" r="3px"/></svg>');
+}
+messages-view .toolbar .btn.btn-mic {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 50 50">    <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 25 -0.03125 C 18.937404 -0.03125 13.96875 4.7740257 13.96875 10.71875 L 13.96875 23.28125 C 13.96875 29.226868 18.937404 34.03125 25 34.03125 C 31.062596 34.03125 36.03125 29.225974 36.03125 23.28125 L 36.03125 10.71875 C 36.03125 4.7740257 31.062596 -0.03125 25 -0.03125 z M 25 2.03125 C 29.983404 2.03125 33.96875 5.9134743 33.96875 10.71875 L 33.96875 11 L 28.5 11 A 1.0001 1.0001 0 0 0 28.40625 11 A 1.001098 1.001098 0 0 0 28.5 13 L 33.96875 13 L 33.96875 15 L 28.5 15 A 1.0001 1.0001 0 0 0 28.40625 15 A 1.001098 1.001098 0 0 0 28.5 17 L 33.96875 17 L 33.96875 19 L 28.5 19 A 1.0001 1.0001 0 0 0 28.40625 19 A 1.001098 1.001098 0 0 0 28.5 21 L 33.96875 21 L 33.96875 23.28125 C 33.96875 28.086526 29.983404 31.96875 25 31.96875 C 20.016596 31.96875 16.03125 28.087632 16.03125 23.28125 L 16.03125 21 L 21.5 21 A 1.0001 1.0001 0 1 0 21.5 19 L 16.03125 19 L 16.03125 17 L 21.5 17 A 1.0001 1.0001 0 1 0 21.5 15 L 16.03125 15 L 16.03125 13 L 21.5 13 A 1.0001 1.0001 0 1 0 21.5 11 L 16.03125 11 L 16.03125 10.71875 C 16.03125 5.9134743 20.016596 2.03125 25 2.03125 z M 9.8125 17.125 A 0.86658667 0.86658667 0 0 0 9.125 18 L 9.125 23 C 9.125 30.70343 14.670151 37.16981 21.96875 38.59375 L 21.96875 45 L 15.46875 45 C 13.56594 45 12 46.568772 12 48.46875 L 12 48.9375 L 12 49.9375 L 13 49.9375 L 36.90625 49.9375 L 37.875 49.9375 L 37.875 48.9375 L 37.875 48.46875 C 37.875 46.569256 36.30906 45 34.40625 45 L 28.03125 45 L 28.03125 38.59375 C 35.329849 37.16981 40.875 30.70343 40.875 23 L 40.875 18 A 0.875 0.875 0 1 0 39.125 18 L 39.125 23 C 39.125 30.80103 32.80103 37.125 25 37.125 C 17.19897 37.125 10.875 30.80103 10.875 23 L 10.875 18 A 0.86658667 0.86658667 0 0 0 9.90625 17.125 A 0.86658667 0.86658667 0 0 0 9.8125 17.125 z M 24.03125 38.8125 C 24.352311 38.832037 24.674187 38.875 25 38.875 C 25.325813 38.875 25.647689 38.832037 25.96875 38.8125 L 25.96875 44.96875 L 24.03125 44.96875 L 24.03125 38.8125 z M 15.46875 47 L 22.75 47 A 1.040104 1.040104 0 0 0 23 47.03125 L 27 47.03125 A 1.040104 1.040104 0 0 0 27.21875 47 L 34.40625 47 C 35.047719 47 35.471214 47.423694 35.6875 47.96875 L 14.1875 47.96875 C 14.402579 47.420665 14.825002 47 15.46875 47 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path></svg>');
+}
+.btn-text {
+  background-color: transparent;
+  color: rgb(38, 140, 251);
+  box-shadow: none;
+  font-weight: 400;
+  letter-spacing: 0.5px !important;
+}
+.btn.btn-text:active {
+  background-color: transparent !important;
+}

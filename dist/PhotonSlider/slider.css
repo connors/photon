@@ -1,0 +1,128 @@
+.slider {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #bababa;
+  width: auto;
+  height: 3px;
+  border-radius: 5px;
+  outline: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+}
+.slider.slider-bold {
+  height: 4px;
+  border-radius: 10px;
+}
+.slider.slider-square, .slider.slider-square-inverted {
+  margin-bottom: 7px;
+}
+.slider.slider-square::-webkit-slider-thumb, .slider.slider-square-inverted::-webkit-slider-thumb {
+  height: 23px;
+  width: 20px;
+  border: 1px solid #BABABA;
+  border: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="90%" height="100%" viewBox="0 0 92 102"><rect x="0" y="0" width="100" height="100" fill="none"/><path d="M18.3 3 v-0 a15.3,15.3 0 0,0 -15.3,15.3 L3 50 L45 98 L88 50 v-31.4 a15.3,-15.3 0 0,0 -15.3,-15.3 z" style="stroke: rgba(130, 130, 130, 1); stroke-width: 2.8px; fill: #fff;"/></svg>');/*In Chrome dunkler!*/
+  background-size: 98% 98%;
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(100, 100, 100, 0.2));
+          filter: drop-shadow(0px 1px 1px rgba(100, 100, 100, 0.2));
+  background-position: 0.5px 2px;
+  background-repeat: no-repeat;
+}
+.slider.slider-square::-webkit-slider-thumb:active, .slider.slider-square-inverted::-webkit-slider-thumb:active {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="90%" height="100%" viewBox="0 0 92 102"><path d="M18.3 3 v-0 a15.3,15.3 0 0,0 -15.3,15.3 L3 50 L45 98 L88 50 v-31.4 a15.3,-15.3 0 0,0 -15.3,-15.3 z" style="stroke: rgba(130, 130, 130, 1); stroke-width: 3px; fill: #f0f0f0;"/></svg>');/*In Chrome dunkler!*/
+}
+.slider.slider-square-inverted::-webkit-slider-thumb {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-filter: drop-shadow(0px -1px 1px rgba(100, 100, 100, 0.2));
+          filter: drop-shadow(0px -1px 1px rgba(100, 100, 100, 0.2));
+}
+.slider.slider-round {
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" style="background-color: #438ef9"></svg>');
+}
+.slider-round.blue {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" style="background-color: #438ef9"></svg>');
+}
+.slider-round.gray {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" style="background-color: #797979"></svg>');
+}
+.slider.slider-round::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border: 1px solid rgb(190, 190, 190);
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(150, 150, 150, 0.4));
+          filter: drop-shadow(0px 1px 1px rgba(150, 150, 150, 0.4));
+}
+.slider.slider-round.slider-small::-webkit-slider-thumb {
+  height: 14px;
+  width: 14px;
+}
+.slider.slider-round::-webkit-slider-thumb:active {
+  background-color: #f0f0f0;
+}
+.slider.slider-round.gray::-webkit-slider-thumb:active {
+  background-color: #f0f0f0;
+}
+
+/*Vertical Settings*/
+
+.slider-vertical {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  /*appearance: slider-vertical;
+  width: 5px;
+  height: auto;*/
+
+}
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+  .slider.slider-square::-webkit-slider-thumb, .slider.slider-square-inverted::-webkit-slider-thumb {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="90%" height="100%" viewBox="0 0 92 102"><rect x="0" y="0" width="100" height="100" fill="none"/><path d="M18.3 3 v-0 a15.3,15.3 0 0,0 -15.3,15.3 L3 50 L45 98 L88 50 v-31.4 a15.3,-15.3 0 0,0 -15.3,-15.3 z" style="stroke: rgba(145, 145, 145, 1); stroke-width: 1.5px; fill: #fff;"/></svg>');
+  }
+  .slider.slider-square::-webkit-slider-thumb:active, .slider.slider-square-inverted::-webkit-slider-thumb:active {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="90%" height="100%" viewBox="0 0 92 102"><rect x="0" y="0" width="100" height="100" fill="none"/><path d="M18.3 3 v-0 a15.3,15.3 0 0,0 -15.3,15.3 L3 50 L45 98 L88 50 v-31.4 a15.3,-15.3 0 0,0 -15.3,-15.3 z" style="stroke: rgba(145, 145, 145, 1); stroke-width: 1.5px; fill: #f0f0f0;"/></svg>');
+  }
+  .slider.slider-vertical::-webkit-slider-thumb {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-filter: drop-shadow(0px -1px 1px rgba(100, 100, 100, 0.2));
+            filter: drop-shadow(0px -1px 1px rgba(100, 100, 100, 0.2));
+  }
+  /*Here is a Data-URL used because Chrome (Blink) don't support rendering 0.1px for retina displays. The borders would be too thick. To use a background-image isn't a clean solution but it's the only way*/
+  .slider.slider-round::-webkit-slider-thumb {
+    border: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" style="fill: #fff; stroke-width: 3px; stroke: rgb(190, 190, 190);"/></svg>');
+    background-size: 100%;
+    border-radius: 0px;
+    background-color: transparent;
+    height: 18px;
+    width: 18px;
+  }
+  .slider.slider-round::-webkit-slider-thumb:active {
+    background-color: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" style="fill: #f0f0f0; stroke-width: 3px; stroke: rgb(190, 190, 190);"/></svg>');
+  }
+  .slider.slider-round.gray::-webkit-slider-thumb:active {
+    background-color: transparent;
+  }
+  .slider.slider-round.slider-bold::-webkit-slider-thumb {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" style="fill: #fff; stroke-width: 3px; stroke: rgb(148, 148, 148);"/></svg>');
+  }
+  .slider.slider-round.slider-bold::-webkit-slider-thumb:active {
+    background-color: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" style="fill: #dadada; stroke-width: 3px; stroke: rgb(148, 148, 148);"/></svg>');
+  }
+}

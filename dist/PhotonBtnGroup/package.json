@@ -1,0 +1,15 @@
+{
+  "name": "photonbtngroup",
+  "version": "0.1.0",
+  "description": "Button group controller",
+  "main": "group.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "button",
+    "group"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC"
+}

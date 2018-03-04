@@ -1,0 +1,16 @@
+{
+  "name": "photonslider",
+  "version": "0.0.1",
+  "description": "slider controller",
+  "main": "slider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slider",
+    "controller",
+    "range"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC"
+}

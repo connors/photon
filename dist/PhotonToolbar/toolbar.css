@@ -1,0 +1,7 @@
+tool-bar {
+
+}
+tool-bar[type="footer"] {
+  border-radius: 0px 0px 4px 4px;
+  background-image: linear-gradient(rgb(232, 232, 232), rgb(213, 213, 213)) !important;
+}

@@ -1,0 +1,136 @@
+tab-group {
+  margin-top: 0px;
+  border-bottom: 1px solid #a5a3a5;
+  background-image: linear-gradient(to bottom, #bdbaba 0%, #b0adb0 100%);
+  min-height: 22px;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #a5a3a5;
+}
+tool-bar + tab-group {
+  margin-top: -1px;
+}
+tool-bar {
+  /*border-bottom: none !important;*/
+}
+tab-item {
+  padding: 3px 3px 2px 3px;
+  font-size: 11px;
+  color: #4c4c52;
+  border-top: 1px solid transparent;
+  border-top: none;
+  background-image: linear-gradient(to bottom, #c1bfc1 0%, #b8b6b8 100%);
+  margin-top: -1px;
+  border-right: 1px solid #989698;
+  margin-right: -1px;
+  border-top: 1px solid #a5a3a5;
+}
+tab-item:first-child {
+  border-left: 1px solid #989698;
+  margin-left: -1px;
+}
+tab-item:not(.active):hover {
+  background-image: linear-gradient(rgb(182, 182, 182), rgb(177, 177, 177));
+}
+tab-item:hover:not(.active):after {
+  opacity: 0;
+}
+tab-item.active {
+  background-image: linear-gradient(to bottom, #dedcde 0%, #d5d4d5 100%);
+  color: #202020;
+  border-top-color: #babbbe;
+}
+
+tab-item button[action="close"] {
+  height: 16px;
+  width: 16px;
+  transition: opacity .3s linear;
+  border-radius: 2px;
+  background-color: transparent;
+}
+tab-item button[action="close"]:hover {
+  background-color: #9d9d9d;
+}
+tab-item:hover button[action="close"] {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><line x1="8px" y1="8px" x2="24px" y2="24px" style="stroke: #494949; stroke-width: 2px;"/><line x1="24px" y1="8px" x2="8px" y2="24px" style="stroke: #494949; stroke-width: 2px;"/></svg>');
+}
+tab-item.active button[action="close"]:hover {
+  background-color: #c3c3c3;
+}
+tab-item.active:hover button[action="close"] {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><line x1="8px" y1="8px" x2="24px" y2="24px" style="stroke: #626262; stroke-width: 2px;"/><line x1="24px" y1="8px" x2="8px" y2="24px" style="stroke: #626262; stroke-width: 2px;"/></svg>');
+}
+tab-item[type="fixed"][action="add"] {
+  width: 25px;
+  transition: border-color 0.2s;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><line x1="16px" y1="8px" x2="16px" y2="24px" style="stroke: #717171; stroke-width: 1.5px;"/><line x1="8px" y1="16px" x2="24px" y2="16px" style="stroke: #717171; stroke-width: 1.5px;"/></svg>');
+  background-size: 100%;
+  box-sizing: border-box;
+}
+tab-item[type="fixed"][action="add"]:hover {
+  border-top-color: #858585;
+  border-left-color: #858585;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><line x1="16px" y1="8px" x2="16px" y2="24px" style="stroke: #717171; stroke-width: 1.5px;"/><line x1="8px" y1="16px" x2="24px" y2="16px" style="stroke: #717171; stroke-width: 1.5px;"/></svg>'), linear-gradient(to bottom, #b6b6b6 0%, #adadad 100%);
+}
+tab-item[type="fixed"][action="add"]:active:hover {
+  background-color: #a2a2a2;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><line x1="16px" y1="8px" x2="16px" y2="24px" style="stroke: #717171; stroke-width: 1.5px;"/><line x1="8px" y1="16px" x2="24px" y2="16px" style="stroke: #717171; stroke-width: 1.5px;"/></svg>');
+}
+tab-item button[action="close"]:active {
+  background-color: #919191;
+}
+tab-item.active button[action="close"]:active {
+  background-color: #bababa;
+}
+
+
+
+
+
+tab-item {
+  transition-property: none;
+  transition-duration: .3s;
+}
+tab-item button {
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+.in-drag tab-item, tab-item.active:not(.dragging) {
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+tab-item.active {
+  z-index: 1;
+}
+tab-item.dragging {
+  transition-property: none;
+
+}
+
+tab-item.dragging.active.active-in-transition {
+  transition-property: left;
+
+}
+
+tab-item.adding {
+  flex: none;
+  width: 0px;
+  padding: normal 0px;
+  transition-property: width !important;
+  overflow: hidden;
+  max-height: 23px;
+}
+
+tab-item[type="fixed"] {
+
+  overflow: hidden;
+  border-bottom: none;
+
+}
+tab-item[type="fixed"].btn {
+  border-radius: 0;
+}

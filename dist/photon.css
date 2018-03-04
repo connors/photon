@@ -1,0 +1,18 @@
+@import "./PhotonOriginal/photon-original.css";
+
+@import "./PhotonWindow/window.css";
+@import "./PhotonButton/button.css";
+@import "./PhotonTab/tab.css";
+@import "./PhotonSwipe/swipe.css";
+@import "./PhotonBtnGroup/segment.css";
+@import "./PhotonContent/content.css";
+@import "./PhotonInput/input.css";
+@import "./PhotonCircularSlider/circular-slider.css";
+@import "./PhotonProgressCircle/progress-circle.css";
+@import "./PhotonSlider/slider.css";
+@import "./PhotonCustom/custom.css";
+@import "./PhotonProgress/progress.css";
+@import "./PhotonPanes/panes.css";
+@import "./PhotonMessages/messages.css";
+@import "./PhotonNumberInput/number-input.css";
+@import "./PhotonDialog/dialog.css";

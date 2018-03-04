@@ -1,0 +1,180 @@
+content-frame {
+  display: block;
+  margin: 10px;
+  width: calc(100% - 20px);
+  border: 1px solid #b5b5b5;
+  background-color: #fff;
+  min-height: 150px;
+  height: auto;
+  position: relative;
+}
+content-frame .pane {
+  flex: 1;
+  border-right: 1px solid #b5b5b5;
+  border-left: none;
+}
+content-frame .pane:last-child {
+  border-right: none;
+}
+content-frame .pane.small {
+  flex: 1;
+  width: 200px;
+}
+content-frame frame-inner {
+  display: block;
+  box-sizing: padding-box;
+  height: calc(100% - 22px);
+  width: 100%;
+}
+content-frame frame-inner list-select {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+content-frame frame-inner list-select li {
+  padding: 0;
+}
+content-frame frame-inner list-select li + li {
+  margin-top: -2px;
+}
+content-frame frame-inner list-select li.active {
+  background-color: rgb(5, 105, 217);
+  color: #fff;
+  font-weight: 400;
+}
+content-frame frame-inner list-select li:before, content-frame frame-inner list-select li summary:after {
+  width: 100%;
+  background-color: transparent;
+  content: " ";
+  display: block;
+  height: 2px;
+}
+content-frame frame-inner list-select li.drag-before:before, content-frame frame-inner list-select li.drag-after:after {
+  background-color: rgb(2, 93, 210);
+}
+
+content-frame frame-inner list-select li list-select {
+
+}
+content-frame frame-inner list-select li.active list-select {
+
+}
+content-frame frame-inner list-select li details {
+
+}
+content-frame frame-inner list-select li details summary, content-frame frame-inner list-select li > span {
+  outline: none;
+  padding: 0px 0px 0px 7px;
+}
+content-frame frame-inner list-select li details summary::-webkit-details-marker {
+  display: none;
+}
+content-frame frame-inner list-select li details summary:after {
+  /*background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"><polygon style="fill: #797979;" points="0,0 40,25 0,50"/></svg>');
+  */
+  background-color: #797979;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"><polygon points="0,0 40,25 0,50"/></svg>');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 90%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  float: left;
+  height: 20px;
+  width: 12px;
+  content: " ";
+  margin-right: 2px;
+}
+content-frame frame-inner list-select li.active details summary:after {
+  background-color: #fff;
+}
+content-frame frame-inner list-select li details[open] summary:after {
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"><polygon points="0,5 50,5 25,45"/></svg>');
+}
+content-frame frame-inner list-select li details *:not(summary) {
+  outline: none;
+  background-color: #fff;
+  color: #000;
+}
+content-frame frame-inner list-select li list-select li {
+  padding: 0px 0px 0px 30px;
+}
+content-frame .toolbar {
+  height: 21px;
+  border-top: 1px solid #b5b5b5;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+  background-image: none;
+  font-size: 0;
+  z-index: 2;
+  overflow-y: hidden;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-image: none !important;
+}
+content-frame .toolbar .btn {
+  margin: 0;
+  padding: 0;
+  height: calc(100% + 2px);
+  width: 26px;
+  margin-top: -1px;
+  border-radius: 0;
+  border-right: 1px solid #b5b5b5;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-color: transparent;
+}
+content-frame .toolbar .btn:active:hover, content-frame .pane tool-bar .btn.active {
+  background-color: #b3b3b3;
+}
+content-frame .toolbar .btn-add {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 52 46"><line x1="11px" x2="40px" y1="23px" y2="23px" style="stroke: #000; stroke-width: 2px;"/><line x1="25px" x2="25px" y1="9px" y2="36px" style="stroke: #000; stroke-width: 2px;"/></svg>');
+}
+content-frame .toolbar .btn-remove {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 52 46"><line x1="13px" x2="39px" y1="23px" y2="23px" style="stroke: #000; stroke-width: 2px;"/></svg>');
+}
+content-frame .toolbar .btn-remove[disabled] {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 52 46"><line x1="13px" x2="39px" y1="23px" y2="23px" style="stroke: #b3b3b3; stroke-width: 2px;"/></svg>');
+}
+
+
+
+.list-editable {
+
+}
+.list-editable li {
+
+}
+.list-editable.dragging li.active.drag-over, .list-editable.dragging li.drag-over + li.active {
+  background-color: rgb(220, 220, 220);
+  color: inherit;
+}
+.list-editable li, .list-editable li * {
+  cursor: -webkit-grab;
+}
+.list-editable.dragging li.drag-over {
+  border-bottom: 2px solid rgb(5, 105, 217);
+}
+
+
+window-content {
+  display: block;
+}
+.theme-gray {
+  background-color: rgb(237, 237, 237);
+}
+.main-border {
+  margin: 20px;
+  padding: 10px 10px 30px 10px;
+  background-color: rgb(229, 229, 229);
+  border: 1px solid rgb(223, 223, 223);
+  border-top: 1px solid rgb(214, 214, 214);
+  border-radius: 4px;
+}
+.main-border .content-frame {
+
+}

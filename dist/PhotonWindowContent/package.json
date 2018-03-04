@@ -1,0 +1,15 @@
+{
+  "name": "photonwindowcontent",
+  "version": "0.0.1",
+  "description": "window content controller",
+  "main": "window-content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "window",
+    "content"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC"
+}

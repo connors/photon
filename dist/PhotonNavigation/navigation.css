@@ -1,0 +1,11 @@
+nav-group {
+  display: block;
+
+}
+nav-group nav-item.active {
+  background-color: rgba(69, 69, 69, 0.15);
+}
+nav-group nav-item:not(.active):active {
+  background-color: transparent;
+
+}

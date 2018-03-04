@@ -1,0 +1,9 @@
+progress-circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  display: inline-block;
+  overflow: hidden;
+}
