@@ -1,0 +1,33 @@
+:host button {
+  opacity: 0.1;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 50%;
+  background-color: transparent;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+button:active {
+  z-index: 1;
+}
+input-stepper button:nth-child(1) {
+  border-radius: 5px 5px 0px 0px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="65px" x2="50px" y2="45px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="65px" x2="50px" y2="45px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/></svg>');
+}
+input-stepper button:nth-child(2) {
+  border-radius: 0px 0px 5px 5px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="35px" x2="50px" y2="55px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="35px" x2="50px" y2="55px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/></svg>');
+}
+input-stepper button:nth-child(1):active {
+  box-shadow: 0px 0px 0px 1px rgb(39, 122, 252);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="65px" x2="50px" y2="45px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="65px" x2="50px" y2="45px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/></svg>'),
+                    linear-gradient(rgb(76, 154, 255), rgb(41, 129, 246));
+}
+input-stepper button:nth-child(2):active {
+  box-shadow: 0px 0px 0px 1px rgb(8, 80, 234);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="35px" x2="50px" y2="55px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="35px" x2="50px" y2="55px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/></svg>'),
+                    linear-gradient(rgb(38, 127, 247), rgb(7, 102, 233));
+}

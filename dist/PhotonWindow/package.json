@@ -1,0 +1,14 @@
+{
+  "name": "photonwindow",
+  "version": "0.0.1",
+  "description": "Photon window controller",
+  "main": "window.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "window"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC"
+}

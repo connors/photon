@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <script type="text/javascript">
+      const Photon = require(__dirname + "/../../");
+    </script>
+    <script type="text/javascript">
+      /*window.addEventListener("load", function(event) {
+        const electron = require('electron');
+        const win = electron.remote.getCurrentWindow();
+
+        const modalWindow = document.querySelector(".modal-window");
+        window.addEventListener("mousedown", function(event) {
+          modalWindow.__mouseDown = true;
+
+          const position = {
+            x: event.pageX,
+            y: event.pageY
+          };
+          const sizings = getSizings(modalWindow.getBoundingClientRect(), position, 10);
+
+          if (sizings.filter(sizing => sizing).length > 0) {
+            modalWindow.__sizingStart = position;
+            let [width, height] = win.getSize();
+            modalWindow.__initSize = {width, height};
+
+          }
+
+        });
+        window.addEventListener("mouseup", function(event) {
+          modalWindow.__mouseDown = false;
+          modalWindow.__sizingStart = null;
+        });
+        window.addEventListener("mousemove", function(event) {
+          if (modalWindow.__mouseDown && modalWindow.__sizingStart) {
+            const position = {
+              x: event.pageX,
+              y: event.pageY
+            };
+            const resize = {
+              x: (modalWindow.__sizingStart.x - position.x) * 2,
+              y: position.y - modalWindow.__sizingStart.y
+            };
+            win.setSize(modalWindow.__initSize.width + resize.x, modalWindow.__initSize.height + resize.y);
+            setModalPos(modalWindow, modalWindow.getParentWindow(), );
+          }
+        });
+        function setModalPos(modal, main, offset = {}) {
+          offset = {
+            x: Math.round(main.getPosition()[0] + main.getSize()[0] / 2 - modal.getSize()[0] / 2),
+            y: Math.round(main.getPosition()[1] + offset.y)
+          };
+          modal.setPosition(offset.x, offset.y);
+        }
+
+        function getSizings(boundingClientRect, position, tolerance) {
+          var tolerance = 10;
+
+          var boundings = Object.values((boundings => {
+            const {top, right, bottom, left} = boundings;
+            return {top, right, bottom, left};
+          })(boundingClientRect));
+          var sizeAreas = boundings.map(function(distance, index) {
+            const area = Object.assign({}, boundings);
+            area[(index + 2) % boundings.length] = distance;
+            const direction = {
+              x: !!(index % 2),
+              y: !(index % 2)
+            };
+            return {
+              boundings: area,
+              direction: direction
+            };
+          });
+
+
+
+          const sizings = sizeAreas.map(function(area) {
+            // Get relative difference from cursor to center of area
+            const xDiff = Math.abs(Math.abs(position.x - area.boundings[3]) - (area.boundings[1] - area.boundings[3]) / 2);
+            const yDiff = Math.abs(Math.abs(position.y - area.boundings[0]) - (area.boundings[2] - area.boundings[0]) / 2);
+            // Get relative difference from cursor to border of area (Negative value means cursor in within are, positive means outer)
+            const xDiffBorder = xDiff - (area.boundings[1] - area.boundings[3]) / 2;
+            const yDiffBorder = yDiff - (area.boundings[2] - area.boundings[0]) / 2;
+            // Return wether both border differences are not higher (positive) than the tolerance (10)
+            const sizing = xDiffBorder <= tolerance && yDiffBorder <= tolerance;
+            // Return sizing
+            return sizing;
+          });
+
+          return sizings;
+        }
+      });*/
+    </script>
+  </head>
+  <body>
+    <div class="modal-window">
+
+    </div class="modal-window">
+  </body>
+</html>

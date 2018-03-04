@@ -1,0 +1,15 @@
+{
+  "name": "photonmessages",
+  "version": "0.0.1",
+  "description": "Messages controller",
+  "main": "messages.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "messages",
+    "controller"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC"
+}

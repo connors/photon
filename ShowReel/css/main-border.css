@@ -1,0 +1,17 @@
+window-content {
+  display: block;
+}
+.theme-gray {
+  background-color: rgb(237, 237, 237);
+}
+.main-border {
+  margin: 20px;
+  padding: 10px 10px 30px 10px;
+  background-color: rgb(229, 229, 229);
+  border: 1px solid rgb(223, 223, 223);
+  border-top: 1px solid rgb(214, 214, 214);
+  border-radius: 4px;
+}
+.main-border .content-frame {
+
+}

@@ -1,0 +1,17 @@
+{
+	"name": "photoncontent",
+	"version": "0.0.1",
+	"description": "Content Frame controller for list editable and list selectable",
+	"keywords": [
+		"frame",
+		"content",
+		"list",
+		"editable"
+	],
+	"license": "ISC",
+	"author": "Maurice Conrad",
+	"main": "frame.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
+}

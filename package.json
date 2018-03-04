@@ -1,44 +1,23 @@
 {
-  "name": "photon",
-  "version": "0.1.2",
-  "author": "Connor Sears",
-  "keywords": [
-    "photon",
-    "html",
-    "css",
-    "electron"
-  ],
-  "style": "dist/css/photon.css",
-  "sass": "sass/photon.scss",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/connors/photon.git"
-  },
-  "bugs": {
-    "url": "https://github.com/connors/photon/issues"
-  },
-  "scripts": {
-    "start": "electron dist/template-app",
-    "build": "grunt"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "electron-prebuilt": "^0.36.0",
-    "grunt": "~0.4.5",
-    "grunt-banner": "~0.5.0",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-compress": "~0.13.0",
-    "grunt-contrib-concat": "~0.5.1",
-    "grunt-contrib-connect": "~0.11.2",
-    "grunt-contrib-copy": "~0.8.0",
-    "grunt-contrib-cssmin": "~0.13.0",
-    "grunt-contrib-sass": "~0.9.2",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-html": "~5.0.0",
-    "grunt-jekyll": "~0.4.2",
-    "grunt-sed": "twbs/grunt-sed#v0.2.0",
-    "load-grunt-tasks": "~3.2.0",
-    "time-grunt": "~1.2.0"
-  }
+	"name": "electron-photon",
+	"version": "0.1.0",
+	"description": "Photon UI for macOS, windows & linux",
+	"keywords": [
+		"ui",
+		"native",
+		"mac",
+		"windows",
+		"linux"
+	],
+	"license": "ISC",
+	"author": "Maurice Conrad",
+	"main": "photon.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/MauriceConrad/Photon.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {}
 }

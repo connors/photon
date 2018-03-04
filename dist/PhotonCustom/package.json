@@ -1,0 +1,14 @@
+{
+  "name": "photoncustom",
+  "version": "0.1.0",
+  "description": "Custom photon controller",
+  "main": "custom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "custom"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC"
+}

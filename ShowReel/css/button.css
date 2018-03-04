@@ -1,0 +1,84 @@
+
+
+.btn-system {
+  outline: none;
+  box-sizing: border-box;
+  height: 21px;
+  padding: 0px 16px;
+  font-size: 13px;
+  border: 1px solid #d5d5d5;
+  font-weight: 400;
+  background-color: #fff;
+  letter-spacing: 0.4px;
+  border-radius: 4.5px;
+  border-top-color: rgb(198, 198, 198);
+  border-bottom-color: rgb(170, 170, 170);
+  border-left-color: rgb(192, 192, 192);
+  border-right-color: rgb(192, 192, 192);
+}
+
+.btn-system.btn-active:not([disabled])/*, .btn-system:active:not([disabled])*/ {
+  letter-spacing: 0.8px;
+  color: #fff;
+  font-weight: 300;
+  padding: 0px 17px 1px 16px;
+  border-top-color: rgb(64, 150, 248);
+  border-bottom-color: rgb(9, 85, 255);
+  border-left-color: rgb(39, 122, 252);
+  border-right-color: rgb(39, 122, 252);
+  background-image: linear-gradient(rgb(94, 168, 249), rgb(14, 117, 255));
+}
+.btn-system:active:not([disabled]), .btn-system.btn-active:active:not([disabled]) {
+  border-top-color: rgb(30, 114, 254);
+  border-bottom-color: rgb(3, 56, 216);
+  border-left-color: rgb(16, 82, 233);
+  border-right-color: rgb(17, 82, 227);
+  background-image: linear-gradient(rgb(64, 140, 253), rgb(11, 93, 224));
+  letter-spacing: 0.8px;
+  color: #fff;
+  font-weight: 300;
+  padding: 0px 17px 1px 16px;
+}
+.btn-system[disabled] {
+  border-color: rgb(212, 212, 212);
+  background-image: none;
+  background-color: rgb(248, 248, 248);
+  color: rgb(168, 168, 168);
+  box-shadow: 0px 1px 0px -0.5px rgba(120, 120, 120, 0.2);
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+  .btn-system, .btn-system:focus {
+    padding: 0px 16px 0.5px 16px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 0px -0.5px rgba(120, 120, 120, 0.6);
+    font-family: 'BlinkMacSystemFont', '-apple-system', -apple-system;
+    background-position: center center;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="100%" height="100%" style="fill: none; stroke: rgb(185, 185, 185); stroke-width: 0.5px; stroke-location: inside;" rx="4px"/></svg>'),
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="100%" height="100%" style="fill: none; stroke: rgb(185, 185, 185); stroke-width: 0.5px; stroke-location: inside; stroke-dasharray: 1000px; stroke-dashoffset: 0px;" rx="4px"/></svg>'),
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%"/></svg>');
+    background-size: 100% 100%;
+
+  }
+  .btn-system.btn-active:not([disabled])/*, .btn-system:active*/ {
+    border-radius: 3.5px;
+    font-weight: 300;
+  }
+  .btn-system.btn-active {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="100%" height="100%" style="fill: none; stroke: #0955ff; stroke-width: 0.5px; stroke-location: inside;" rx="4px"/></svg>'),
+                      linear-gradient(rgb(94, 168, 249), rgb(14, 117, 255)) !important;
+
+  }
+  .btn-system.btn-active:active {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="100%" height="100%" style="fill: none; stroke: #0955ff; stroke-width: 0.5px; stroke-location: inside;" rx="4px"/></svg>'),
+                      linear-gradient(rgb(64, 140, 253), rgb(11, 93, 224)) !important;
+  }
+  .btn-system[disabled], .btn-system.btn-active[disabled] {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="100%" height="100%" style="fill: none; stroke: rgb(212, 212, 212); stroke-width: 0.5px; stroke-location: inside;" rx="4px"/></svg>'),
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0%" y="0%" width="100%" height="100%" style="fill: none; stroke: rgb(212, 212, 212); stroke-width: 0.5px; stroke-location: inside; stroke-dasharray: 1000px; stroke-dashoffset: 0px;" rx="4px"/></svg>') !important;
+  }
+}

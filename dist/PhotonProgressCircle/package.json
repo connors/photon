@@ -1,0 +1,14 @@
+{
+	"name": "photonprogresscircle",
+	"version": "0.0.1",
+	"keywords": [
+		"circular",
+		"progress"
+	],
+	"license": "ISC",
+	"author": "Maurice Conrad",
+	"main": "circularProgress.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
+}

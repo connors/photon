@@ -1,0 +1,188 @@
+btn-group {
+  display: inline-block;
+  font-size: 0;
+  margin: 0 !important;
+}
+btn-group .btn {
+
+  border-radius: 0;
+}
+btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+btn-group .btn.btn-segment,
+.btn-group .btn.btn-segment {
+  outline: none;
+  padding: 0px 12px 0px 12px;
+  border: 1px solid #d5d5d5;
+  font-weight: 400;
+  background-color: #fff;
+  letter-spacing: 0.4px;
+  height: 21px;
+  border-top: 1px solid rgb(205, 205, 205);
+  border-bottom: 1px solid rgb(174, 174, 174);
+  box-sizing: border-box;
+  z-index: 1;
+  color: #000;
+}
+btn-group .btn.active {
+  background-image: linear-gradient(rgb(113, 113, 113), rgb(106, 106, 106));
+  color: #fff;
+  border-top-color: rgb(104, 104, 104);
+  border-left-color: rgb(96, 96, 96);
+  border-right: 1px solid rgb(96, 96, 96);
+  border-bottom-color: rgb(91, 96, 96);
+}
+btn-group .btn.active + .btn {
+  border-left: none;
+}
+btn-group .btn.btn-segment.active {
+  border-left-color: transparent;
+}
+btn-group, .btn:first-child {
+  border-radius: 4.5px 0px 0px 4.5px;
+}
+btn-group .btn:last-child {
+  border-radius: 0px 4.5px 4.5px 0px;
+}
+btn-group, .btn.btn-segment:first-child,
+.btn-group .btn.btn-segment:first-child {
+  border-radius: 4.5px 0px 0px 4.5px;
+  border-left-color: rgb(205, 205, 205);
+}
+btn-group .btn.btn-segment:last-child,
+.btn-group .btn.btn-segment:last-child {
+  border-radius: 0px 4.5px 4.5px 0px;
+  border-right: 1px solid rgb(205, 205, 205);
+}
+btn-group:hover .btn-segment:active,
+.btn-group:hover .btn-segment:active {
+  background-color: #f0f0f0;
+}
+btn-group:hover .btn-segment.active:active,
+.btn-group:hover .btn-segment.active:active {
+  background-image: linear-gradient(to bottom, rgb(74, 152, 253), rgb(7, 102, 227)) !important;
+  border-top-color: rgb(35, 127, 254) !important;
+  border-bottom-color: rgb(3, 63, 221) !important;
+}
+btn-group .btn.btn-segment.active,
+.btn-group .btn.btn-segment.active {
+  border-right-color: transparent;
+  z-index: 3;
+}
+btn-group .btn.btn-segment.active,
+.btn-group .btn.btn-segment.active {
+  border-top-color: rgb(73, 160, 249);
+  border-bottom-color: rgb(5, 95, 255);
+  background-image: linear-gradient(to bottom, rgb(105, 180, 250), rgb(13, 128, 255));
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.75px;
+  background-size: 100% 100%;
+}
+btn-group .btn-segment.active:last-child,
+.btn-group .btn-segment.active:last-child {
+  border-right: 1px solid rgb(73, 160, 249);
+}
+btn-group .btn-segment.active:first-child,
+.btn-group .btn-segment.active:first-child {
+  border-left-color: rgb(73, 160, 249);
+}
+btn-group .btn-segment.active + .btn-segment,
+.btn-group .btn-segment.active + .btn-segment {
+  border-left: none;
+}
+btn-group.fill-width,
+.btn-group.fill-width {
+  display: inline-flex;
+}
+btn-group.fill-width .btn,
+.btn-group.fill-width .btn {
+  flex: 1;
+}
+btn-group.seperated .btn-segment.active,
+.btn-group.seperated .btn-segment.active {
+  border-left: 1px solid rgb(30, 140, 254);
+}
+btn-group .btn.btn-segment[disabled], btn-group .btn.btn-segment.active[disabled],
+.btn-group .btn.btn-segment[disabled], .btn-group .btn.btn-segment.active[disabled] {
+  border-color: rgb(212, 212, 212);
+  background-image: none !important;
+  background-color: rgb(248, 248, 248);
+  color: rgb(168, 168, 168);
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+  btn-group .btn.btn-segment, btn-group .btn.btn-segment:first-child, btn-group .btn.btn-segment:last-child,
+  .btn-group .btn.btn-segment, .btn-group .btn.btn-segment:first-child, .btn-group .btn.btn-segment:last-child {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 0px 13px 0px 13px;
+  }
+  btn-group .btn.btn-segment.active + .btn.btn-segment:not(.active) {
+
+  }
+  btn-group .btn.btn-segment,
+  .btn-group .btn.btn-segment {
+    box-shadow: inset 0px 0px 0px 0.5px rgb(190, 190, 190);
+  }
+  btn-group,
+  .btn-group {
+    box-shadow: inset 0px 0px 0px 0.5px rgb(30, 130, 253);
+    border-radius: 4.5px;
+  }
+  btn-group .btn.btn-segment.active,
+  .btn-group .btn.btn-segment.active {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 0px 12px;
+    box-shadow: inset 0px 0px 0px 0.5px rgb(30, 130, 253);
+    box-shadow: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0px" y="0px" width="100%" height="0.5px" style="fill: rgb(30, 130, 253);"/></svg>'),
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0px" y="0px" width="100%" height="0.5px" style="fill: rgb(30, 130, 253);"/></svg>'),
+                      linear-gradient(to bottom, rgb(105, 180, 250), rgb(13, 128, 255));
+    background-position: left top, left bottom, center;
+    background-size: 100% 1px, 100% 1px, 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+  btn-group .btn.btn-segment.active:active:hover,
+  .btn-group .btn.btn-segment.active:active:hover {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0px" y="0px" width="100%" height="0.5px" style="fill: rgb(0, 107, 238);"/></svg>'),
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="0px" y="0px" width="100%" height="0.5px" style="fill: rgb(0, 107, 238);"/></svg>'),
+                      linear-gradient(to bottom, rgb(74, 152, 253), rgb(7, 102, 227)) !important;
+    background-position: left top, left bottom, center;
+    background-size: 100% 1px, 100% 1px, 100% 100%;
+  }
+  btn-group .btn.btn-segment.active:first-child, btn-group .btn.btn-segment.active:last-child,
+  .btn-group .btn.btn-segment.active:first-child, .btn-group .btn.btn-segment.active:last-child {
+    background-image: linear-gradient(to bottom, rgb(105, 180, 250), rgb(13, 128, 255));
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  btn-group .btn.btn-segment.active:first-child,
+  .btn-group .btn.btn-segment.active:first-child {
+    box-shadow: inset 0px 0px 0px 0.5px rgb(30, 130, 253);
+  }
+  btn-group .btn.btn-segment.active:last-child,
+  .btn-group .btn.btn-segment.active:last-child {
+    box-shadow: inset 0px 0px 0px 0.5px rgb(30, 130, 253);
+    z-index: 1;
+  }
+  btn-group.seperated .btn.btn-segment.active,
+  .btn-group.seperated .btn.btn-segment.active {
+    background-image: linear-gradient(to bottom, rgb(105, 180, 250), rgb(13, 128, 255));
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: inset 0px 0px 0px 0.5px rgb(30, 130, 253);
+  }
+
+}

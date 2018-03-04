@@ -1,0 +1,166 @@
+list-group {
+  font-size: 0;
+  display: block;
+  overflow-x: hidden;
+}
+list-item {
+  display: inline-flex;
+  overflow: hidden;
+  width: 100%;
+}
+list-item * {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+list-item action-list {
+  display: inline-block;
+  flex: none;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: rgb(192, 192, 197);
+  transition-property: width;
+}
+list-item.touching action-list {
+  transition: none;
+  position: relative;
+}
+list-item action-list[role="left"] {
+  width: 0px;
+}
+list-item action-list[role="right"] {
+  width: 0px;
+  text-align: right;
+}
+list-item action-list swipe-action {
+  width: 65px;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  font-size: 13px;
+}
+list-item.touching action-list swipe-action {
+  transition: none;
+}
+list-item action-list swipe-action.smart {
+  transition: width 1s;
+  width: 95% !important;
+
+}
+list-item action-list swipe-action:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+list-item action-list swipe-action action-inner {
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  width: 100%;
+  white-space: normal;
+  vertical-align: middle;
+}
+list-item action-list swipe-action action-inner > * {
+
+}
+list-item action-list swipe-action action-inner .icon {
+  display: block;
+  width: 100%;
+  height: 24px;
+}
+list-item item-inner {
+  flex: none;
+  width: 100%;
+  font-size: 13px;
+  padding: 7px 0px 7px 12px;
+  text-align: left;
+  margin-left: -0px;
+  display: flex;
+  transition-property: margin-left;
+}
+list-item.touching item-inner {
+  transition: none;
+}
+list-item + list-item {
+  border-top: 1px solid rgb(225, 225, 225);
+}
+item-inner .media-object {
+  display: inline-block;
+
+}
+item-inner .media-body {
+  margin: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+item-inner .media-body p {
+  margin: 5px 0 0;
+}
+/*
+item-inner .media-body {
+  display: inline-block;
+}
+.list-item-swipe .item-inner {
+  padding: 12px;
+  width: 100%;
+}
+.list-item-swipe .item-inner, .list-item-swipe .swipe-actions {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.list-item-swipe.smart-action {
+
+}
+.list-item-swipe .swipe-actions {
+  font-size: 0;
+  display: inline-block;
+  width: 0px;
+  position: relative;
+  background-color: #afafaf;
+  transition-timing-function: ;
+}
+.list-item-swipe .swipe-actions .action {
+  display: inline-block;
+  position: absolute;
+  font-size: 12px;
+  height: 100%;
+  transition-timing-function: ease-out;
+  width: 70px;
+}
+.list-item-swipe .swipe-actions-left .action {
+  left: 0px;
+}
+.list-item-swipe .swipe-actions-right .action {
+  right: 0px;
+}
+.action-inner {
+  vertical-align: middle;
+}
+.action-inner .action-center {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.action-inner {
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translate(0px, calc(-50%));
+  font-size: 1.1em;
+  color: #fff;
+}
+.list-item-swipe.smart-action .action:first-child {
+  transition: width 0.3s;
+  width: 100%;
+}
+.list-item-swipe .swipe-actions-left .action:first-child {
+  transition-property: width;
+  transition-duration: 0.4s;
+}*/

@@ -1,0 +1,15 @@
+{
+  "name": "photonoriginal",
+  "version": "1.0.0",
+  "description": "Original photon dependencies",
+  "main": "photon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "photon",
+    "original"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC"
+}

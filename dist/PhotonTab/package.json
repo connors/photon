@@ -1,0 +1,15 @@
+{
+	"name": "photontab",
+	"version": "0.0.1",
+	"description": "Tab Group component",
+	"keywords": [
+		"tab",
+		"tabgroup"
+	],
+	"license": "ISC",
+	"author": "Maurice Conrad",
+	"main": "tab.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
+}

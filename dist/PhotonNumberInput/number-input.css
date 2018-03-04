@@ -1,0 +1,50 @@
+number-input {
+  padding: 2px 2px;
+  border-radius: 4px;
+}
+number-input.focus {
+  background-color: rgba(138, 191, 254, 0.8);
+}
+
+number-input {
+  display: inline-block;
+  min-width: calc(var(--length) * 9.25px);
+  overflow: hidden;
+  text-align: right;
+}
+number-input[maxlength="1"] {
+  --length: 1;
+}
+number-input[maxlength="2"] {
+  --length: 2;
+}
+number-input[maxlength="3"] {
+  --length: 3;
+}
+number-input[maxlength="4"] {
+  --length: 4;
+}
+number-input[maxlength="5"] {
+  --length: 5;
+}
+number-input[maxlength="6"] {
+  --length: 6;
+}
+number-input[maxlength="7"] {
+  --length: 7;
+}
+number-input[maxlength="8"] {
+  --length: 8;
+}
+number-input[maxlength="9"] {
+  --length: 9;
+}
+number-input[maxlength="10"] {
+  --length: 10;
+}
+number-input[maxlength="11"] {
+  --length: 11;
+}
+number-input[maxlength="12"] {
+  --length: 12;
+}

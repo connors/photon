@@ -1,0 +1,210 @@
+input:not([type="range"]):not([type="color"]):not(.message-input) {
+  height: auto;
+  height: inherit;
+  font-size: 12px;
+  height: 13px;
+  padding: 10px 6px 10px 6px;
+  outline: none;
+  border: 1px solid rgb(213, 213, 213);
+  margin: 5px;
+  cursor: text;
+  -webkit-app-region: no-drag;
+}
+input:not([type="range"]):not([type="color"]):not(.message-input):focus {
+  border-radius: 1px;
+  box-shadow: 0px 0px 0px 3.5px rgb(145, 191, 245);
+  animation: showFocus .3s;
+  border-color: rgb(122, 167, 221) !important;
+}
+@keyframes showFocus {
+  0% {
+    border-color: #dbdbdb;
+    border-radius: -1px;
+    box-shadow: 0px 0px 0px 14px rgba(145, 191, 245, 0);
+    /*outline: 14px solid rgba(159, 204, 250, 0);
+    outline-offset: 0px;*/
+  }
+  100% {
+    border-color: rgb(122, 167, 221) !important;
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 3.5px rgba(145, 191, 245, 1);
+    /*outline: 4px solid rgba(159, 204, 250, 1);
+    outline-offset: -1px;*/
+  }
+}
+
+tool-bar input:not([type="range"]):not([type="color"]):not(.message-input) {
+  font-size: 13px;
+  height: 14px;
+  padding: 11px 6px 11px 6px;
+  border-radius: 4px;
+  border-color: #c2c2c2;
+}
+tool-bar input:not([type="range"]):not([type="color"]):not(.message-input):focus {
+  border-color: #9fccfa;
+  border-radius: 4px;
+}
+input[type="search"] {
+  text-indent: 0px;
+  text-align: center;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 50 50"><circle cx="20" cy="20" r="17" style="fill: none; stroke: #6a6a6a; stroke-width: 3px;"/><line x1="31" y1="31" x2="49" y2="49" style="stroke: #6a6a6a; stroke-width: 3.5px;"/></svg>');
+  background-size: auto 65%, 100% 100%;
+  background-position: 5px center, center;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-indent: 12px;
+  border-radius: 6px !important;
+}
+tool-bar input[type="search"] {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 50 50"><circle cx="20" cy="20" r="17" style="fill: none; stroke: #6a6a6a; stroke-width: 3px;"/><line x1="31" y1="31" x2="49" y2="49" style="stroke: #6a6a6a; stroke-width: 3.5px;"/></svg>'),
+                    linear-gradient(rgb(255, 255, 255), rgb(241, 240, 240));
+  border: 1px solid rgb(167, 167, 167);
+  border-bottom-color: rgb(178, 178, 178) !important;
+  border-top-color: rgb(212, 212, 212) !important;
+  border-left-color: rgb(204, 204, 204) !important;
+  border-right-color: rgb(204, 204, 204) !important;
+}
+input[type="search"]:focus {
+  text-align: left;
+  text-indent: 15px;
+  box-shadow: 0px 0px 0px 4.5px rgb(115, 166, 233);
+  border-bottom-color: #f00 !important;
+  border-radius: 4px !important;
+}
+input[type="search"]::-webkit-input-placeholder {
+  /*text-align: center;*/
+
+
+}
+input[type="search"]:focus::-webkit-input-placeholder {
+  /*text-align: left;*/
+}
+input[type='number'] {
+  width: 75px;
+}
+input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+  transform: translate(27px, 0px) scale(1.5);
+  opacity: 1;
+  display: none;
+  background-color: red !important;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 20"><circle cx="5px" cy="5px" r="10px"/></svg>');
+}
+input[type='number']::-webkit-inner-spin-button {
+
+}
+
+input-stepper {
+  display: block;
+  margin: 0px 3px 0px 0px;
+  font-size: 0;
+  height: 20px;
+  width: 13px;
+  box-sizing: border-box;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+}
+input + input-stepper {
+  margin-top: -1px;
+}
+input-stepper button {
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 50%;
+  background-color: transparent;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+input-stepper button:active {
+  z-index: 1;
+}
+input-stepper button:nth-child(1) {
+  border-radius: 5px 5px 0px 0px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="65px" x2="50px" y2="45px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="65px" x2="50px" y2="45px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/></svg>');
+}
+input-stepper button:nth-child(2) {
+  border-radius: 0px 0px 5px 5px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="35px" x2="50px" y2="55px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="35px" x2="50px" y2="55px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/></svg>');
+}
+input-stepper button:nth-child(1):active {
+  box-shadow: 0px 0px 0px 1px rgb(39, 122, 252);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="65px" x2="50px" y2="45px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="65px" x2="50px" y2="45px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/></svg>'),
+                    linear-gradient(rgb(76, 154, 255), rgb(41, 129, 246));
+}
+input-stepper button:nth-child(2):active {
+  box-shadow: 0px 0px 0px 1px rgb(8, 80, 234);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="35px" x2="50px" y2="55px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="35px" x2="50px" y2="55px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/></svg>'),
+                    linear-gradient(rgb(38, 127, 247), rgb(7, 102, 233));
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+  input-stepper {
+    border: 1px solid rgb(202, 202, 202);
+    border: none;
+    box-shadow: 0px 0px 0px 0.5px rgb(189, 189, 189);
+    width: 12px;
+  }
+  input-stepper button:nth-child(1) {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="65px" x2="50px" y2="45px" style="stroke: #222; stroke-width: 12px; stroke-linecap: round;"/><line x1="75px" y1="65px" x2="50px" y2="45px" style="stroke: #222; stroke-width: 12px; stroke-linecap: round;"/></svg>');
+  }
+  input-stepper button:nth-child(2) {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="35px" x2="50px" y2="55px" style="stroke: #222; stroke-width: 12px; stroke-linecap: round;"/><line x1="75px" y1="35px" x2="50px" y2="55px" style="stroke: #222; stroke-width: 12px; stroke-linecap: round;"/></svg>');
+  }
+  input-stepper button:nth-child(1):active {
+    box-shadow: 0px 0px 0px 0.5px rgb(39, 122, 252);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="65px" x2="50px" y2="45px" style="stroke: #fff; stroke-width: 12px; stroke-linecap: round;"/><line x1="75px" y1="65px" x2="50px" y2="45px" style="stroke: #fff; stroke-width: 12px; stroke-linecap: round;"/></svg>'),
+                      linear-gradient(rgb(76, 154, 255), rgb(41, 129, 246));
+  }
+  input-stepper button:nth-child(2):active {
+    box-shadow: 0px 0px 0px 0.5px rgb(8, 80, 234);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="35px" x2="50px" y2="55px" style="stroke: #fff; stroke-width: 12px; stroke-linecap: round;"/><line x1="75px" y1="35px" x2="50px" y2="55px" style="stroke: #fff; stroke-width: 12px; stroke-linecap: round;"/></svg>'),
+                      linear-gradient(rgb(38, 127, 247), rgb(7, 102, 233));
+  }
+}
+input[data-type-rule="suffix"] {
+  width: 75px;
+}
+
+
+
+:host button {
+  opacity: 0.1;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 50%;
+  background-color: transparent;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+button:active {
+  z-index: 1;
+}
+input-stepper button:nth-child(1) {
+  border-radius: 5px 5px 0px 0px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="65px" x2="50px" y2="45px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="65px" x2="50px" y2="45px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/></svg>');
+}
+input-stepper button:nth-child(2) {
+  border-radius: 0px 0px 5px 5px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="35px" x2="50px" y2="55px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="35px" x2="50px" y2="55px" style="stroke: #333; stroke-width: 15px; stroke-linecap: round;"/></svg>');
+}
+input-stepper button:nth-child(1):active {
+  box-shadow: 0px 0px 0px 1px rgb(39, 122, 252);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="65px" x2="50px" y2="45px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="65px" x2="50px" y2="45px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/></svg>'),
+                    linear-gradient(rgb(76, 154, 255), rgb(41, 129, 246));
+}
+input-stepper button:nth-child(2):active {
+  box-shadow: 0px 0px 0px 1px rgb(8, 80, 234);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><line x1="25px" y1="35px" x2="50px" y2="55px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/><line x1="75px" y1="35px" x2="50px" y2="55px" style="stroke: #fff; stroke-width: 15px; stroke-linecap: round;"/></svg>'),
+                    linear-gradient(rgb(38, 127, 247), rgb(7, 102, 233));
+}

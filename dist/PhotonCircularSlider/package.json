@@ -1,0 +1,15 @@
+{
+  "name": "photoncircularslider",
+  "version": "0.0.1",
+  "description": "Circular slider controller",
+  "main": "circular.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "circular",
+    "slider"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC"
+}

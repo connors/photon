@@ -1,0 +1,16 @@
+{
+  "name": "photontoolbar",
+  "version": "0.0.1",
+  "description": "Photon toolbar controller",
+  "main": "toolbar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "toolbar",
+    "header",
+    "footer"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC"
+}
