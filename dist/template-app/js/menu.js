@@ -23,10 +23,10 @@ menu.append(new MenuItem({
 
 // Add the listener
 document.addEventListener('DOMContentLoaded', function () {
-
+  "use strict";
   let filesContext = document.querySelectorAll('.file_arq');
   
-  filesContext.forEach(function(el){
+  Array.from(filesContext).forEach(function(el){
     el.addEventListener('click', function (event) {
       event.preventDefault()
       menu.popup(remote.getCurrentWindow());
