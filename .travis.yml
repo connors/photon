@@ -6,7 +6,7 @@ git:
   depth: 10
 
 node_js:
-  - "0.12"
+  - node
 
 env:
   matrix:
