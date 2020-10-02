@@ -13,7 +13,7 @@ Take note that our master branch is our active, unstable development branch and 
 
 ### What's included
 
-Within the download you'll find the following directories and files, logically grouping common assets. You'll see something like this:
+Within the download, you'll find the following directories and files, logically grouping common assets. You'll see something like this:
 
 ```
 photon/
@@ -43,8 +43,8 @@ Photon's documentation is built with [Jekyll](http://jekyllrb.com) and publicly 
 1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation) (requires v2.5.x).
   * **Windows users:** Read [this unofficial guide](http://jekyll-windows.juthilo.com/) to get Jekyll up and running without problems.
 2. Install the Ruby-based syntax highlighter, [Rouge](https://github.com/jneen/rouge), with `gem install rouge`.
-3. From the root `/photon` directory, run `jekyll serve` in the command line.
-4. Open <http://localhost:4000> in your browser, and boom!
+3. From the root `/photon` directory, run `Jekyll serve` in the command line.
+4. Open <http://localhost:4000> in your browser and boom!
 
 Learn more about using Jekyll by reading its [documentation](http://jekyllrb.com/docs/home/).
 
