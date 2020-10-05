@@ -14,8 +14,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-height: 24px;
 
-  &:active,
   &.active {
     background-color: #dcdfe1;
   }

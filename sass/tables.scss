@@ -22,8 +22,8 @@ tbody {
    background-color: #f5f5f4;
 }
 
-tr:active,
-.table-striped tr:active:nth-child(even) {
+tr.active,
+.table-striped tr.active:nth-child(even) {
   color: #fff;
   background-color: $active-color;
 }

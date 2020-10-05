@@ -46,7 +46,7 @@
   border-left-color: $dark-border-color;
   @include linear-gradient(#fcfcfc, #f1f1f1);
 
-  &:active {
+  &:active:not([disabled]) {
     background-color: #ddd;
     background-image: none;
   }
@@ -67,7 +67,7 @@
   border-bottom-color: darken(#388df8, 15%);
   @include linear-gradient(#6eb4f7, #1a82fb);
 
-  &:active {
+  &:active:not([disabled]) {
     @include linear-gradient(darken(#6eb4f7, 10%), darken(#1a82fb, 10%));
   }
 }
@@ -78,7 +78,7 @@
   border-bottom-color: darken($positive-color, 15%);
   @include linear-gradient(lighten($positive-color, 10%), darken($positive-color, 10%));
 
-  &:active {
+  &:active:not([disabled]) {
     @include linear-gradient($positive-color, darken($positive-color, 15%));
   }
 }
@@ -89,7 +89,7 @@
   border-bottom-color: darken($negative-color, 15%);
   @include linear-gradient(lighten($negative-color, 10%), darken($negative-color, 10%));
 
-  &:active {
+  &:active:not([disabled]) {
     @include linear-gradient($negative-color, darken($negative-color, 15%));
   }
 }
@@ -100,7 +100,7 @@
   border-bottom-color: darken($warning-color, 15%);
   @include linear-gradient(lighten($warning-color, 10%), darken($warning-color, 10%));
 
-  &:active {
+  &:active:not([disabled]) {
     @include linear-gradient($warning-color, darken($warning-color, 15%));
   }
 }
@@ -115,6 +115,28 @@
   color: #737475;
   font-size: 14px;
   line-height: 1;
+}
+.btn-primary .icon,
+.btn-positive .icon,
+.btn-negative .icon,
+.btn-warning .icon {
+  color: #fff;
+}
+
+.btn[disabled] {
+  color: #b7b7b7;
+}
+
+.btn-primary[disabled],
+.btn-positive[disabled],
+.btn-negative[disabled],
+.btn-warning[disabled] {
+  color: rgba(255,255,255,0.7);
+  filter: saturate(30%) brightness(120%);
+}
+
+.btn[disabled] .icon {
+  color: #b7b7b7;
 }
 
 // Add the margin next to the icon if there is text in the button too

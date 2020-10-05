@@ -13,6 +13,7 @@
   padding: 3px;
   font-size: 12px;
   text-align: center;
+  color: lighten($gray-color, 20%);
   border-left: 1px solid #989698;
   @include linear-gradient(#b8b6b8, #b0aeb0);
 
@@ -21,6 +22,7 @@
   }
 
   &.active {
+    color: $gray-color;
     @include linear-gradient(#d4d2d4, #cccacc);
   }
 
@@ -33,7 +35,7 @@
     font-size: 15px;
     line-height: 15px;
     text-align: center;
-    color: #666;
+    color: lighten($gray-color, 20%);
     opacity: 0;
     transition: opacity .1s linear, background-color .1s linear;
     border-radius: 3px;

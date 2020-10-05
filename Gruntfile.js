@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         docsAssetsPath: 'docs/assets/',
         docsDistPath:   'docs/dist/',
         docsPath:       'docs/',
-        srcPath:        'sass/',
+        sassPath:       'sass/',
+        jsPath:         'js/',
     },
 
     banner: '/*!\n' +
@@ -34,7 +35,12 @@ module.exports = function(grunt) {
             ' */\n',
 
     clean: {
-      dist: ['<%= meta.distPath %>/css', '<%= meta.docsDistPath %>/css']
+      dist: [
+        '<%= meta.distPath %>/css',
+        '<%= meta.distPath %>/js',
+        '<%= meta.docsDistPath %>/css',
+        '<%= meta.docsDistPath %>/js'
+      ]
     },
 
     sass: {
@@ -83,6 +89,16 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      js: {
+        src: [
+          '<%= meta.jsPath %>/photon.js',
+          '<%= meta.jsPath %>/*.js'
+        ],
+        dest: '<%= meta.distPath %>/js/photon.js'
+      },
+    },
+
     cssmin: {
       options: {
         keepSpecialComments: '*' // keep all important comments
@@ -104,8 +120,12 @@ module.exports = function(grunt) {
         port: 8000
       },
       css: {
-        files: '<%= meta.srcPath %>**/*.scss',
+        files: '<%= meta.sassPath %>**/*.scss',
         tasks: ['dist-css', 'copy']
+      },
+      js: {
+        files: '<%= meta.jsPath %>/*.js',
+        tasks: ['concat']
       },
       html: {
         files: '<%= meta.docsPath %>**',
@@ -146,7 +166,7 @@ module.exports = function(grunt) {
 
   // Tasks
   grunt.registerTask('dist-css', ['sass', 'usebanner', 'cssmin']);
-  grunt.registerTask('dist', ['clean', 'dist-css', 'copy']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'copy', 'concat']);
   grunt.registerTask('server', ['dist', 'jekyll:docs', 'connect', 'watch']);
 
   grunt.registerTask('default', ['dist']);

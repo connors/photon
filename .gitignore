@@ -1,3 +1,12 @@
+# Build files
+dist/css
+dist/js
+docs/assets/css
+docs/dist/css
+docs/dist/fonts
+docs/dist/js
+docs/dist/template-app
+
 # Ignore docs files
 _gh_pages
 _site

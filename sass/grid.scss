@@ -9,35 +9,85 @@
   bottom: 0;
   left: 0;
   display: flex;
-}
 
-.pane {
-  position: relative;
-  overflow-y: auto;
-  flex: 1;
-  border-left: 1px solid $border-color;
+  > .pane {
+    position: relative;
+    overflow-y: auto;
+    flex: 1;
+    border-left: 1px solid $border-color;
 
-  &:first-child {
-    border-left: 0;
+    &:first-child {
+      border-left: 0;
+    }
   }
-}
 
-.pane-sm {
-  max-width: 220px;
-  min-width: 150px;
-}
+  > .pane-sm {
+    max-width: 220px;
+    min-width: 150px;
+  }
 
-.pane-mini {
-  width: 80px;
-  flex: none;
-}
+  > .pane-mini {
+    width: 80px;
+    flex: none;
+  }
 
-.pane-one-fourth {
-  width: 25%;
-  flex: none;
-}
+  > .pane-one-fourth {
+    width: 25%;
+    flex: none;
+  }
 
-.pane-one-third {
-  width: 33.3%;
-  flex: none;
+  > .pane-one-third {
+    width: 33.3%;
+    flex: none;
+  }
+
+  > .dragbar {
+    width: 8px;
+    margin: 0 -4px;
+    flex: none;
+    cursor: ew-resize;
+    z-index: 1;
+  }
+
+  &.vertical {
+    flex-direction: column;
+
+    > .pane {
+      border-left: 0 none;
+      border-top: 1px solid $border-color;
+
+      &:first-child {
+        border-top: 0;
+      }
+    }
+
+    > .pane-sm {
+      max-width: none;
+      min-width: 0;
+      max-height: 220px;
+      min-height: 150px;
+    }
+
+    > .pane-mini {
+      width: auto;
+      height: 80px;
+    }
+
+    > .pane-one-fourth {
+      width: auto;
+      height: 25%;
+    }
+
+    > .pane-one-third {
+      width: auto;
+      height: 33.3%;
+    }
+
+    > .dragbar {
+      height: 8px;
+      width: auto;
+      margin: -4px 0;
+      cursor: ns-resize;
+    }
+  }
 }

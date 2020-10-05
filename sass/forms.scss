@@ -25,11 +25,12 @@ input[type="checkbox"] {
 .form-control {
   display: inline-block;
   width: 100%;
-  min-height: 25px;
+  min-height: 32px;
   padding: $padding-less $padding;
   font-size: $font-size-default;
   line-height: $line-height-default;
   background-color: $chrome-color;
+  color: $gray-color;
   border: 1px solid $border-color;
   border-radius: $default-border-radius;
   outline: none;

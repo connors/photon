@@ -40,5 +40,8 @@
     "grunt-sed": "twbs/grunt-sed#v0.2.0",
     "load-grunt-tasks": "~3.2.0",
     "time-grunt": "~1.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }
